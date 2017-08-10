@@ -1,0 +1,6 @@
+*.ld
+*.gpdsc
+*.xml
+.project
+.cproject
+Drivers/
