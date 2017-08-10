@@ -4,3 +4,6 @@
 [submodule "HW/libs"]
 	path = HW/libs
 	url = git@github.com:TERA-TU-Graz/ECad_Library.git
+[submodule "HW/projects/general"]
+	path = HW/projects/general
+	url = git@github.com:TERA-TU-Graz/general_pcbs.git

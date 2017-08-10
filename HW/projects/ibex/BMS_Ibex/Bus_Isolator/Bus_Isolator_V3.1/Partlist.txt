@@ -1,0 +1,28 @@
+Partlist
+
+Exported from host-Insulation.brd at 23.10.15 20:58
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Assembly variant: 
+
+Part     Value          Package    Library     Position (mm)         Orientation
+
+C1       100n           C0805      useful      (8.128 7.751)         MR0
+C2       100n           C0805      useful      (18.927 10.16)        MR270
+C3       100n           C0805      useful      (8.128 7.751)         R180
+C4       100n           C0805      useful      (18.927 10.16)        R270
+C5       4,7uF, 25V     C0805      rcl         (16.129 23.876)       MR270
+C7       220pF, 2kV     C1210_HV   useful      (11.938 26.035)       MR0
+CON1     53398-08       53398-08   con-molex   (21.844 11.938)       R90
+CON3     53398-08       53398-08   con-molex   (3.81 17.2212)        R270
+G1       TMR_1-1211     TMR_1-??1? traco-power (20.848 29.29)        R180
+IC1      ISO7241        R-PDSO-G16 ti          (12.192 13.593)       MR90
+IC2      ISO7241        R-PDSO-G16 ti          (12.192 13.593)       R90
+L1       4,7uH, 1,2A    L3225M     rcl         (17.526 27.051)       MR0
+Q2       BSS205N        SOT23      infineon    (21.459 18.034)       MR0
+R1       10K            R0805      useful      (22.479 20.832)       MR180
+R2       10K            R0805      useful      (1.397 12.704)        MR90
+R3       10K            R0805      useful      (1.397 16.514)        MR270
+X1       B2B-XH         B2B-XH     con-jst-xh  (13.843 5.211)        R0
+X2       B2B-XH         B2B-XH     con-jst-xh  (20.828 23.749)       R180

@@ -1,0 +1,307 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ft232rl
+LIBS:relais
+LIBS:Supply
+LIBS:tera_connectors
+LIBS:tera_emc_prodection
+LIBS:tera_general
+LIBS:tera_logic
+LIBS:tera_processors
+LIBS:tera_sensoric
+LIBS:tera_switches
+LIBS:lem_v1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp "TERA TU Graz"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HO_25-NP/SP33 IC1
+U 1 1 59360AFD
+P 5100 2800
+F 0 "IC1" H 5100 3347 60  0000 C CNN
+F 1 "HO_25-NP/SP33" H 5100 3241 60  0000 C CNN
+F 2 "tera_atomic_ic:HO_25-NP_SP33" H 5150 2250 60  0001 C CNN
+F 3 "" H 4850 2800 60  0001 C CNN
+F 4 "98-1001" H 5100 2150 60  0001 C CNN "HPN"
+	1    5100 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2200 4600 2200
+Wire Wire Line
+	4600 2200 4600 2700
+Wire Wire Line
+	4600 2500 4700 2500
+Wire Wire Line
+	4600 2600 4700 2600
+Connection ~ 4600 2500
+Wire Wire Line
+	4600 2700 4700 2700
+Connection ~ 4600 2600
+Wire Wire Line
+	4700 2900 4600 2900
+Wire Wire Line
+	4600 2900 4600 3250
+Wire Wire Line
+	4600 3250 4200 3250
+Wire Wire Line
+	4700 3000 4600 3000
+Connection ~ 4600 3000
+Wire Wire Line
+	4700 3100 4600 3100
+Connection ~ 4600 3100
+NoConn ~ 5500 2800
+$Comp
+L CONN_01X04 P3
+U 1 1 59360F1D
+P 8200 2850
+F 0 "P3" H 8118 2475 50  0000 C CNN
+F 1 "signal" H 8118 2566 50  0000 C CNN
+F 2 "tera_Connectors_Molex:Molex_PicoBlade_53261-0471_04x1.25mm_Angled" H 8200 2850 50  0001 C CNN
+F 3 "" H 8200 2850 50  0000 C CNN
+F 4 "03-0004" H 8200 2850 60  0001 C CNN "HPN"
+	1    8200 2850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5550 3000 5550 3400
+Wire Wire Line
+	5550 3000 5500 3000
+Wire Wire Line
+	5500 2600 6300 2600
+Wire Wire Line
+	5500 2900 6300 2900
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 5936111B
+P 7800 2550
+F 0 "#FLG01" H 7800 2645 50  0001 C CNN
+F 1 "PWR_FLAG" H 7800 2774 50  0000 C CNN
+F 2 "" H 7800 2550 50  0000 C CNN
+F 3 "" H 7800 2550 50  0000 C CNN
+	1    7800 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2550 7800 2700
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 5936115D
+P 7800 3150
+F 0 "#FLG02" H 7800 3245 50  0001 C CNN
+F 1 "PWR_FLAG" H 7800 3373 50  0000 C CNN
+F 2 "" H 7800 3150 50  0000 C CNN
+F 3 "" H 7800 3150 50  0000 C CNN
+	1    7800 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 3150 7800 3000
+$Comp
+L CONN_01X03 P1
+U 1 1 593612EB
+P 4000 2300
+F 0 "P1" H 4150 2250 50  0000 C CNN
+F 1 "Input" H 4200 2350 50  0000 C CNN
+F 2 "tera_Connectors_Phoenix:PhoenixContact_MSTBVA-G_03x5.08mm_Vertical" H 4000 2300 50  0001 C CNN
+F 3 "" H 4000 2300 50  0000 C CNN
+F 4 "05-1003" H 4000 2300 60  0001 C CNN "HPN"
+	1    4000 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X03 P2
+U 1 1 5936143F
+P 4000 3150
+F 0 "P2" H 4078 3191 50  0000 L CNN
+F 1 "output" H 4078 3100 50  0000 L CNN
+F 2 "tera_Connectors_Phoenix:PhoenixContact_MSTBA-G_03x5.08mm_Angled" H 4000 3150 50  0001 C CNN
+F 3 "" H 4000 3150 50  0000 C CNN
+F 4 "05-1103" H 4000 3150 60  0001 C CNN "HPN"
+	1    4000 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2300 4300 2300
+Wire Wire Line
+	4300 2300 4300 3150
+Wire Wire Line
+	4300 2400 4200 2400
+Wire Wire Line
+	4300 3050 4200 3050
+Wire Wire Line
+	4300 3150 4200 3150
+Connection ~ 4300 3050
+Connection ~ 4300 2400
+Text Label 4250 2200 0    60   ~ 0
+HV+_In
+Text Label 4200 3250 0    60   ~ 0
+HV+_out
+Text Label 4300 2800 1    60   ~ 0
+HV-
+$Comp
+L GND #PWR03
+U 1 1 59361FC6
+P 5550 3400
+F 0 "#PWR03" H 5550 3150 50  0001 C CNN
+F 1 "GND" H 5555 3227 50  0000 C CNN
+F 2 "" H 5550 3400 50  0000 C CNN
+F 3 "" H 5550 3400 50  0000 C CNN
+	1    5550 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 59362089
+P 6300 2400
+F 0 "#PWR04" H 6300 2250 50  0001 C CNN
+F 1 "VCC" H 6317 2573 50  0000 C CNN
+F 2 "" H 6300 2400 50  0000 C CNN
+F 3 "" H 6300 2400 50  0000 C CNN
+	1    6300 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2400 6300 2500
+Text Label 6300 2600 0    60   ~ 0
+Signal
+Text Label 6300 2900 0    60   ~ 0
+Standby
+Text Label 8000 2900 2    60   ~ 0
+Signal
+Text Label 8000 2800 2    60   ~ 0
+Standby
+$Comp
+L VCC #PWR05
+U 1 1 5937E95D
+P 7500 2550
+F 0 "#PWR05" H 7500 2400 50  0001 C CNN
+F 1 "VCC" H 7517 2723 50  0000 C CNN
+F 2 "" H 7500 2550 50  0000 C CNN
+F 3 "" H 7500 2550 50  0000 C CNN
+	1    7500 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2550 7500 2700
+Wire Wire Line
+	7500 2700 8000 2700
+Connection ~ 7800 2700
+Wire Wire Line
+	7500 3000 8000 3000
+$Comp
+L GND #PWR06
+U 1 1 5937EA9C
+P 7500 3050
+F 0 "#PWR06" H 7500 2800 50  0001 C CNN
+F 1 "GND" H 7505 2877 50  0000 C CNN
+F 2 "" H 7500 3050 50  0000 C CNN
+F 3 "" H 7500 3050 50  0000 C CNN
+	1    7500 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3050 7500 3000
+Connection ~ 7800 3000
+Wire Wire Line
+	6300 2500 5500 2500
+$Comp
+L C_Small C1
+U 1 1 5937EC82
+P 5750 3100
+F 0 "C1" V 5700 2950 50  0000 L CNN
+F 1 "47n" V 5700 3150 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 5842 3009 50  0001 L CNN
+F 3 "" H 5750 3100 50  0000 C CNN
+F 4 "50-47n0" H 5750 3100 60  0001 C CNN "HPN"
+	1    5750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 5937EF96
+P 5950 3100
+F 0 "C2" V 5900 2950 50  0000 L CNN
+F 1 "47n" V 5900 3150 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 6042 3009 50  0001 L CNN
+F 3 "" H 5950 3100 50  0000 C CNN
+F 4 "50-47n0" H 5950 3100 60  0001 C CNN "HPN"
+	1    5950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 5937EFBE
+P 6150 3100
+F 0 "C3" V 6100 2950 50  0000 L CNN
+F 1 "47n" V 6100 3150 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 6242 3009 50  0001 L CNN
+F 3 "" H 6150 3100 50  0000 C CNN
+F 4 "50-47n0" H 6150 3100 60  0001 C CNN "HPN"
+	1    6150 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3000 5950 2600
+Connection ~ 5950 2600
+Wire Wire Line
+	6150 3000 6150 2500
+Connection ~ 6150 2500
+Wire Wire Line
+	5750 3200 5750 3300
+Wire Wire Line
+	5550 3300 6150 3300
+Connection ~ 5550 3300
+Wire Wire Line
+	5950 3300 5950 3200
+Connection ~ 5750 3300
+Wire Wire Line
+	6150 3300 6150 3200
+Connection ~ 5950 3300
+Wire Wire Line
+	5500 3100 5550 3100
+Connection ~ 5550 3100
+Wire Wire Line
+	5750 3000 5750 2700
+Wire Wire Line
+	5750 2700 5500 2700
+$EndSCHEMATC

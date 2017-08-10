@@ -1,0 +1,949 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ft232rl
+LIBS:relais
+LIBS:Supply
+LIBS:tera_general
+LIBS:tera_switches
+LIBS:tera_logic
+LIBS:tera_processors
+LIBS:tera_connectors
+LIBS:tera_emc_prodection
+LIBS:tera_sensoric
+LIBS:interlock_power
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:Zilog
+LIBS:isolator_pwr
+LIBS:BMS_Master_V7_kicad-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 11
+Title "BMS Master"
+Date "2017-01-06"
+Rev "6"
+Comp "TERA TU Graz"
+Comment1 "Rene Pöschl"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4100 3600 1050 1050
+U 56F5071E
+F0 "CurrentMeasurement" 60
+F1 "CurrentMeasurement.sch" 60
+F2 "+5V" I L 4100 3700 40 
+F3 "GND" I L 4100 4550 40 
+F4 "LEM1_Signal" O R 5150 4000 40 
+F5 "LEM2_Signal" O R 5150 4100 40 
+F6 "+3V3" I L 4100 3800 40 
+F7 "LEM_Standby" I L 4100 4000 40 
+F8 "Alegro_1_Filtered" O R 5150 4250 40 
+F9 "Alegro_1" I L 4100 4250 40 
+F10 "Alegro_2_Filtered" O R 5150 4350 40 
+F11 "Alegro_2" I L 4100 4350 40 
+$EndSheet
+$Sheet
+S 9150 4350 950  1750
+U 56F507C6
+F0 "SPI_Controller" 60
+F1 "SPI.sch" 60
+F2 "CS_B0" I L 9150 4950 60 
+F3 "CS_B1" I L 9150 5050 60 
+F4 "CS_B2" I L 9150 5150 60 
+F5 "SPI_CS" I L 9150 5250 60 
+F6 "GND" I L 9150 6000 60 
+F7 "+3V3" I L 9150 4650 60 
+F8 "NCS5" O R 10100 4650 60 
+F9 "NCS6" O R 10100 4750 60 
+F10 "NCS7" O R 10100 4850 60 
+F11 "NCS8" O R 10100 4950 60 
+F12 "SCLK" I L 9150 5400 60 
+F13 "MOSI" I L 9150 5600 60 
+F14 "MISO" O L 9150 5500 60 
+F15 "+5V" I L 9150 4550 60 
+F16 "MISO_5V" I R 10100 5200 60 
+F17 "MOSI_5V" O R 10100 5300 60 
+F18 "SCLK_5V" O R 10100 5100 60 
+F19 "~Alert" O L 9150 5750 60 
+F20 "~Fault" O L 9150 5850 60 
+F21 "+12V_Permanent" I L 9150 4450 60 
+$EndSheet
+$Sheet
+S 1050 1000 900  700 
+U 56F5D14B
+F0 "supply" 60
+F1 "supply.sch" 60
+F2 "+5V" O R 1950 1300 60 
+F3 "+3V3" O R 1950 1400 60 
+F4 "+12V_Permanent" I L 1050 1200 60 
+F5 "GND" I L 1050 1450 60 
+$EndSheet
+$Sheet
+S 9800 1850 750  1000
+U 58175C82
+F0 "CAN" 60
+F1 "CAN.sch" 60
+F2 "GND" I L 9800 2750 60 
+F3 "CAN2+" B L 9800 2000 60 
+F4 "CAN2-" B L 9800 2100 60 
+F5 "CAN1+" B L 9800 2400 60 
+F6 "CAN1-" B L 9800 2500 60 
+$EndSheet
+$Comp
+L +12V #PWR01
+U 1 1 56FEA5A8
+P 850 1150
+F 0 "#PWR01" H 850 1000 50  0001 C CNN
+F 1 "+12V" H 868 1323 50  0000 C CNN
+F 2 "" H 850 1150 50  0000 C CNN
+F 3 "" H 850 1150 50  0000 C CNN
+	1    850  1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 56FEB8F4
+P 2500 1350
+F 0 "#PWR02" H 2500 1200 50  0001 C CNN
+F 1 "+3.3V" H 2518 1523 50  0000 C CNN
+F 2 "" H 2500 1350 50  0000 C CNN
+F 3 "" H 2500 1350 50  0000 C CNN
+	1    2500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 56FEBA50
+P 2350 1250
+F 0 "#PWR03" H 2350 1100 50  0001 C CNN
+F 1 "+5V" H 2368 1423 50  0000 C CNN
+F 2 "" H 2350 1250 50  0000 C CNN
+F 3 "" H 2350 1250 50  0000 C CNN
+	1    2350 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 56FEC261
+P 850 1500
+F 0 "#PWR04" H 850 1250 50  0001 C CNN
+F 1 "GND" H 858 1327 50  0000 C CNN
+F 2 "" H 850 1500 50  0000 C CNN
+F 3 "" H 850 1500 50  0000 C CNN
+	1    850  1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5709711B
+P 9650 2800
+F 0 "#PWR05" H 9650 2550 50  0001 C CNN
+F 1 "GND" H 9658 2627 50  0000 C CNN
+F 2 "" H 9650 2800 50  0000 C CNN
+F 3 "" H 9650 2800 50  0000 C CNN
+	1    9650 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 57164043
+P 9050 6100
+F 0 "#PWR06" H 9050 5850 50  0001 C CNN
+F 1 "GND" H 9058 5927 50  0000 C CNN
+F 2 "" H 9050 6100 50  0000 C CNN
+F 3 "" H 9050 6100 50  0000 C CNN
+	1    9050 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR07
+U 1 1 571685D4
+P 8700 4400
+F 0 "#PWR07" H 8700 4250 50  0001 C CNN
+F 1 "+3.3V" V 8700 4600 50  0000 C CNN
+F 2 "" H 8700 4400 50  0000 C CNN
+F 3 "" H 8700 4400 50  0000 C CNN
+	1    8700 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR08
+U 1 1 571F6147
+P 3800 3650
+F 0 "#PWR08" H 3800 3500 50  0001 C CNN
+F 1 "+5V" H 3818 3823 50  0000 C CNN
+F 2 "" H 3800 3650 50  0000 C CNN
+F 3 "" H 3800 3650 50  0000 C CNN
+	1    3800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 571F62C0
+P 3800 4650
+F 0 "#PWR09" H 3800 4400 50  0001 C CNN
+F 1 "GND" H 3808 4477 50  0000 C CNN
+F 2 "" H 3800 4650 50  0000 C CNN
+F 3 "" H 3800 4650 50  0000 C CNN
+	1    3800 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR010
+U 1 1 57DE1EE6
+P 8850 4400
+F 0 "#PWR010" H 8850 4250 50  0001 C CNN
+F 1 "+5V" V 8850 4600 50  0000 C CNN
+F 2 "" H 8850 4400 50  0000 C CNN
+F 3 "" H 8850 4400 50  0000 C CNN
+	1    8850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 5813CDE1
+P 2750 7550
+F 0 "#PWR011" H 2750 7300 50  0001 C CNN
+F 1 "GND" H 2758 7377 50  0000 C CNN
+F 2 "" H 2750 7550 50  0000 C CNN
+F 3 "" H 2750 7550 50  0000 C CNN
+	1    2750 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR012
+U 1 1 5814095A
+P 1200 7400
+F 0 "#PWR012" H 1200 7250 50  0001 C CNN
+F 1 "+5V" H 1218 7573 50  0000 C CNN
+F 2 "" H 1200 7400 50  0000 C CNN
+F 3 "" H 1200 7400 50  0000 C CNN
+	1    1200 7400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR013
+U 1 1 58143753
+P 1150 5750
+F 0 "#PWR013" H 1150 5600 50  0001 C CNN
+F 1 "+3.3V" V 1150 5950 50  0000 C CNN
+F 2 "" H 1150 5750 50  0000 C CNN
+F 3 "" H 1150 5750 50  0000 C CNN
+	1    1150 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 1 1 581F9E37
+P 4050 1500
+F 0 "U1" H 4050 2200 60  0000 L CNN
+F 1 "STM32f4_board_v3-1" H 3700 2100 60  0000 L CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 5000 1550 60  0001 C CNN
+F 3 "" H 3850 1800 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	1    4050 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 2 1 581FA2F9
+P 5600 1900
+F 0 "U1" H 5650 3000 60  0000 L CNN
+F 1 "STM32f4_board_v3-1" H 5250 2900 60  0000 L CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 6550 1950 60  0001 C CNN
+F 3 "" H 5400 2200 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	2    5600 1900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 3 1 581FA586
+P 6950 1900
+F 0 "U1" H 6900 3000 60  0000 L CNN
+F 1 "STM32f4_board_v3-1" H 6550 2900 60  0000 L CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 7900 1950 60  0001 C CNN
+F 3 "" H 6750 2200 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	3    6950 1900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 4 1 581FA726
+P 1950 6500
+F 0 "U1" H 1975 7487 60  0000 C CNN
+F 1 "STM32f4_board_v3-1" H 1975 7381 60  0000 C CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 2900 6550 60  0001 C CNN
+F 3 "" H 1750 6800 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	4    1950 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 5 1 581FA8E0
+P 8950 2600
+F 0 "U1" H 9400 2500 60  0000 L CNN
+F 1 "STM32f4_board_v3-1" H 9400 2400 60  0000 L CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 9900 2650 60  0001 C CNN
+F 3 "" H 8750 2900 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	5    8950 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 6 1 581FB0E4
+P 8800 2100
+F 0 "U1" H 8779 2447 60  0000 C CNN
+F 1 "STM32f4_board_v3-1" H 8779 2341 60  0000 C CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 9750 2150 60  0001 C CNN
+F 3 "" H 8600 2400 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	6    8800 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 7 1 581FB2CA
+P 8900 3250
+F 0 "U1" H 9250 3200 60  0000 C CNN
+F 1 "STM32f4_board_v3-1" H 9650 3300 60  0000 C CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 9850 3300 60  0001 C CNN
+F 3 "" H 8700 3550 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	7    8900 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 8 1 581FB4A8
+P 10150 1050
+F 0 "U1" H 10150 1550 60  0000 L CNN
+F 1 "STM32f4_board_v3-1" H 9800 1450 60  0000 L CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 11100 1100 60  0001 C CNN
+F 3 "" H 9950 1350 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	8    10150 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR014
+U 1 1 58456FD2
+P 3650 3650
+F 0 "#PWR014" H 3650 3500 50  0001 C CNN
+F 1 "+3.3V" V 3650 3850 50  0000 C CNN
+F 2 "" H 3650 3650 50  0000 C CNN
+F 3 "" H 3650 3650 50  0000 C CNN
+	1    3650 3650
+	1    0    0    -1  
+$EndComp
+Text Label 7350 1400 0    39   ~ 0
+Interlock_OK
+Text Label 4450 1900 0    39   ~ 0
+CS_B0
+Text Label 4450 1600 0    39   ~ 0
+SCLK
+Text Label 4450 1700 0    39   ~ 0
+MISO
+Text Label 4450 1800 0    39   ~ 0
+MOSI
+Text Label 4450 2000 0    39   ~ 0
+12V_Relay_Fault
+Text Label 6000 1100 0    39   ~ 0
+SPI_CS
+Text Label 7350 1800 0    39   ~ 0
+Main_Fault
+Text Label 7350 1600 0    39   ~ 0
+Interlock_On1
+Text Label 7350 1500 0    39   ~ 0
+Interlock_On2
+Text Label 6000 2100 0    39   ~ 0
+NALERT
+Text Label 6000 2600 0    39   ~ 0
+CS_B1
+Text Label 4450 1200 0    39   ~ 0
+Alegro_1_Filtered
+Text Label 4450 1300 0    39   ~ 0
+Alegro_2_Filtered
+Text Label 4450 1400 0    39   ~ 0
+WheelSpeed
+Text Label 7350 1700 0    39   ~ 0
+CS_B2
+Text Label 6000 1300 0    39   ~ 0
+NFAULT
+Text Label 7350 1900 0    39   ~ 0
+Precharge_Fault
+Text Label 9150 5250 2    39   ~ 0
+SPI_CS
+Text Label 9150 5750 2    39   ~ 0
+NALERT
+Text Label 9150 5050 2    39   ~ 0
+CS_B1
+Text Label 9150 5600 2    39   ~ 0
+MOSI
+Text Label 9150 5500 2    39   ~ 0
+MISO
+Text Label 9150 5400 2    39   ~ 0
+SCLK
+Text Label 9150 5850 2    39   ~ 0
+NFAULT
+Text Label 9150 5150 2    39   ~ 0
+CS_B2
+Text Label 9150 4950 2    39   ~ 0
+CS_B0
+Text Label 7350 1100 0    39   ~ 0
+LEM2
+Text Label 7350 1300 0    39   ~ 0
+LEM_Standby
+Text Label 6000 2200 0    39   ~ 0
+Button_On
+Text Label 6000 1200 0    39   ~ 0
+Button_Off
+Text Label 7350 2500 0    39   ~ 0
+EXT_GPIO_3
+Text Label 7350 2300 0    39   ~ 0
+EXT_GPIO_1
+Text Label 7350 2400 0    39   ~ 0
+EXT_GPIO_2
+Wire Wire Line
+	1950 1400 2500 1400
+Wire Wire Line
+	2500 1400 2500 1350
+Wire Wire Line
+	1950 1300 2350 1300
+Wire Wire Line
+	2350 1300 2350 1250
+Wire Wire Line
+	9650 2800 9650 2750
+Wire Wire Line
+	9650 2750 9800 2750
+Wire Wire Line
+	9050 6100 9050 6000
+Wire Wire Line
+	9050 6000 9150 6000
+Wire Wire Line
+	3800 4650 3800 4550
+Wire Wire Line
+	3800 4550 4100 4550
+Wire Wire Line
+	3800 3650 3800 3700
+Wire Wire Line
+	3800 3700 4100 3700
+Wire Wire Line
+	9300 2000 9800 2000
+Wire Wire Line
+	9300 2100 9800 2100
+Wire Wire Line
+	2750 5800 2750 7550
+Wire Wire Line
+	2750 5800 2600 5800
+Wire Wire Line
+	2600 5900 2750 5900
+Wire Wire Line
+	2600 6000 2750 6000
+Wire Wire Line
+	2600 6100 2750 6100
+Wire Wire Line
+	2600 6200 2750 6200
+Wire Wire Line
+	2600 6300 2750 6300
+Wire Wire Line
+	2600 6400 2750 6400
+Wire Wire Line
+	2600 6500 2750 6500
+Wire Wire Line
+	2600 6600 2750 6600
+Wire Wire Line
+	2600 6700 2750 6700
+Wire Wire Line
+	2600 7100 2750 7100
+Wire Wire Line
+	2600 7400 2750 7400
+Wire Wire Line
+	1200 7400 1350 7400
+Wire Wire Line
+	1150 5750 1150 7300
+Wire Wire Line
+	1150 7300 1350 7300
+Wire Wire Line
+	1150 7100 1350 7100
+Wire Wire Line
+	1150 6700 1350 6700
+Wire Wire Line
+	1150 6600 1350 6600
+Wire Wire Line
+	1150 6500 1350 6500
+Wire Wire Line
+	1150 6400 1350 6400
+Wire Wire Line
+	1150 6300 1350 6300
+Wire Wire Line
+	1150 6200 1350 6200
+Wire Wire Line
+	1150 6100 1350 6100
+Wire Wire Line
+	1150 6000 1350 6000
+Wire Wire Line
+	1150 5900 1350 5900
+Wire Wire Line
+	1150 5800 1350 5800
+Wire Wire Line
+	2600 7500 2750 7500
+Wire Wire Line
+	2600 7300 2750 7300
+Wire Wire Line
+	1300 7400 1300 7500
+Wire Wire Line
+	1300 7500 1350 7500
+Wire Wire Line
+	3650 3650 3650 3800
+Wire Wire Line
+	3650 3800 4100 3800
+Connection ~ 2750 5900
+Connection ~ 2750 6000
+Connection ~ 2750 6100
+Connection ~ 2750 6200
+Connection ~ 2750 6300
+Connection ~ 2750 6400
+Connection ~ 2750 6500
+Connection ~ 2750 6600
+Connection ~ 2750 6700
+Connection ~ 2750 7100
+Connection ~ 2750 7400
+Connection ~ 1150 7100
+Connection ~ 1150 6700
+Connection ~ 1150 6600
+Connection ~ 1150 6500
+Connection ~ 1150 6400
+Connection ~ 1150 6300
+Connection ~ 1150 6200
+Connection ~ 1150 6100
+Connection ~ 1150 6000
+Connection ~ 1150 5900
+Connection ~ 1150 5800
+Connection ~ 2750 7500
+Connection ~ 2750 7300
+Connection ~ 1300 7400
+NoConn ~ 6000 1600
+NoConn ~ 7350 2200
+NoConn ~ 7350 2600
+NoConn ~ 9300 2200
+NoConn ~ 4450 1100
+NoConn ~ 9750 800 
+NoConn ~ 9750 900 
+NoConn ~ 9750 1000
+NoConn ~ 9750 1100
+NoConn ~ 9750 1200
+NoConn ~ 9750 1300
+NoConn ~ 9300 3200
+NoConn ~ 9300 3300
+NoConn ~ 9350 2700
+NoConn ~ 9350 2800
+NoConn ~ 9350 2900
+NoConn ~ 6000 1900
+NoConn ~ 6000 2000
+$Sheet
+S 3850 5550 1050 850 
+U 592DE821
+F0 "Interlock" 60
+F1 "Interlock.sch" 60
+F2 "GND" I L 3850 6300 60 
+F3 "12V_Permanent" I L 3850 5650 60 
+F4 "IL_I_ON" I L 3850 6050 60 
+F5 "Interlock_OK" O R 4900 5900 60 
+F6 "IL_K_ON" I L 3850 6150 60 
+F7 "+5V" I L 3850 5750 60 
+F8 "IL_next+" O R 4900 6050 60 
+F9 "IL_next-" I R 4900 6150 60 
+$EndSheet
+Text Label 3850 6050 2    39   ~ 0
+Interlock_On1
+Text Label 3850 6150 2    39   ~ 0
+Interlock_On2
+$Comp
+L GND #PWR015
+U 1 1 592F4C8E
+P 3650 6350
+F 0 "#PWR015" H 3650 6100 50  0001 C CNN
+F 1 "GND" H 3658 6177 50  0000 C CNN
+F 2 "" H 3650 6350 50  0000 C CNN
+F 3 "" H 3650 6350 50  0000 C CNN
+	1    3650 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 6350 3650 6300
+Wire Wire Line
+	3650 6300 3850 6300
+$Comp
+L +5V #PWR016
+U 1 1 592F6351
+P 3450 5600
+F 0 "#PWR016" H 3450 5450 50  0001 C CNN
+F 1 "+5V" H 3468 5773 50  0000 C CNN
+F 2 "" H 3450 5600 50  0000 C CNN
+F 3 "" H 3450 5600 50  0000 C CNN
+	1    3450 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 5600 3450 5750
+Wire Wire Line
+	3450 5750 3850 5750
+$Comp
+L +12V #PWR017
+U 1 1 592F8B78
+P 3700 5600
+F 0 "#PWR017" H 3700 5450 50  0001 C CNN
+F 1 "+12V" H 3718 5773 50  0000 C CNN
+F 2 "" H 3700 5600 50  0000 C CNN
+F 3 "" H 3700 5600 50  0000 C CNN
+	1    3700 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 5600 3700 5650
+Wire Wire Line
+	3700 5650 3850 5650
+Text Label 4900 5900 0    39   ~ 0
+Interlock_OK
+Text Label 7350 1200 0    39   ~ 0
+LEM1
+Text Label 4100 4000 2    39   ~ 0
+LEM_Standby
+Text Label 5150 4000 0    39   ~ 0
+LEM1
+Text Label 5150 4100 0    39   ~ 0
+LEM2
+Text Label 5150 4250 0    39   ~ 0
+Alegro_1_Filtered
+Text Label 5150 4350 0    39   ~ 0
+Alegro_2_Filtered
+Wire Wire Line
+	850  1150 850  1200
+Wire Wire Line
+	850  1200 1050 1200
+Wire Wire Line
+	850  1500 850  1450
+Wire Wire Line
+	850  1450 1050 1450
+$Comp
+L +12V #PWR018
+U 1 1 59381450
+P 9000 4400
+F 0 "#PWR018" H 9000 4250 50  0001 C CNN
+F 1 "+12V" V 9000 4600 50  0000 C CNN
+F 2 "" H 9000 4400 50  0000 C CNN
+F 3 "" H 9000 4400 50  0000 C CNN
+	1    9000 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4400 8700 4650
+Wire Wire Line
+	8700 4650 9150 4650
+Wire Wire Line
+	8850 4400 8850 4550
+Wire Wire Line
+	8850 4550 9150 4550
+Wire Wire Line
+	9000 4400 9000 4450
+Wire Wire Line
+	9000 4450 9150 4450
+Text Label 10100 4750 0    40   ~ 0
+NCS_MainRelay
+NoConn ~ 10100 4650
+Text Label 10100 4850 0    40   ~ 0
+NCS_12V_Relay
+Text Label 10100 4950 0    40   ~ 0
+NCS_PreCharge
+Text Label 10100 5100 0    40   ~ 0
+SPI_CLK_5V
+Text Label 10100 5200 0    40   ~ 0
+SPI_MISO_5V
+Text Label 10100 5300 0    40   ~ 0
+SPI_MOSI_5V
+$Sheet
+S 6450 3650 550  1100
+U 593855DF
+F0 "Other IO" 40
+F1 "OtherIO.sch" 40
+F2 "3V3" I L 6450 3850 40 
+F3 "5V" I L 6450 3750 40 
+F4 "GND" I L 6450 4650 40 
+F5 "Button_On" O R 7000 3900 40 
+F6 "Button_Off" O R 7000 4000 40 
+F7 "EXT_GPIO_1" O R 7000 4150 40 
+F8 "EXT_GPIO_2" O R 7000 4250 40 
+F9 "EXT_GPIO_3" O R 7000 4350 40 
+F10 "WheelSpeed" O R 7000 4500 40 
+$EndSheet
+Text Label 7000 3900 0    39   ~ 0
+Button_On
+Text Label 7000 4000 0    39   ~ 0
+Button_Off
+Text Label 7000 4150 0    39   ~ 0
+EXT_GPIO_1
+Text Label 7000 4250 0    39   ~ 0
+EXT_GPIO_2
+Text Label 7000 4350 0    39   ~ 0
+EXT_GPIO_3
+$Sheet
+S 1500 2550 1250 1700
+U 59396CDA
+F0 "Main Connector" 40
+F1 "main_connector.sch" 40
+F2 "+12VDC_BMS" O R 2750 2650 40 
+F3 "+12VDC_BMS_Switched" O R 2750 2750 40 
+F4 "+3V3" I R 2750 2900 40 
+F5 "+5V" I R 2750 3000 40 
+F6 "IL_master-" O L 1500 3300 40 
+F7 "IL_master+" I L 1500 3200 40 
+F8 "Interlock_OK" I L 1500 3100 40 
+F9 "ISense_MCU" O R 2750 3200 40 
+F10 "ISense_Main" O R 2750 3300 40 
+F11 "PreCharge_Fault" O R 2750 3700 40 
+F12 "MainRelay_Fault" O R 2750 3500 40 
+F13 "12V_Relay_Fault" O R 2750 3600 40 
+F14 "NCS_MainRelay" I L 1500 3500 40 
+F15 "NCS_PreCharge" I L 1500 3700 40 
+F16 "NCS_12V_Relay" I L 1500 3600 40 
+F17 "SPI_CLK" I L 1500 3850 40 
+F18 "SPI_MOSI" I L 1500 4050 40 
+F19 "SPI_MISO" T L 1500 3950 40 
+F20 "GND" O R 2750 4150 40 
+$EndSheet
+$Comp
+L +12V #PWR019
+U 1 1 593C089E
+P 2850 2600
+F 0 "#PWR019" H 2850 2450 50  0001 C CNN
+F 1 "+12V" H 2868 2773 50  0000 C CNN
+F 2 "" H 2850 2600 50  0000 C CNN
+F 3 "" H 2850 2600 50  0000 C CNN
+	1    2850 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2600 2850 2650
+Wire Wire Line
+	2850 2650 2750 2650
+Text Label 1500 3100 2    39   ~ 0
+Interlock_OK
+Text Label 4900 6050 0    39   ~ 0
+IL_next+
+Text Label 4900 6150 0    39   ~ 0
+IL_next-
+Text Label 1500 3200 2    39   ~ 0
+IL_next+
+Text Label 1500 3300 2    39   ~ 0
+IL_next-
+Text Label 1500 3500 2    40   ~ 0
+NCS_MainRelay
+Text Label 1500 3600 2    40   ~ 0
+NCS_12V_Relay
+Text Label 1500 3700 2    40   ~ 0
+NCS_PreCharge
+Text Label 1500 3850 2    40   ~ 0
+SPI_CLK_5V
+Text Label 1500 3950 2    40   ~ 0
+SPI_MISO_5V
+Text Label 1500 4050 2    40   ~ 0
+SPI_MOSI_5V
+Text Label 2750 3700 0    39   ~ 0
+Precharge_Fault
+Text Label 2750 3600 0    39   ~ 0
+12V_Relay_Fault
+Text Label 2750 3500 0    39   ~ 0
+Main_Fault
+Text Label 7000 4500 0    39   ~ 0
+WheelSpeed
+$Comp
+L +3.3V #PWR020
+U 1 1 593F13EA
+P 3150 2600
+F 0 "#PWR020" H 3150 2450 50  0001 C CNN
+F 1 "+3.3V" V 3150 2800 50  0000 C CNN
+F 2 "" H 3150 2600 50  0000 C CNN
+F 3 "" H 3150 2600 50  0000 C CNN
+	1    3150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR021
+U 1 1 593F15C3
+P 3300 2600
+F 0 "#PWR021" H 3300 2450 50  0001 C CNN
+F 1 "+5V" H 3318 2773 50  0000 C CNN
+F 2 "" H 3300 2600 50  0000 C CNN
+F 3 "" H 3300 2600 50  0000 C CNN
+	1    3300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2600 3150 2900
+Wire Wire Line
+	3150 2900 2750 2900
+Wire Wire Line
+	3300 2600 3300 3000
+Wire Wire Line
+	3300 3000 2750 3000
+Text Label 4100 4250 2    39   ~ 0
+Alegro_1
+Text Label 2750 3200 0    39   ~ 0
+Alegro_1
+Text Label 2750 3300 0    39   ~ 0
+Alegro_2
+Text Label 4100 4350 2    39   ~ 0
+Alegro_2
+$Comp
+L GND #PWR022
+U 1 1 593F422D
+P 2850 4200
+F 0 "#PWR022" H 2850 3950 50  0001 C CNN
+F 1 "GND" H 2858 4027 50  0000 C CNN
+F 2 "" H 2850 4200 50  0000 C CNN
+F 3 "" H 2850 4200 50  0000 C CNN
+	1    2850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4200 2850 4150
+Wire Wire Line
+	2850 4150 2750 4150
+$Comp
+L +5V #PWR023
+U 1 1 593F8CE7
+P 6300 3700
+F 0 "#PWR023" H 6300 3550 50  0001 C CNN
+F 1 "+5V" H 6318 3873 50  0000 C CNN
+F 2 "" H 6300 3700 50  0000 C CNN
+F 3 "" H 6300 3700 50  0000 C CNN
+	1    6300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR024
+U 1 1 593F8CED
+P 6150 3700
+F 0 "#PWR024" H 6150 3550 50  0001 C CNN
+F 1 "+3.3V" V 6150 3900 50  0000 C CNN
+F 2 "" H 6150 3700 50  0000 C CNN
+F 3 "" H 6150 3700 50  0000 C CNN
+	1    6150 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3700 6300 3750
+Wire Wire Line
+	6300 3750 6450 3750
+Wire Wire Line
+	6150 3700 6150 3850
+Wire Wire Line
+	6150 3850 6450 3850
+$Comp
+L GND #PWR025
+U 1 1 593F9314
+P 6250 4750
+F 0 "#PWR025" H 6250 4500 50  0001 C CNN
+F 1 "GND" H 6258 4577 50  0000 C CNN
+F 2 "" H 6250 4750 50  0000 C CNN
+F 3 "" H 6250 4750 50  0000 C CNN
+	1    6250 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4750 6250 4650
+Wire Wire Line
+	6250 4650 6450 4650
+Wire Wire Line
+	9350 2500 9800 2500
+Wire Wire Line
+	9350 2400 9800 2400
+NoConn ~ 6000 1700
+NoConn ~ 6000 1800
+NoConn ~ 4450 1500
+NoConn ~ 7350 2000
+$EndSCHEMATC

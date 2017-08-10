@@ -1,0 +1,761 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:local_power
+LIBS:ft232rl
+LIBS:relais
+LIBS:Supply
+LIBS:tera_connectors
+LIBS:tera_emc_prodection
+LIBS:tera_general
+LIBS:tera_logic
+LIBS:tera_processors
+LIBS:tera_switches
+LIBS:tera_sensoric
+LIBS:fennek_power_distribution-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X03 P1
+U 1 1 592C0904
+P 1050 3350
+F 0 "P1" H 1128 3391 50  0000 L CNN
+F 1 "HV_in" H 1128 3300 50  0000 L CNN
+F 2 "tera_Connectors_Phoenix:PhoenixContact_MSTBA-G_03x5.08mm_Angled" H 1050 3350 50  0001 C CNN
+F 3 "" H 1050 3350 50  0000 C CNN
+F 4 "05-1103" H 1050 3350 60  0001 C CNN "HPN"
+	1    1050 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L F_Small F1
+U 1 1 592C0918
+P 1550 3200
+F 0 "F1" H 1550 3385 50  0000 C CNN
+F 1 "20A 60VDC" H 1550 3294 50  0000 C CNN
+F 2 "tera_general:Fuse_holder_6.3x32mm_Schruter_0031.2520" H 1550 3200 50  0001 C CNN
+F 3 "" H 1550 3200 50  0000 C CNN
+F 4 "94-0101" H 1550 3200 60  0001 C CNN "HPN"
+	1    1550 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 592C091F
+P 1850 3100
+F 0 "#FLG07" H 1850 3195 50  0001 C CNN
+F 1 "PWR_FLAG" H 1850 3200 15  0000 C CNN
+F 2 "" H 1850 3100 50  0000 C CNN
+F 3 "" H 1850 3100 50  0000 C CNN
+	1    1850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENERsmall D1
+U 1 1 592C0926
+P 1750 3350
+F 0 "D1" V 1704 3419 50  0000 L CNN
+F 1 "58V" V 1795 3419 50  0000 L CNN
+F 2 "tera_diodes:DO-214AA_with_vias_in_pad" H 1750 3350 50  0001 C CNN
+F 3 "" H 1750 3350 50  0000 C CNN
+F 4 "21-9002" V 1750 3350 60  0001 C CNN "HPN"
+	1    1750 3350
+	0    1    1    0   
+$EndComp
+NoConn ~ 1250 3350
+$Comp
+L CONN_01X04 P4
+U 1 1 592C092F
+P 3150 2950
+F 0 "P4" H 3228 2991 50  0000 L CNN
+F 1 "HV_Emergency_Stop_Relay" H 3228 2900 50  0000 L CNN
+F 2 "tera_Connectors_Phoenix:PhoenixContact_MSTBA-G_04x5.08mm_Angled" H 3150 2950 50  0001 C CNN
+F 3 "" H 3150 2950 50  0000 C CNN
+F 4 "05-1104" H 3150 2950 60  0001 C CNN "HPN"
+	1    3150 2950
+	0    1    -1   0   
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 592C0937
+P 4000 3200
+F 0 "R2" V 3804 3200 50  0000 C CNN
+F 1 "470R 5W" V 3895 3200 50  0000 C CNN
+F 2 "tera_rlc:TE_SMW-5W" H 4000 3200 50  0001 C CNN
+F 3 "" H 4000 3200 50  0000 C CNN
+F 4 "17-470R" V 4000 3200 60  0001 C CNN "HPN"
+	1    4000 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil K1
+U 2 1 592C093F
+P 4000 3450
+F 0 "K1" V 3900 3450 60  0000 C CNN
+F 1 "SPDT-16A_12VDC-Coil" V 4300 3350 60  0000 C CNN
+F 2 "tera_relais:Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil" H 4000 2875 60  0001 C CNN
+F 3 "" H 4000 3450 60  0001 C CNN
+F 4 "96-2005" V 4000 3450 60  0001 C CNN "HPN"
+	2    4000 3450
+	0    -1   1    0   
+$EndComp
+$Comp
+L CONN_01X02 P6
+U 1 1 592C0947
+P 6200 3250
+F 0 "P6" H 6278 3291 50  0000 L CNN
+F 1 "MCU_HV_supply" H 6278 3200 50  0000 L CNN
+F 2 "tera_Connectors_Phoenix:PhoenixContact_MSTB-GF_02x5.08mm_Angled_ThreadedFlange" H 6277 3154 50  0001 L CNN
+F 3 "" H 6200 3250 50  0000 C CNN
+F 4 "05-1302" H 6200 3250 60  0001 C CNN "HPN"
+	1    6200 3250
+	1    0    0    1   
+$EndComp
+NoConn ~ 4250 3450
+NoConn ~ 4250 3350
+$Comp
+L Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil K1
+U 1 1 592C0957
+P 8650 5050
+F 0 "K1" H 8700 5150 60  0000 L CNN
+F 1 "SPDT-16A_12VDC-Coil" H 8300 4800 60  0001 L CNN
+F 2 "tera_relais:Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil" H 8650 4475 60  0001 C CNN
+F 3 "" H 8650 5050 60  0001 C CNN
+F 4 "96-2005" H 8650 5050 60  0001 C CNN "HPN"
+	1    8650 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R11
+U 1 1 592C0967
+P 8350 5500
+F 0 "R11" V 8550 5500 50  0000 C CNN
+F 1 "510R 250mW" V 8450 5500 50  0000 C CNN
+F 2 "tera_rlc:R_1206in" H 8350 5500 50  0001 C CNN
+F 3 "" H 8350 5500 50  0000 C CNN
+F 4 "13-510R" V 8350 5500 60  0001 C CNN "HPN"
+	1    8350 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L CP_Small C3
+U 1 1 592C096F
+P 9800 5050
+F 0 "C3" H 9888 5096 50  0000 L CNN
+F 1 "820u" H 9888 5005 50  0000 L CNN
+F 2 "tera_rlc:c_elec_10x10mm" H 9800 5050 50  0001 C CNN
+F 3 "" H 9800 5050 50  0000 C CNN
+F 4 "55-820u" H 9800 5050 60  0001 C CNN "HPN"
+	1    9800 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R13
+U 1 1 592C0977
+P 9150 4800
+F 0 "R13" V 8954 4800 50  0000 C CNN
+F 1 "22R 2W" V 9045 4800 50  0000 C CNN
+F 2 "tera_rlc:R_2512in" H 9150 4800 50  0001 C CNN
+F 3 "" H 9150 4800 50  0000 C CNN
+F 4 "14-22R0" V 9150 4800 60  0001 C CNN "HPN"
+	1    9150 4800
+	0    1    1    0   
+$EndComp
+Text Notes 9800 4800 0    40   ~ 0
+Delays turning off. \nEnsures that main \nrelay is turned of first.
+$Comp
+L C_Small C4
+U 1 1 592C0980
+P 5600 2300
+F 0 "C4" V 5550 2250 50  0000 R CNN
+F 1 "1nf" V 5550 2500 50  0000 R CNN
+F 2 "tera_rlc:C_0603in" H 5600 2300 50  0001 C CNN
+F 3 "" H 5600 2300 50  0000 C CNN
+F 4 "51-1n00" V 5600 2300 60  0001 C CNN "HPN"
+	1    5600 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 592C0990
+P 2300 2300
+F 0 "C2" V 2250 2250 50  0000 R CNN
+F 1 "1nf" V 2250 2500 50  0000 R CNN
+F 2 "tera_rlc:C_0603in" H 2300 2300 50  0001 C CNN
+F 3 "" H 2300 2300 50  0000 C CNN
+F 4 "51-1n00" V 2300 2300 60  0001 C CNN "HPN"
+	1    2300 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R14
+U 1 1 592C09A0
+P 9550 4800
+F 0 "R14" V 9354 4800 50  0000 C CNN
+F 1 "22R 2W" V 9445 4800 50  0000 C CNN
+F 2 "tera_rlc:R_2512in" H 9550 4800 50  0001 C CNN
+F 3 "" H 9550 4800 50  0000 C CNN
+F 4 "14-22R0" V 9550 4800 60  0001 C CNN "HPN"
+	1    9550 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X02 P12
+U 1 1 592C09B1
+P 4750 6800
+F 0 "P12" H 4900 6750 50  0000 C CNN
+F 1 "Main_relay_coil" H 5100 6850 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_EH_S02B-EH_02x2.50mm_Angled" H 4668 6617 50  0001 C CNN
+F 3 "" H 4750 6800 50  0000 C CNN
+F 4 "02-????" H 4750 6800 60  0001 C CNN "HPN"
+	1    4750 6800
+	1    0    0    1   
+$EndComp
+$Comp
+L R_Small R12
+U 1 1 592C09C1
+P 3350 6950
+F 0 "R12" V 3550 6950 50  0000 C CNN
+F 1 "10R 500mW" V 3450 6950 50  0000 C CNN
+F 2 "tera_rlc:R_1210in" H 3350 6950 50  0001 C CNN
+F 3 "" H 3350 6950 50  0000 C CNN
+F 4 "13-10R0" V 3350 6950 60  0001 C CNN "HPN"
+	1    3350 6950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 3200 1250 3200
+Wire Wire Line
+	1250 3200 1250 3250
+Wire Wire Line
+	1250 3450 1250 3500
+Wire Wire Line
+	1250 3500 1850 3500
+Wire Wire Line
+	1750 3500 1750 3450
+Wire Wire Line
+	1850 3500 1850 3550
+Connection ~ 1750 3500
+Wire Wire Line
+	1650 3200 2150 3200
+Wire Wire Line
+	1750 3200 1750 3250
+Connection ~ 1750 3200
+Wire Wire Line
+	1850 3200 1850 3100
+Wire Wire Line
+	3000 3200 3000 3150
+Connection ~ 1850 3200
+Wire Wire Line
+	3100 3150 3100 3200
+Wire Wire Line
+	3100 3200 3200 3200
+Wire Wire Line
+	3200 3200 3200 3150
+Wire Wire Line
+	3300 3150 3300 3200
+Wire Wire Line
+	4300 3650 4250 3650
+Wire Wire Line
+	4300 3200 4300 3650
+Wire Wire Line
+	4300 3550 4250 3550
+Wire Wire Line
+	3750 3550 3800 3550
+Wire Wire Line
+	3750 3200 3750 3550
+Wire Wire Line
+	3750 3450 3800 3450
+Connection ~ 3750 3200
+Connection ~ 3750 3450
+Connection ~ 4300 3550
+Connection ~ 4300 3200
+Wire Wire Line
+	5900 3400 5900 3300
+Wire Wire Line
+	5900 3300 6000 3300
+Wire Wire Line
+	7750 4800 9050 4800
+Wire Wire Line
+	8650 4800 8650 4900
+Wire Wire Line
+	8950 4800 8950 4950
+Connection ~ 8650 4800
+Wire Wire Line
+	8950 5150 8950 5250
+Wire Wire Line
+	8650 5250 9800 5250
+Wire Wire Line
+	8650 5200 8650 5500
+Wire Wire Line
+	8650 5400 7750 5400
+Connection ~ 8650 5250
+Wire Wire Line
+	7750 5500 8250 5500
+Wire Wire Line
+	8650 5500 8450 5500
+Connection ~ 8650 5400
+Connection ~ 8950 4800
+Wire Wire Line
+	9250 4800 9450 4800
+Wire Wire Line
+	9650 4800 9800 4800
+Wire Wire Line
+	9800 4800 9800 4950
+Wire Wire Line
+	9800 5250 9800 5150
+Connection ~ 8950 5250
+Wire Notes Line
+	9000 4550 10550 4550
+Wire Notes Line
+	10550 4550 10550 5750
+Wire Notes Line
+	10550 5750 9000 5750
+Wire Notes Line
+	9000 5750 9000 4550
+Wire Wire Line
+	5350 3200 5350 3150
+Wire Wire Line
+	5450 3200 5450 3150
+Connection ~ 5350 3200
+Wire Wire Line
+	5650 3150 5650 3200
+Wire Wire Line
+	5750 3150 5750 3200
+Connection ~ 5750 3200
+Wire Wire Line
+	5600 2500 5600 2400
+Wire Wire Line
+	2350 3200 3000 3200
+Wire Wire Line
+	2050 3200 2050 3150
+Wire Wire Line
+	2150 3200 2150 3150
+Connection ~ 2050 3200
+Wire Wire Line
+	2350 3150 2350 3200
+Wire Wire Line
+	2450 3150 2450 3200
+Connection ~ 2450 3200
+Wire Wire Line
+	2300 2500 2300 2400
+Wire Wire Line
+	2450 2500 2450 2100
+Wire Wire Line
+	2300 2100 2550 2100
+Wire Wire Line
+	2200 2500 2200 2500
+Connection ~ 4500 3200
+Wire Wire Line
+	5650 3200 6000 3200
+Wire Wire Line
+	4100 3200 5450 3200
+Wire Wire Line
+	3300 3200 3900 3200
+Wire Wire Line
+	2950 6950 3250 6950
+Wire Wire Line
+	4300 6650 4550 6650
+$Comp
+L PWR_FLAG #FLG08
+U 1 1 592C0A4C
+P 2600 3250
+F 0 "#FLG08" H 2600 3345 50  0001 C CNN
+F 1 "PWR_FLAG" H 2600 3350 15  0000 C CNN
+F 2 "" H 2600 3250 50  0000 C CNN
+F 3 "" H 2600 3250 50  0000 C CNN
+	1    2600 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 3250 2600 3200
+Connection ~ 2600 3200
+$Comp
+L PWR_FLAG #FLG09
+U 1 1 592C0A54
+P 3400 3250
+F 0 "#FLG09" H 3400 3345 50  0001 C CNN
+F 1 "PWR_FLAG" H 3400 3350 15  0000 C CNN
+F 2 "" H 3400 3250 50  0000 C CNN
+F 3 "" H 3400 3250 50  0000 C CNN
+	1    3400 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 3250 3400 3200
+Connection ~ 3400 3200
+$Comp
+L PWR_FLAG #FLG010
+U 1 1 592C0A5C
+P 4600 3250
+F 0 "#FLG010" H 4600 3345 50  0001 C CNN
+F 1 "PWR_FLAG" H 4600 3350 15  0000 C CNN
+F 2 "" H 4600 3250 50  0000 C CNN
+F 3 "" H 4600 3250 50  0000 C CNN
+	1    4600 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 3250 4600 3200
+Connection ~ 4600 3200
+$Comp
+L PWR_FLAG #FLG011
+U 1 1 592C0A64
+P 5950 3150
+F 0 "#FLG011" H 5950 3245 50  0001 C CNN
+F 1 "PWR_FLAG" H 5950 3250 15  0000 C CNN
+F 2 "" H 5950 3150 50  0000 C CNN
+F 3 "" H 5950 3150 50  0000 C CNN
+	1    5950 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3150 5950 3200
+Connection ~ 5950 3200
+Text Notes 4800 7050 0    40   ~ 0
+Omron G9EB1B12DC\nCoil: 12VDC/207mA (58Ohm)
+$Comp
+L D_Small D11
+U 1 1 592C0A76
+P 8950 5050
+F 0 "D11" H 9050 5100 50  0000 C CNN
+F 1 "BAS3005B-02V" H 8950 4950 30  0000 C CNN
+F 2 "tera_diodes:BAS3005B-02V__sc79" V 8950 5050 50  0001 C CNN
+F 3 "" V 8950 5050 50  0000 C CNN
+F 4 "21-1105" H 8950 5050 60  0001 C CNN "HPN"
+	1    8950 5050
+	0    -1   1    0   
+$EndComp
+Text Notes 9100 5350 0    40   ~ 0
+Coil info: 12VDC, 0.36W => 400 Ohm, 30mA
+Text Notes 9100 5650 0    40   ~ 0
+Time constands:\nTurn on: 5tau=180ms\nTurn off: tau= 360ms (Relay coil in series!)
+Text Notes 6150 3500 0    60   ~ 0
+-> Joule Meter -> MCU
+$Comp
+L D_Small D13
+U 1 1 592C0A81
+P 4400 6800
+F 0 "D13" H 4400 6700 50  0000 C CNN
+F 1 "BAS3005B-02V" V 4500 7100 50  0000 C CNN
+F 2 "tera_diodes:BAS3005B-02V__sc79" V 4400 6800 50  0001 C CNN
+F 3 "" V 4400 6800 50  0000 C CNN
+F 4 "21-1105" H 4400 6800 60  0001 C CNN "HPN"
+	1    4400 6800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4550 6650 4550 6750
+Wire Wire Line
+	4400 6700 4400 6650
+Connection ~ 4400 6650
+Wire Wire Line
+	4400 6950 4400 6900
+Connection ~ 3500 6950
+Wire Wire Line
+	4550 6950 4550 6850
+Connection ~ 4400 6950
+Text Label 1250 3200 1    40   ~ 0
++HV_in
+Text Label 2150 3200 3    40   ~ 0
+HV+_fused
+Text Label 3300 3200 3    40   ~ 0
+HV+_after_main_relais
+Text Label 5650 3200 3    40   ~ 0
+HV+_to_MCU
+Text Label 3100 3200 3    40   ~ 0
+HV+_Main_Relays
+$Comp
+L ACS722LLCTR-20AB-T IC1
+U 1 1 592C0A96
+P 2250 2800
+F 0 "IC1" H 2400 3150 60  0000 R CNN
+F 1 "ACS722LLCTR-20AB-T" H 3250 3250 60  0000 R CNN
+F 2 "tera_atomic_ic:ACS7xx" H 2300 2400 60  0001 C CNN
+F 3 "" H 2200 3100 60  0001 C CNN
+F 4 "98-0013" H 2250 2300 60  0001 C CNN "HPN"
+	1    2250 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ACS722LLCTR-20AB-T IC2
+U 1 1 592C0A9E
+P 5550 2800
+F 0 "IC2" H 5700 3150 60  0000 R CNN
+F 1 "ACS722LLCTR-20AB-T" H 6550 3250 60  0000 R CNN
+F 2 "tera_atomic_ic:ACS7xx" H 5600 2400 60  0001 C CNN
+F 3 "" H 5500 3100 60  0001 C CNN
+F 4 "98-0013" H 5550 2300 60  0001 C CNN "HPN"
+	1    5550 2800
+	0    -1   -1   0   
+$EndComp
+Text Notes 8000 5900 0    40   ~ 0
+Holding voltage: 0.4 Un \n=> R11 max = 600 Ohm
+Wire Wire Line
+	3500 6850 3500 6950
+Wire Wire Line
+	2950 6850 3500 6850
+$Sheet
+S 1950 6150 1000 1100
+U 592CDA4E
+F0 "LowSideSwitch_MainRelay" 40
+F1 "2xLowSideSwitch8A.sch" 40
+F2 "NCS" I L 1950 6700 60 
+F3 "SCLK" I L 1950 6800 60 
+F4 "MOSI" I L 1950 6900 60 
+F5 "MISO" T L 1950 7000 60 
+F6 "Fault" O L 1950 6500 60 
+F7 "relay_on_hw" I L 1950 6400 60 
+F8 "GND" I R 2950 7150 60 
+F9 "+12V" I R 2950 6250 60 
+F10 "+5V" I L 1950 6250 60 
+F11 "CHANNEL1" O R 2950 6850 60 
+F12 "CHANNEL2" O R 2950 6950 60 
+$EndSheet
+Text HLabel 3100 5950 0    60   Input ~ 0
++12VDC_switched
+Wire Wire Line
+	3200 5950 3200 6650
+Wire Wire Line
+	3200 6250 2950 6250
+Connection ~ 3200 6250
+Text HLabel 1850 6700 0    60   Input ~ 0
+NCS_MainRelay
+Text HLabel 1850 6800 0    60   Input ~ 0
+SCLK
+Text HLabel 1850 6900 0    60   Input ~ 0
+MOSI
+Text HLabel 1850 7000 0    60   3State ~ 0
+MISO
+Text HLabel 1850 6500 0    60   Output ~ 0
+MainRelay_Fault
+Wire Wire Line
+	1850 6700 1950 6700
+Wire Wire Line
+	1850 6800 1950 6800
+Wire Wire Line
+	1850 6900 1950 6900
+Wire Wire Line
+	1850 7000 1950 7000
+Wire Wire Line
+	1850 6500 1950 6500
+Text HLabel 1850 6400 0    60   Input ~ 0
+Interlock_OK
+Wire Wire Line
+	1850 6400 1950 6400
+Wire Wire Line
+	3050 7200 3050 7150
+Wire Wire Line
+	3050 7150 2950 7150
+Wire Wire Line
+	4500 3200 4500 3100
+Connection ~ 2750 3200
+Wire Wire Line
+	2750 3150 2750 3200
+Text HLabel 2750 3150 1    60   Output ~ 0
++VBatt
+Text HLabel 4500 3100 1    60   Output ~ 0
+VBatt_Switched
+Wire Wire Line
+	2300 2100 2300 2200
+Wire Wire Line
+	2550 2100 2550 2150
+Connection ~ 2450 2100
+Text HLabel 2200 2500 1    60   Output ~ 0
+ISense_Main
+Text HLabel 2050 2500 1    60   Input ~ 0
++3V3
+Text HLabel 5350 2500 1    60   Input ~ 0
++3V3
+Text HLabel 5500 2500 1    60   Output ~ 0
+ISense_MCU
+Wire Wire Line
+	5600 2200 5600 2100
+Wire Wire Line
+	5600 2100 5900 2100
+Wire Wire Line
+	5900 2100 5900 2200
+Wire Wire Line
+	5750 2500 5750 2100
+Connection ~ 5750 2100
+Text HLabel 1850 6250 0    60   Input ~ 0
++5V
+Wire Wire Line
+	1850 6250 1950 6250
+$Comp
+L ASSR-1218 K3
+U 1 1 59300CD7
+P 4200 6300
+F 0 "K3" V 4147 6488 60  0000 L CNN
+F 1 "ASSR-1218" V 4253 6488 60  0000 L CNN
+F 2 "tera_general:SO-4" H 4150 6600 60  0001 C CNN
+F 3 "" H 4200 6300 60  0000 C CNN
+	1    4200 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R17
+U 1 1 593024DD
+P 4200 5850
+F 0 "R17" V 4300 5900 50  0000 L CNN
+F 1 "1k" V 4300 5700 50  0000 L CNN
+F 2 "tera_rlc:R_0805in" V 4130 5850 50  0001 C CNN
+F 3 "" H 4200 5850 50  0000 C CNN
+F 4 "11-1K00" H 200 2350 50  0001 C CNN "HPN"
+	1    4200 5850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 6650 4100 6600
+Wire Wire Line
+	4300 6600 4300 6650
+Text HLabel 3850 5850 0    60   Output ~ 0
+IL_prev-
+Wire Wire Line
+	3950 5850 3950 6000
+Wire Wire Line
+	3950 6000 4100 6000
+Wire Wire Line
+	3850 5850 4050 5850
+Connection ~ 3950 5850
+Wire Wire Line
+	4350 5850 4900 5850
+Wire Wire Line
+	4450 5850 4450 6000
+Wire Wire Line
+	4450 6000 4300 6000
+Connection ~ 4450 5850
+Wire Notes Line
+	3300 4950 3300 6300
+Wire Notes Line
+	3300 6300 5450 6300
+Wire Notes Line
+	5450 6300 5450 4950
+Wire Notes Line
+	5450 4950 3300 4950
+Text Notes 3800 5050 0    50   ~ 0
+Isolated Interlock Circuit
+$Sheet
+S 6750 4700 1000 1100
+U 59308F13
+F0 "LowSideSwitch_PreCharge" 40
+F1 "2xLowSideSwitch8A.sch" 40
+F2 "NCS" I L 6750 5250 60 
+F3 "SCLK" I L 6750 5350 60 
+F4 "MOSI" I L 6750 5450 60 
+F5 "MISO" T L 6750 5550 60 
+F6 "Fault" O L 6750 5050 60 
+F7 "relay_on_hw" I L 6750 4950 60 
+F8 "GND" I R 7750 5700 60 
+F9 "+12V" I R 7750 4800 60 
+F10 "+5V" I L 6750 4800 60 
+F11 "CHANNEL1" O R 7750 5400 60 
+F12 "CHANNEL2" O R 7750 5500 60 
+$EndSheet
+Text HLabel 6500 5250 0    60   Input ~ 0
+NCS_PreCharger
+Text HLabel 6500 5350 0    60   Input ~ 0
+SCLK
+Text HLabel 6500 5450 0    60   Input ~ 0
+MOSI
+Text HLabel 6500 5550 0    60   3State ~ 0
+MISO
+Text HLabel 6650 5050 0    60   Output ~ 0
+PreCharge_Fault
+Wire Wire Line
+	6500 5250 6750 5250
+Wire Wire Line
+	6500 5350 6750 5350
+Wire Wire Line
+	6500 5450 6750 5450
+Wire Wire Line
+	6500 5550 6750 5550
+Wire Wire Line
+	6650 5050 6750 5050
+Text HLabel 6650 4950 0    60   Input ~ 0
+Interlock_OK
+Wire Wire Line
+	6650 4950 6750 4950
+Wire Wire Line
+	7850 5750 7850 5700
+Wire Wire Line
+	7850 5700 7750 5700
+Text HLabel 6650 4800 0    60   Input ~ 0
++5V
+Wire Wire Line
+	6650 4800 6750 4800
+Text HLabel 7900 4450 0    60   Input ~ 0
++12VDC_switched
+Wire Wire Line
+	8000 4450 8000 4800
+Connection ~ 8000 4800
+Wire Wire Line
+	3100 5950 3200 5950
+Wire Wire Line
+	3450 6950 4550 6950
+Wire Wire Line
+	3200 6650 4100 6650
+Text Label 4850 5850 2    50   ~ 0
+IL_Out-
+Text HLabel 3850 5650 0    60   Input ~ 0
+IL_prev+
+Wire Wire Line
+	3850 5650 4900 5650
+Wire Wire Line
+	7900 4450 8000 4450
+Text HLabel 1850 3550 3    60   Output ~ 0
+-VBatt
+Text HLabel 5900 3400 3    60   Output ~ 0
+-VBatt
+Text HLabel 3050 7200 3    60   Input ~ 0
+GND_BN
+Text HLabel 7850 5750 3    60   Input ~ 0
+GND_BN
+Text HLabel 5900 2200 3    60   Input ~ 0
+GND_BN
+Text HLabel 2550 2150 3    60   Input ~ 0
+GND_BN
+Text HLabel 4900 5650 2    60   Output ~ 0
+IL_next+
+Text HLabel 4900 5850 2    60   Input ~ 0
+IL_next-
+$EndSCHEMATC

@@ -1,0 +1,1 @@
+Version 6 is the board for fennek 2017 (found under projects/fennek2017/BMS/measurement_and_balancing/)

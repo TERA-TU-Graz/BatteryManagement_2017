@@ -1,0 +1,37 @@
+Title,BMS Host Interface Splitter
+Revision,2
+Date,2017-01-06
+Generated,Fri 17 Feb 2017 15:37:16 CET
+Company,TERA TU Graz
+Comment 1,Rene Pöschl
+Comment 2,
+Comment 3,
+Comment 4,
+Total Parts,46
+Total Unique Parts,16
+
+
+
+Ref,Qty,HPN,Value,Footprint,
+C1 ,1,52-100n,100n,tera_rlc:C_0805in
+C2 C3 C4 C5 C6 C7 C8 C9 ,8,52-100n,100n,tera_rlc:C_0603in
+D1 ,1,21-9003,18V,tera_diodes:DO-214AA_with_vias_in_pad
+D2 ,1,21-0002,~Alert,tera_diodes:LED_0805
+D3 ,1,21-0002,~Fault,tera_diodes:LED_0805
+P1 ,1,02-0909,SPI_IN,tera_Connectors_JST:JST_XH_B09B-XH-A_09x2.50mm_Straight
+P2 ,1,02-0902,12V,tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight
+P3 ,1,02-1902,Digital_Out,tera_Connectors_JST:JST_EH_B02B-EH-A_02x2.50mm_Straight
+P5 P8 P11 P14 ,4,03-0206,SPI_Out,tera_Connectors_Molex:Molex_PicoBlade_53398-0671_06x1.25mm_Straight
+P4 P7 P10 P13 ,4,02-1902,Digital_In,tera_Connectors_JST:JST_EH_B02B-EH-A_02x2.50mm_Straight
+P6 P9 P12 P15 ,4,02-0902,12V_Out,tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight
+R1 R2 ,2,11-5K10,5k1,tera_rlc:C_0805in
+R3 R4 R5 R6 R7 R8 R9 R10 ,8,11-10K0,10K,tera_rlc:R_0805in
+U1 ,1,20-2005,SN74HC21D,tera_atomic_ic:SN74HC21D
+U2 U4 U6 U8 ,4,20-2090,74HCT1G125GW-Q100,tera_atomic_ic:74HCT1G125GW-Q100H
+U3 U5 U7 U9 ,4,20-2092,NC7WZ16P6X,tera_atomic_ic:NC7WZ16P6X
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated Fri 17 Feb 2017 15:37:16 CET

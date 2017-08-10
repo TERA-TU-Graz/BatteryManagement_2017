@@ -1,0 +1,53 @@
+Partlist
+
+Exported from bms_board.sch at 08.02.14 17:52
+
+EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+
+Assembly variant: 
+
+Part     Value          Device         Package  Library      Sheet
+
+C1       0.1uf          CSTD           C0805    useful       1
+C2       0.1uf          CSTD           C0805    useful       1
+C3       0.1uf          CSTD           C0805    useful       1
+C4       0.1uf          CSTD           C0805    useful       1
+C5       0.1uf          CSTD           C0805    useful       1
+C6       0.1uf          CSTD           C0805    useful       1
+C7       0.1uf          CSTD           C0805    useful       1
+C8       2.2uf          CSTD           C0805    useful       1
+C9       0.1uf          CSTD           C0805    useful       1
+C10      2.2uf          CSTD           C0805    useful       1
+C11      0.1uf          CSTD           C0805    useful       1
+C12      10uf           CSTD           C0805    useful       1
+C13      0.1uf          CSTD           C0805    useful       1
+C14      2.2uf          CSTD           C0805    useful       1
+C15      47n            CSTD           C0805    useful       1
+C16      47n            CSTD           C0805    useful       1
+C17      1nf            CSTD           C0805    useful       1
+CON1     53398-02       53398-02       53398-02 con-molex    1
+CON2     53398-02       53398-02       53398-02 con-molex    1
+CON3     53261-10       53261-10       53261-10 con-molex    1
+IC1      BQ76PL536      BQ76PL536      LQFP-64  ti           1
+R1       1.82k          R              R0805    useful       1
+R2       1.47k          R              R0805    useful       1
+R3       1.82k          R              R0805    useful       1
+R4       1.47k          R              R0805    useful       1
+R5       100k           R              R0805    useful       1
+R9       1k             R              R0805    useful       1
+R10      1k             R              R0805    useful       1
+R11      1k             R              R0805    useful       1
+R12      1k             R              R0805    useful       1
+R13      1k             R              R0805    useful       1
+R14      1k             R              R0805    useful       1
+R15      1k             R              R0805    useful       1
+R16      1k             R              R0805    useful       1
+R17      2M             R              R0805    useful       1
+R18      2M             R              R0805    useful       1
+R19      2M             R              R0805    useful       1
+SJ1      SOLDERJUMPERNO SOLDERJUMPERNO SJ_2S-NO useful       1
+SJ2      SOLDERJUMPERNO SOLDERJUMPERNO SJ_2S-NO useful       1
+X1                      X05X2ICR       X10ICR   connectors   1
+X2                      X07X2IR        X14R-IDC connectors   1
+X7       M02PAD         M02PAD         1X02     stiftleisten 1
+X10                     X05X2ICR       X10ICR   connectors   1

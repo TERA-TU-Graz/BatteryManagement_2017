@@ -1,0 +1,59 @@
+Title,Power distribution unit Fennek 2017
+Revision,1
+Date,2017-01-06
+Generated,Tue 21 Feb 2017 21:53:30 CET
+Company,TERA TU Graz
+Comment 1,Rene Pöschl
+Comment 2,
+Comment 3,
+Comment 4,
+Total Parts,61
+Total Unique Parts,38
+
+
+
+Ref,Qty,HPN,Value,Footprint,
+C3 ,1,55-820u,820u,tera_rlc:c_elec_10x10mm
+C2 C1 ,2,51-1n00,1nf,tera_rlc:C_0603in
+D1 ,1,21-9002,58V,tera_diodes:DO-214AA_with_vias_in_pad
+D12 D4 ,2,21-9008,14V,tera_diodes:SOD128_with_vias_in_pad
+D10 D9 D11 D2 D3 D13 ,6,21-1105,BAS3005B-02V,tera_diodes:BAS3005B-02V__sc79
+D5 ,1,21-0001,BMS_crtl_blown,tera_diodes:LED_0805
+D7 ,1,21-0001,BMS_pwr_blown,tera_diodes:LED_0805
+D6 ,1,21-0001,HMI_blown,tera_diodes:LED_0805
+D8 ,1,21-0001,Future_blown,tera_diodes:LED_0805
+F1 ,1,94-0101,20A 60VDC,tera_general:Fuse_holder_6.3x32mm_Schruter_0031.2520
+F7 ,1,94-1000,1A 12VDC,tera_general:Fuse_Phoenix_SI-H-FKS_15
+F2 ,1,94-1000,3A 12VDC,tera_general:Fuse_Phoenix_SI-H-FKS_15
+F3 F5 F4 F6 ,4,94-5010,0.5A 12VDC,tera_general:Fuse_0603in
+IC1 IC2 ,2,98-0013,ACS722LLCTR-20AB-T,tera_atomic_ic:ACS7xx
+JP1 ,1, ,SEM_source,tera_general:SOLDERJUMPER_3
+K1 K2 ,2,96-2005,SPDT-16A_12VDC-Coil,tera_relais:Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil
+P1 ,1,05-1103,HV_in,tera_Connectors_Phoenix:PhoenixContact_MSTBA-G_03x5.08mm_Angled
+P4 ,1,05-1104,HV_Emergency_Stop_Relay,tera_Connectors_Phoenix:PhoenixContact_MSTBA-G_04x5.08mm_Angled
+P6 ,1,05-0102,MCU_HV_supply,tera_Connectors_Phoenix:PhoenixContact_MSTB-GF_02x5.08mm_Angled_ThreadedFlange
+P10 ,1,02-1904,Precharge_relays,tera_Connectors_JST:JST_EH_B04B-EH-A_04x2.50mm_Straight
+P5 ,1,03-0203,Current_Sens_MCU_IN,tera_Connectors_Molex:Molex_PicoBlade_53398-0371_03x1.25mm_Straight
+P3 ,1,03-0203,Current_Sens,tera_Connectors_Molex:Molex_PicoBlade_53398-0371_03x1.25mm_Straight
+P13 ,1,05-0152,SEM_telemetry_supply,tera_Connectors_Phoenix:PhoenixContact_MC-GF_02x3.50mm_Angled_ThreadedFlange
+P7 ,1,02-0904,BMS_supply,tera_Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight
+P8 ,1,02-0902,HMI_supply,tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight
+P9 ,1,02-0902,Future_use,tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight
+P2 ,1,02-1904,12V_relays,tera_Connectors_JST:JST_EH_B04B-EH-A_04x2.50mm_Straight
+P11 ,1,02-1904,Main_relay,tera_Connectors_JST:JST_EH_B04B-EH-A_04x2.50mm_Straight
+P12 ,1,02-1902,Main_relay_coil,tera_Connectors_JST:JST_EH_B02B-EH-A_02x2.50mm_Straight
+Q1 Q3 Q2 Q4 ,4,24-2253,IRLML2246TRPBF-1,tera_atomic_infineon:IRLML2246TRPBF-1
+R2 ,1,17-470R,470R 5W,tera_rlc:TE_SMW-5W
+R11 R1 ,2,13-100R,100R 250mW,tera_rlc:R_1206in
+R13 R14 ,2,14-22R0,22R 2W,tera_rlc:R_2512in
+R12 ,1,13-10R0,10R 500mW,tera_rlc:R_1210in
+R3 R7 R4 R8 ,4,11-12K0,12k,tera_rlc:R_0603in
+R5 R9 R6 R10 ,4,11-100K,100k,tera_rlc:R_0603in
+U1 ,1,90-1031,TEN_30-4812WIN_single_output,traco_power:TEN_30-xxxx
+U2 ,1,90-1021,THD_12-4812_single_output,traco_power:THD_12-xxxx_single_output
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated Tue 21 Feb 2017 21:53:30 CET

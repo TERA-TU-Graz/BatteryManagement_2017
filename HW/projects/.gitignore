@@ -1,0 +1,9 @@
+*.epf
+*.s#*
+*.b#*
+gerber/
+*.fcstd*
+*.step*
+*.FCStd*
+*.xml
+*.bck

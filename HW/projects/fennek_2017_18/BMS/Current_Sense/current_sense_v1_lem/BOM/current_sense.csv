@@ -1,0 +1,26 @@
+Title,
+Revision,
+Date,
+Generated,Wed 07 Jun 2017 14:15:10 CEST
+Company,TERA TU Graz
+Comment 1,
+Comment 2,
+Comment 3,
+Comment 4,
+Total Parts,7
+Total Unique Parts,5
+
+
+
+Ref,Qty,HPN,Value,Footprint,
+C1 C2 C3 ,3,50-47n0,47n,tera_rlc:C_0603in
+IC1 ,1,98-1001,HO_25-NP/SP33,tera_atomic_ic:HO_25-NP_SP33
+P3 ,1,03-0004,signal,tera_Connectors_Molex:Molex_PicoBlade_53261-0471_04x1.25mm_Angled
+P1 ,1,05-1003,Input,tera_Connectors_Phoenix:PhoenixContact_MSTBVA-G_03x5.08mm_Vertical
+P2 ,1,05-1103,output,tera_Connectors_Phoenix:PhoenixContact_MSTBA-G_03x5.08mm_Angled
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated Wed 07 Jun 2017 14:15:10 CEST

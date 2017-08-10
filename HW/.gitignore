@@ -1,0 +1,8 @@
+*.bak
+*-bak
+*.blend[0-9]*
+*.fcstd[0-9]*
+*.orig
+*.FCStd1
+*_autosave*
+*~lock*

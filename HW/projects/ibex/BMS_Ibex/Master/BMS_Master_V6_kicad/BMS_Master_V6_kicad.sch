@@ -1,0 +1,935 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ft232rl
+LIBS:relais
+LIBS:Supply
+LIBS:tera_general
+LIBS:tera_switches
+LIBS:tera_logic
+LIBS:tera_processors
+LIBS:tera_connectors
+LIBS:tera_emc_prodection
+LIBS:BMS_Master_V6_kicad-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 14
+Title "BMS Master"
+Date "2017-01-06"
+Rev "6"
+Comp "TERA TU Graz"
+Comment1 "Rene Pöschl"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 5300 4350 700  850 
+U 56F5071E
+F0 "CurrentMeasurement" 60
+F1 "CurrentMeasurement.sch" 60
+F2 "+5V" I L 5300 4450 60 
+F3 "GND" I L 5300 5100 60 
+F4 "LEM1_Signal" O R 6000 4750 60 
+F5 "LEM2_Signal" O R 6000 4850 60 
+F6 "LEM3_Signal" O R 6000 4950 60 
+F7 "+3V3" I L 5300 4550 60 
+$EndSheet
+$Sheet
+S 9250 4200 1250 1750
+U 56F50775
+F0 "RelayAndFanCtrl" 60
+F1 "RelayAndFanCtrl.sch" 60
+F2 "NCS_CHARGE" I L 9250 4950 60 
+F3 "NCS_MAIN" I L 9250 4850 60 
+F4 "MISO" O L 9250 5300 60 
+F5 "MOSI" I L 9250 5400 60 
+F6 "FAN_PWM" I L 9250 5700 60 
+F7 "+12V_PWR" I L 9250 4300 60 
+F8 "+5V" I L 9250 4500 60 
+F9 "+3V3" I L 9250 4600 60 
+F10 "GND" I L 9250 5850 60 
+F11 "NCS_PRECHARGE" I L 9250 5050 60 
+F12 "NCS_FAN" I L 9250 4750 60 
+F13 "SCLK" I L 9250 5200 60 
+F14 "FaultMain" O R 10500 5150 60 
+F15 "FaultCharger" O R 10500 5250 60 
+F16 "FaultPrecharger" O R 10500 5350 60 
+F17 "FaultFan" O R 10500 5450 60 
+F18 "MainOn" O R 10500 5600 60 
+F19 "ChargerOn" O R 10500 5700 60 
+F20 "Interlock_OK" I L 9250 5600 60 
+$EndSheet
+$Sheet
+S 7450 4450 950  1750
+U 56F507C6
+F0 "SPI_Controller" 60
+F1 "SPI.sch" 60
+F2 "CS_B0" I L 7450 5050 60 
+F3 "CS_B1" I L 7450 5150 60 
+F4 "CS_B2" I L 7450 5250 60 
+F5 "SPI_CS" I L 7450 5350 60 
+F6 "GND" I L 7450 6100 60 
+F7 "+3V3" I L 7450 4600 60 
+F8 "NALERT" O L 7450 5850 60 
+F9 "NFAULT" O L 7450 5950 60 
+F10 "NCS5" O R 8400 4750 60 
+F11 "NCS6" O R 8400 4850 60 
+F12 "NCS7" O R 8400 4950 60 
+F13 "NCS8" O R 8400 5050 60 
+F14 "SCLK" I L 7450 5500 60 
+F15 "MOSI" I L 7450 5700 60 
+F16 "MISO" O L 7450 5600 60 
+F17 "+5V" I L 7450 4750 60 
+F18 "MISO_5V" I R 8400 5300 60 
+F19 "MOSI_5V" O R 8400 5400 60 
+F20 "SCLK_5V" O R 8400 5200 60 
+$EndSheet
+$Sheet
+S 1050 1000 650  700 
+U 56F5D14B
+F0 "supply" 60
+F1 "supply.sch" 60
+F2 "+12V_PWR" O R 1700 1100 60 
+F3 "+12V_CRTL" O R 1700 1200 60 
+F4 "GND" O R 1700 1600 60 
+F5 "+5V" O R 1700 1300 60 
+F6 "+3V3" O R 1700 1400 60 
+$EndSheet
+$Sheet
+S 1350 4450 700  500 
+U 572C6D8B
+F0 "TemperatureMeasurement" 39
+F1 "TemperatureMeasurement.sch" 39
+F2 "GND" I L 1350 4850 60 
+F3 "TS1" O R 2050 4550 60 
+F4 "TS3" O R 2050 4750 60 
+F5 "TS2" O R 2050 4650 60 
+F6 "TS4" O R 2050 4850 60 
+F7 "+12V" I L 1350 4550 60 
+F8 "~SHDN" I L 1350 4700 60 
+$EndSheet
+$Sheet
+S 9800 1850 750  750 
+U 58175C82
+F0 "CAN" 60
+F1 "CAN.sch" 60
+F2 "CAN+" B L 9800 2000 60 
+F3 "CAN-" B L 9800 2100 60 
+F4 "GND" I L 9800 2450 60 
+$EndSheet
+$Comp
+L +12V #PWR01
+U 1 1 56FEA5A8
+P 1950 1150
+F 0 "#PWR01" H 1950 1000 50  0001 C CNN
+F 1 "+12V" H 1968 1323 50  0000 C CNN
+F 2 "" H 1950 1150 50  0000 C CNN
+F 3 "" H 1950 1150 50  0000 C CNN
+	1    1950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 56FEB8F4
+P 2250 1350
+F 0 "#PWR02" H 2250 1200 50  0001 C CNN
+F 1 "+3.3V" H 2268 1523 50  0000 C CNN
+F 2 "" H 2250 1350 50  0000 C CNN
+F 3 "" H 2250 1350 50  0000 C CNN
+	1    2250 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 56FEBA50
+P 2100 1250
+F 0 "#PWR03" H 2100 1100 50  0001 C CNN
+F 1 "+5V" H 2118 1423 50  0000 C CNN
+F 2 "" H 2100 1250 50  0000 C CNN
+F 3 "" H 2100 1250 50  0000 C CNN
+	1    2100 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 56FEC261
+P 1900 1650
+F 0 "#PWR04" H 1900 1400 50  0001 C CNN
+F 1 "GND" H 1908 1477 50  0000 C CNN
+F 2 "" H 1900 1650 50  0000 C CNN
+F 3 "" H 1900 1650 50  0000 C CNN
+	1    1900 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5709711B
+P 9650 2500
+F 0 "#PWR05" H 9650 2250 50  0001 C CNN
+F 1 "GND" H 9658 2327 50  0000 C CNN
+F 2 "" H 9650 2500 50  0000 C CNN
+F 3 "" H 9650 2500 50  0000 C CNN
+	1    9650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 571624A7
+P 9150 5900
+F 0 "#PWR06" H 9150 5650 50  0001 C CNN
+F 1 "GND" H 9158 5727 50  0000 C CNN
+F 2 "" H 9150 5900 50  0000 C CNN
+F 3 "" H 9150 5900 50  0000 C CNN
+	1    9150 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 57164043
+P 7350 6200
+F 0 "#PWR07" H 7350 5950 50  0001 C CNN
+F 1 "GND" H 7358 6027 50  0000 C CNN
+F 2 "" H 7350 6200 50  0000 C CNN
+F 3 "" H 7350 6200 50  0000 C CNN
+	1    7350 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR08
+U 1 1 571685D4
+P 7150 4550
+F 0 "#PWR08" H 7150 4400 50  0001 C CNN
+F 1 "+3.3V" V 7150 4750 50  0000 C CNN
+F 2 "" H 7150 4550 50  0000 C CNN
+F 3 "" H 7150 4550 50  0000 C CNN
+	1    7150 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR09
+U 1 1 5716C6FF
+P 8800 4450
+F 0 "#PWR09" H 8800 4300 50  0001 C CNN
+F 1 "+5V" V 8800 4650 50  0000 C CNN
+F 2 "" H 8800 4450 50  0000 C CNN
+F 3 "" H 8800 4450 50  0000 C CNN
+	1    8800 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR010
+U 1 1 5716C857
+P 8650 4550
+F 0 "#PWR010" H 8650 4400 50  0001 C CNN
+F 1 "+3.3V" V 8650 4800 50  0000 C CNN
+F 2 "" H 8650 4550 50  0000 C CNN
+F 3 "" H 8650 4550 50  0000 C CNN
+	1    8650 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR011
+U 1 1 571F6147
+P 5000 4400
+F 0 "#PWR011" H 5000 4250 50  0001 C CNN
+F 1 "+5V" H 5018 4573 50  0000 C CNN
+F 2 "" H 5000 4400 50  0000 C CNN
+F 3 "" H 5000 4400 50  0000 C CNN
+	1    5000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 571F62C0
+P 5000 5200
+F 0 "#PWR012" H 5000 4950 50  0001 C CNN
+F 1 "GND" H 5008 5027 50  0000 C CNN
+F 2 "" H 5000 5200 50  0000 C CNN
+F 3 "" H 5000 5200 50  0000 C CNN
+	1    5000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X05 P1
+U 1 1 572776F2
+P 4100 4600
+F 0 "P1" H 4100 4900 50  0000 C CNN
+F 1 "Interlock" V 4200 4600 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_XH_B05B-XH-A_05x2.50mm_Straight" H 4100 4600 50  0001 C CNN
+F 3 "" H 4100 4600 50  0000 C CNN
+F 4 "02-0905" H 0   0   50  0001 C CNN "HPN"
+	1    4100 4600
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 572776FB
+P 4100 5400
+F 0 "P2" H 4100 5550 50  0000 L CNN
+F 1 "12V_IL" V 4250 5300 50  0000 L CNN
+F 2 "tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 4100 5400 50  0001 C CNN
+F 3 "" H 4100 5400 50  0000 C CNN
+F 4 "02-0902" H 0   0   50  0001 C CNN "HPN"
+	1    4100 5400
+	1    0    0    1   
+$EndComp
+$Comp
+L +12V #PWR013
+U 1 1 5727BEE4
+P 3700 5300
+F 0 "#PWR013" H 3700 5150 50  0001 C CNN
+F 1 "+12V" H 3718 5473 50  0000 C CNN
+F 2 "" H 3700 5300 50  0000 C CNN
+F 3 "" H 3700 5300 50  0000 C CNN
+	1    3700 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 5727F262
+P 3700 5500
+F 0 "#PWR014" H 3700 5250 50  0001 C CNN
+F 1 "GND" H 3708 5327 50  0000 C CNN
+F 2 "" H 3700 5500 50  0000 C CNN
+F 3 "" H 3700 5500 50  0000 C CNN
+	1    3700 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 57281F7A
+P 3700 4850
+F 0 "#PWR015" H 3700 4600 50  0001 C CNN
+F 1 "GND" H 3708 4677 50  0000 C CNN
+F 2 "" H 3700 4850 50  0000 C CNN
+F 3 "" H 3700 4850 50  0000 C CNN
+	1    3700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR016
+U 1 1 57283E2B
+P 3700 4300
+F 0 "#PWR016" H 3700 4150 50  0001 C CNN
+F 1 "+5V" H 3718 4473 50  0000 C CNN
+F 2 "" H 3700 4300 50  0000 C CNN
+F 3 "" H 3700 4300 50  0000 C CNN
+	1    3700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR017
+U 1 1 56FCC5C9
+P 1150 4500
+F 0 "#PWR017" H 1150 4350 50  0001 C CNN
+F 1 "+12V" H 1168 4673 50  0000 C CNN
+F 2 "" H 1150 4500 50  0000 C CNN
+F 3 "" H 1150 4500 50  0000 C CNN
+	1    1150 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 56FCF655
+P 1150 4900
+F 0 "#PWR018" H 1150 4650 50  0001 C CNN
+F 1 "GND" H 1158 4727 50  0000 C CNN
+F 2 "" H 1150 4900 50  0000 C CNN
+F 3 "" H 1150 4900 50  0000 C CNN
+	1    1150 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NO_Small JP1
+U 1 1 5701E943
+P 1200 4700
+F 0 "JP1" H 1200 4750 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1210 4640 50  0001 C CNN
+F 2 "tera_general:SOLDERJUMPER_2" H 1200 4700 50  0001 C CNN
+F 3 "" H 1200 4700 50  0000 C CNN
+	1    1200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR019
+U 1 1 57DE1EE6
+P 6950 4500
+F 0 "#PWR019" H 6950 4350 50  0001 C CNN
+F 1 "+5V" H 6968 4673 50  0000 C CNN
+F 2 "" H 6950 4500 50  0000 C CNN
+F 3 "" H 6950 4500 50  0000 C CNN
+	1    6950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 5813CDE1
+P 2750 7550
+F 0 "#PWR020" H 2750 7300 50  0001 C CNN
+F 1 "GND" H 2758 7377 50  0000 C CNN
+F 2 "" H 2750 7550 50  0000 C CNN
+F 3 "" H 2750 7550 50  0000 C CNN
+	1    2750 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR021
+U 1 1 5814095A
+P 1200 7400
+F 0 "#PWR021" H 1200 7250 50  0001 C CNN
+F 1 "+5V" H 1218 7573 50  0000 C CNN
+F 2 "" H 1200 7400 50  0000 C CNN
+F 3 "" H 1200 7400 50  0000 C CNN
+	1    1200 7400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR022
+U 1 1 58143753
+P 1150 5750
+F 0 "#PWR022" H 1150 5600 50  0001 C CNN
+F 1 "+3.3V" V 1150 5950 50  0000 C CNN
+F 2 "" H 1150 5750 50  0000 C CNN
+F 3 "" H 1150 5750 50  0000 C CNN
+	1    1150 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 1 1 581F9E37
+P 4050 1500
+F 0 "U1" H 4050 2200 60  0000 L CNN
+F 1 "STM32f4_board_v3-1" H 3700 2100 60  0000 L CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 5000 1550 60  0001 C CNN
+F 3 "" H 3850 1800 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	1    4050 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 2 1 581FA2F9
+P 5600 1900
+F 0 "U1" H 5650 3000 60  0000 L CNN
+F 1 "STM32f4_board_v3-1" H 5250 2900 60  0000 L CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 6550 1950 60  0001 C CNN
+F 3 "" H 5400 2200 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	2    5600 1900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 3 1 581FA586
+P 6950 1900
+F 0 "U1" H 6900 3000 60  0000 L CNN
+F 1 "STM32f4_board_v3-1" H 6550 2900 60  0000 L CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 7900 1950 60  0001 C CNN
+F 3 "" H 6750 2200 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	3    6950 1900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 4 1 581FA726
+P 1950 6500
+F 0 "U1" H 1975 7487 60  0000 C CNN
+F 1 "STM32f4_board_v3-1" H 1975 7381 60  0000 C CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 2900 6550 60  0001 C CNN
+F 3 "" H 1750 6800 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	4    1950 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 5 1 581FA8E0
+P 8950 2600
+F 0 "U1" H 9400 2500 60  0000 L CNN
+F 1 "STM32f4_board_v3-1" H 9400 2400 60  0000 L CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 9900 2650 60  0001 C CNN
+F 3 "" H 8750 2900 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	5    8950 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 6 1 581FB0E4
+P 8800 2100
+F 0 "U1" H 8779 2447 60  0000 C CNN
+F 1 "STM32f4_board_v3-1" H 8779 2341 60  0000 C CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 9750 2150 60  0001 C CNN
+F 3 "" H 8600 2400 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	6    8800 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 7 1 581FB2CA
+P 8900 3250
+F 0 "U1" H 9250 3200 60  0000 C CNN
+F 1 "STM32f4_board_v3-1" H 9650 3300 60  0000 C CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 9850 3300 60  0001 C CNN
+F 3 "" H 8700 3550 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	7    8900 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L STM32f4_board_v3-1 U1
+U 8 1 581FB4A8
+P 10150 1050
+F 0 "U1" H 10150 1550 60  0000 L CNN
+F 1 "STM32f4_board_v3-1" H 9800 1450 60  0000 L CNN
+F 2 "Boards_Tera:STM32f4-board_v3-1" V 11100 1100 60  0001 C CNN
+F 3 "" H 9950 1350 60  0000 C CNN
+F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
+	8    10150 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR023
+U 1 1 58456FD2
+P 4850 4400
+F 0 "#PWR023" H 4850 4250 50  0001 C CNN
+F 1 "+3.3V" V 4850 4600 50  0000 C CNN
+F 2 "" H 4850 4400 50  0000 C CNN
+F 3 "" H 4850 4400 50  0000 C CNN
+	1    4850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12P #PWR024
+U 1 1 584732E5
+P 1800 1050
+F 0 "#PWR024" H 1800 900 50  0001 C CNN
+F 1 "+12P" H 1815 1223 50  0000 C CNN
+F 2 "" H 1800 1050 50  0000 C CNN
+F 3 "" H 1800 1050 50  0000 C CNN
+	1    1800 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12P #PWR025
+U 1 1 58474964
+P 9100 4250
+F 0 "#PWR025" H 9100 4100 50  0001 C CNN
+F 1 "+12P" H 9115 4423 50  0000 C CNN
+F 2 "" H 9100 4250 50  0000 C CNN
+F 3 "" H 9100 4250 50  0000 C CNN
+	1    9100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X05 P3
+U 1 1 584A7C04
+P 2300 2500
+F 0 "P3" H 2300 2800 50  0000 C CNN
+F 1 "ExtGPIO" V 2400 2500 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_EH_B05B-EH-A_05x2.50mm_Straight" H 2300 2500 50  0001 C CNN
+F 3 "" H 2300 2500 50  0000 C CNN
+F 4 "02-1905" H 2300 2500 60  0001 C CNN "HPN"
+	1    2300 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR026
+U 1 1 584A9279
+P 2550 2750
+F 0 "#PWR026" H 2550 2500 50  0001 C CNN
+F 1 "GND" H 2558 2577 50  0000 C CNN
+F 2 "" H 2550 2750 50  0000 C CNN
+F 3 "" H 2550 2750 50  0000 C CNN
+	1    2550 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR027
+U 1 1 584AB990
+P 2550 2250
+F 0 "#PWR027" H 2550 2100 50  0001 C CNN
+F 1 "+3.3V" V 2550 2450 50  0000 C CNN
+F 2 "" H 2550 2250 50  0000 C CNN
+F 3 "" H 2550 2250 50  0000 C CNN
+	1    2550 2250
+	1    0    0    -1  
+$EndComp
+Text Label 7350 1500 0    39   ~ 0
+Interlock_OK
+Text Label 4450 1500 0    39   ~ 0
+CS_B0
+Text Label 4450 1600 0    39   ~ 0
+SCLK
+Text Label 4450 1700 0    39   ~ 0
+MISO
+Text Label 4450 1800 0    39   ~ 0
+MOSI
+Text Label 4450 1900 0    39   ~ 0
+SuperCharger_ON
+Text Label 4450 2000 0    39   ~ 0
+SuperCharger_Fault
+Text Label 7350 2000 0    39   ~ 0
+FAN_PWM
+Text Label 6000 1100 0    39   ~ 0
+SPI_CS
+Text Label 6000 1200 0    39   ~ 0
+Main_On
+Text Label 6000 1300 0    39   ~ 0
+Main_Fault
+Text Label 6000 1700 0    39   ~ 0
+Interlock_On1
+Text Label 6000 1800 0    39   ~ 0
+Interlock_On2
+Text Label 6000 2100 0    39   ~ 0
+NALERT
+Text Label 6000 2600 0    39   ~ 0
+CS_B1
+Text Label 4450 1200 0    39   ~ 0
+LEM1
+Text Label 4450 1300 0    39   ~ 0
+LEM2
+Text Label 4450 1400 0    39   ~ 0
+LEM3
+Text Label 7350 1700 0    39   ~ 0
+CS_B2
+Text Label 7350 1800 0    39   ~ 0
+NFAULT
+Text Label 7350 1900 0    39   ~ 0
+Precharge_Fault
+Text Label 6000 2200 0    39   ~ 0
+FAN_Fault
+Text Label 9250 5700 2    39   ~ 0
+FAN_PWM
+Text Label 10500 5600 0    39   ~ 0
+Main_On
+Text Label 10500 5150 0    39   ~ 0
+Main_Fault
+Text Label 7450 5350 2    39   ~ 0
+SPI_CS
+Text Label 7450 5850 2    39   ~ 0
+NALERT
+Text Label 7450 5150 2    39   ~ 0
+CS_B1
+Text Label 10500 5250 0    39   ~ 0
+SuperCharger_Fault
+Text Label 10500 5700 0    39   ~ 0
+SuperCharger_ON
+Text Label 7450 5700 2    39   ~ 0
+MOSI
+Text Label 7450 5600 2    39   ~ 0
+MISO
+Text Label 7450 5500 2    39   ~ 0
+SCLK
+Text Label 7450 5950 2    39   ~ 0
+NFAULT
+Text Label 10500 5350 0    39   ~ 0
+Precharge_Fault
+Text Label 7450 5250 2    39   ~ 0
+CS_B2
+Text Label 7450 5050 2    39   ~ 0
+CS_B0
+Text Label 9250 5600 2    39   ~ 0
+Interlock_OK
+Text Label 6000 4750 0    39   ~ 0
+LEM1
+Text Label 6000 4850 0    39   ~ 0
+LEM2
+Text Label 6000 4950 0    39   ~ 0
+LEM3
+Text Label 3900 4600 2    39   ~ 0
+Interlock_On1
+Text Label 3900 4700 2    39   ~ 0
+Interlock_On2
+Text Label 3900 4500 2    39   ~ 0
+Interlock_OK
+Text Label 7350 1100 0    39   ~ 0
+TS1
+Text Label 7350 1200 0    39   ~ 0
+TS2
+Text Label 7350 1300 0    39   ~ 0
+TS3
+Text Label 7350 1400 0    39   ~ 0
+TS4
+Text Label 2050 4550 0    39   ~ 0
+TS1
+Text Label 2050 4650 0    39   ~ 0
+TS2
+Text Label 2050 4750 0    39   ~ 0
+TS3
+Text Label 2050 4850 0    39   ~ 0
+TS4
+Text Label 1100 4700 2    39   ~ 0
+~TMP_REF_SHDN
+Text Label 7350 1600 0    39   ~ 0
+~TMP_REF_SHDN
+Text Label 10500 5450 0    39   ~ 0
+FAN_Fault
+Text Label 7350 2300 0    39   ~ 0
+EXT_GPIO_1
+Text Label 7350 2400 0    39   ~ 0
+EXT_GPIO_2
+Text Label 7350 2500 0    39   ~ 0
+EXT_GPIO_3
+Text Label 2500 2400 0    39   ~ 0
+EXT_GPIO_1
+Text Label 2500 2500 0    39   ~ 0
+EXT_GPIO_2
+Text Label 2500 2600 0    39   ~ 0
+EXT_GPIO_3
+Wire Wire Line
+	1700 1600 1900 1600
+Wire Wire Line
+	1900 1600 1900 1650
+Wire Wire Line
+	1700 1400 2250 1400
+Wire Wire Line
+	2250 1400 2250 1350
+Wire Wire Line
+	1700 1300 2100 1300
+Wire Wire Line
+	2100 1300 2100 1250
+Wire Wire Line
+	1700 1200 1950 1200
+Wire Wire Line
+	1950 1200 1950 1150
+Wire Wire Line
+	1700 1100 1800 1100
+Wire Wire Line
+	1800 1100 1800 1050
+Wire Wire Line
+	9650 2500 9650 2450
+Wire Wire Line
+	9650 2450 9800 2450
+Wire Wire Line
+	8400 4750 9250 4750
+Wire Wire Line
+	8400 4850 9250 4850
+Wire Wire Line
+	8400 4950 9250 4950
+Wire Wire Line
+	8400 5050 9250 5050
+Wire Wire Line
+	7350 6200 7350 6100
+Wire Wire Line
+	7350 6100 7450 6100
+Wire Wire Line
+	9150 5900 9150 5850
+Wire Wire Line
+	9150 5850 9250 5850
+Wire Wire Line
+	7150 4550 7150 4600
+Wire Wire Line
+	7150 4600 7450 4600
+Wire Wire Line
+	9250 4600 8650 4600
+Wire Wire Line
+	8650 4600 8650 4550
+Wire Wire Line
+	8800 4500 9250 4500
+Wire Wire Line
+	8800 4500 8800 4450
+Wire Wire Line
+	9250 4300 9100 4300
+Wire Wire Line
+	9100 4300 9100 4250
+Wire Wire Line
+	5000 5200 5000 5100
+Wire Wire Line
+	5000 5100 5300 5100
+Wire Wire Line
+	5000 4400 5000 4450
+Wire Wire Line
+	5000 4450 5300 4450
+Wire Wire Line
+	3900 4800 3700 4800
+Wire Wire Line
+	3700 4800 3700 4850
+Wire Wire Line
+	3900 4400 3700 4400
+Wire Wire Line
+	3700 4400 3700 4300
+Wire Wire Line
+	3700 5300 3700 5350
+Wire Wire Line
+	3700 5350 3900 5350
+Wire Wire Line
+	3700 5500 3700 5450
+Wire Wire Line
+	3700 5450 3900 5450
+Wire Wire Line
+	1150 4500 1150 4550
+Wire Wire Line
+	1150 4550 1350 4550
+Wire Wire Line
+	1150 4900 1150 4850
+Wire Wire Line
+	1150 4850 1350 4850
+Wire Wire Line
+	1300 4700 1350 4700
+Wire Wire Line
+	8400 5200 9250 5200
+Wire Wire Line
+	8400 5300 9250 5300
+Wire Wire Line
+	8400 5400 9250 5400
+Wire Wire Line
+	6950 4500 6950 4750
+Wire Wire Line
+	6950 4750 7450 4750
+Wire Wire Line
+	9300 2000 9800 2000
+Wire Wire Line
+	9300 2100 9800 2100
+Wire Wire Line
+	2750 5800 2750 7550
+Wire Wire Line
+	2750 5800 2600 5800
+Wire Wire Line
+	2600 5900 2750 5900
+Wire Wire Line
+	2600 6000 2750 6000
+Wire Wire Line
+	2600 6100 2750 6100
+Wire Wire Line
+	2600 6200 2750 6200
+Wire Wire Line
+	2600 6300 2750 6300
+Wire Wire Line
+	2600 6400 2750 6400
+Wire Wire Line
+	2600 6500 2750 6500
+Wire Wire Line
+	2600 6600 2750 6600
+Wire Wire Line
+	2600 6700 2750 6700
+Wire Wire Line
+	2600 7100 2750 7100
+Wire Wire Line
+	2600 7400 2750 7400
+Wire Wire Line
+	1200 7400 1350 7400
+Wire Wire Line
+	1150 5750 1150 7300
+Wire Wire Line
+	1150 7300 1350 7300
+Wire Wire Line
+	1150 7100 1350 7100
+Wire Wire Line
+	1150 6700 1350 6700
+Wire Wire Line
+	1150 6600 1350 6600
+Wire Wire Line
+	1150 6500 1350 6500
+Wire Wire Line
+	1150 6400 1350 6400
+Wire Wire Line
+	1150 6300 1350 6300
+Wire Wire Line
+	1150 6200 1350 6200
+Wire Wire Line
+	1150 6100 1350 6100
+Wire Wire Line
+	1150 6000 1350 6000
+Wire Wire Line
+	1150 5900 1350 5900
+Wire Wire Line
+	1150 5800 1350 5800
+Wire Wire Line
+	2600 7500 2750 7500
+Wire Wire Line
+	2600 7300 2750 7300
+Wire Wire Line
+	1300 7400 1300 7500
+Wire Wire Line
+	1300 7500 1350 7500
+Wire Wire Line
+	4850 4400 4850 4550
+Wire Wire Line
+	4850 4550 5300 4550
+Wire Wire Line
+	2500 2700 2550 2700
+Wire Wire Line
+	2550 2700 2550 2750
+Wire Wire Line
+	2500 2300 2550 2300
+Wire Wire Line
+	2550 2300 2550 2250
+Connection ~ 2750 5900
+Connection ~ 2750 6000
+Connection ~ 2750 6100
+Connection ~ 2750 6200
+Connection ~ 2750 6300
+Connection ~ 2750 6400
+Connection ~ 2750 6500
+Connection ~ 2750 6600
+Connection ~ 2750 6700
+Connection ~ 2750 7100
+Connection ~ 2750 7400
+Connection ~ 1150 7100
+Connection ~ 1150 6700
+Connection ~ 1150 6600
+Connection ~ 1150 6500
+Connection ~ 1150 6400
+Connection ~ 1150 6300
+Connection ~ 1150 6200
+Connection ~ 1150 6100
+Connection ~ 1150 6000
+Connection ~ 1150 5900
+Connection ~ 1150 5800
+Connection ~ 2750 7500
+Connection ~ 2750 7300
+Connection ~ 1300 7400
+NoConn ~ 6000 1600
+NoConn ~ 7350 2200
+NoConn ~ 7350 2600
+NoConn ~ 9300 2200
+NoConn ~ 4450 1100
+NoConn ~ 9350 2400
+NoConn ~ 9350 2500
+NoConn ~ 9750 800 
+NoConn ~ 9750 900 
+NoConn ~ 9750 1000
+NoConn ~ 9750 1100
+NoConn ~ 9750 1200
+NoConn ~ 9750 1300
+NoConn ~ 9300 3200
+NoConn ~ 9300 3300
+NoConn ~ 9350 2700
+NoConn ~ 9350 2800
+NoConn ~ 9350 2900
+NoConn ~ 6000 1900
+NoConn ~ 6000 2000
+$EndSCHEMATC

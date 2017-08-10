@@ -1,0 +1,36 @@
+Title,BMS Host Interface (SPI+DI/DO) Isolator
+Revision,3.2
+Date,2016-05-17
+Generated,Wed 01 Mar 2017 10:55:04 CET
+Company,TERA TU Graz
+Comment 1,Rene Pöschl
+Comment 2,
+Comment 3,
+Comment 4,
+Total Parts,21
+Total Unique Parts,15
+
+
+
+Ref,Qty,HPN,Value,Footprint,
+C1 ,1,52-4u70,4.7uF 25V,tera_rlc:C_0805in
+C2 ,1,55-220p,220pF 2kV,tera_rlc:C_1206in_HV
+C4 C5 C3 C6 ,4,52-100n,100n,tera_rlc:C_0805in
+D1 ,1,21-9008,14V,tera_diodes:SOD128
+D2 ,1,21-0002,12V_OK,tera_diodes:LED_0805
+L1 ,1,97-0016,4.7uH 1.2A,tera_rlc:L_muarta_LQH32PN
+P3 ,1,02-0902,12V,tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight
+P1 ,1,03-0208,SPI_master,tera_Connectors_Molex:Molex_PicoBlade_53398-0871_08x1.25mm_Straight
+P4 ,1,02-1902,Digital_Master,tera_Connectors_JST:JST_EH_B02B-EH-A_02x2.50mm_Straight
+P2 ,1,03-0208,Host_slave,tera_Connectors_Molex:Molex_PicoBlade_53398-0871_08x1.25mm_Straight
+Q1 ,1,24-2050,BSS205N,tera_atomic_infineon:BSS205N
+R7 ,1,11-12K0,12k,tera_rlc:R_0603in
+R1 R2 R3 ,3,11-10K0,10k,tera_rlc:R_0805in
+U1 ,1,90-1001,TMR_1-1211,traco_power:TMR_1-XX1X
+U2 U3 ,2,20-1500,ISO7241,tera_atomic_ic:ISO7241
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated Wed 01 Mar 2017 10:55:04 CET

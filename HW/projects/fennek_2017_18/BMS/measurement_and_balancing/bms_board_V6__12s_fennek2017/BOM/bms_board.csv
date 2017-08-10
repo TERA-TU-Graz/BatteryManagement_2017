@@ -1,0 +1,49 @@
+Title,BMS Monitor / Balancer for Fennek 2017
+Revision,6
+Date,2017-01-06
+Generated,Sat 25 Mar 2017 17:30:07 CET
+Company,TERA TU Graz
+Comment 1,Rene Pöschl
+Comment 2,
+Comment 3,
+Comment 4,
+Total Parts,193
+Total Unique Parts,28
+
+
+
+Ref,Qty,AssemblyVariant,HPN,Value,Footprint,
+C16 C17 ,2, ,50-47n0,47n,tera_rlc:C_0603in
+C51 C1 C4 C9 C13 C21 C26 C30 C18 C34 C42 C44 C46 C48 C50 C53 C52 C54 ,18, ,50-100n,100n 50V,tera_rlc:C_0805in
+C2 C19 ,2, ,53-10u0,10u,tera_rlc:C_0805in
+C7 C11 C14 C5 C24 C28 C31 C22 ,8, ,52-2u20,2.2u,tera_rlc:C_0805in
+C12 C15 C8 C3 C6 C10 C20 C23 C27 C29 C32 C25 C33 C41 C43 C45 C47 C49 ,18, ,52-100n,100n,tera_rlc:C_0603in
+C36 C35 C40 C38 C37 C39 ,6, ,50-33p0,33p,tera_rlc:C_0603in
+D2 D5 D8 D11 D14 D17 D20 D23 D26 D29 D32 D35 ,12,Balancer,21-0003,LED,tera_diodes:LED_0805
+D1 D4 D7 D10 D13 D16 D19 D22 D25 D28 D31 D34 ,12, ,21-2001,5.1V,tera_diodes:SOD-323
+D3 D6 D9 D12 D15 D18 D21 D24 D27 D30 D33 D36 ,12,Balancer,21-2001,5.1V,tera_diodes:SOD-323
+IC1 IC2 ,2, ,20-0006,TI-bq76pl536,tera_atomic_ic:TI_bq76PL536
+P1 ,1, ,02-0013,Battery_Interface,tera_Connectors_JST:JST_XH_S13B-XH-A_13x2.50mm_Angled
+P2 ,1, ,03-0202,TS1,tera_Connectors_Molex:Molex_PicoBlade_53261-0271_02x1.25mm_Angled
+P3 ,1, ,03-0202,TS2,tera_Connectors_Molex:Molex_PicoBlade_53261-0271_02x1.25mm_Angled
+P4 ,1, ,03-0210,Host_Interface,tera_Connectors_Molex:Molex_PicoBlade_53398-1071_10x1.25mm_Straight
+Q3 Q4 Q5 Q6 Q7 Q8 Q9 Q10 Q11 Q12 Q13 Q14 ,12,Balancer,24-2050,BSS205N,tera_atomic_infineon:BSS205N
+Q1 Q2 ,2, ,24-2050,BSS205N,tera_atomic_infineon:BSS205N
+R5 ,1, ,11-100K,100K,tera_rlc:R_0603in
+R8 R11 ,2, ,11-1K47,1.47K,tera_rlc:R_0603in
+R9 R10 ,2, ,11-1K82,1.82K,tera_rlc:R_0603in
+R1 R7 R16 R21 R42 R47 R52 R57 R62 R67 R72 R77 ,12,Balancer,11-2K20,2K2,tera_rlc:R_0603in
+R3 R13 R18 R39 R44 R49 R54 R59 R64 R69 R74 R79 ,12,Balancer,11-2M00,2M,tera_rlc:R_0603in
+R6 R15 R20 R41 R46 R51 R56 R61 R66 R71 R76 R81 ,12,Balancer,11-1K00,1K,tera_rlc:R_0603in
+R2 R12 R17 R38 R43 R48 R53 R58 R63 R68 R73 R78 ,12,Balancer,11-180R,180R,tera_rlc:R_0805in
+R4 R14 R19 R40 R45 R50 R55 R60 R65 R70 R75 R80 R29 R26 R27 R28 R33 R32 R31 R30 ,20, ,11-1K00,1K,tera_rlc:R_0603in
+R22 R23 R25 R24 ,4, ,11-2M00,2M,tera_rlc:R_0603in
+R34 R35 ,2, ,11-510K,510K,tera_rlc:R_0603in
+R36 R37 ,2, ,11-10K0,10K,tera_rlc:R_0603in
+X1 X2 ,2, ,09-1003,Prog_Voltage,Socket_Strips:Socket_Strip_Straight_1x02
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated Sat 25 Mar 2017 17:30:07 CET

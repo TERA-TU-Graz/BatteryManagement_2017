@@ -1,0 +1,76 @@
+Title,BMS Master
+Revision,6
+Date,2017-01-06
+Generated,Thu 16 Feb 2017 20:40:08 CET
+Company,TERA TU Graz
+Comment 1,Rene Pöschl
+Comment 2,
+Comment 3,
+Comment 4,
+Total Parts,136
+Total Unique Parts,55
+
+
+
+Ref,Qty,HPN,Value,Footprint,
+C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 C11 C12 C13 C14 C25 C26 C18 C17 C20 C19 ,20,52-100n,100n,tera_rlc:C_0603in
+C27 C21 ,2,52-1u00,1u,tera_rlc:C_0805in
+C22 ,1,52-2u20,2u2,tera_rlc:C_0805in
+C16 ,1,52-47n0,47nF,tera_rlc:C_0603in
+D1 D2 D3 D21 D25 D24 D27 D26 ,8,21-9001,3V3,tera_diodes:DO-216AA
+D4 D6 D8 D10 ,4,21-0003,K_CH1,tera_diodes:LED_0805
+D5 D7 D9 D11 ,4,21-0003,K_CH2,tera_diodes:LED_0805
+D16 D17 ,2,21-9003,18V,tera_diodes:DO-214AA_with_vias_in_pad
+D18 ,1,21-0002,12V_CRTL_OK,tera_diodes:LED_0805
+D20 ,1, ,5V,tera_diodes:DO-216AA
+D23 ,1,21-0002,3V3_OK,tera_diodes:LED_0805
+D22 ,1,21-0002,5V_OK,tera_diodes:LED_0805
+D19 ,1,21-0002,12V_PWR_OK,tera_diodes:LED_0805
+D15 D14 ,2,21-9011,SUPPRESSOR,tera_sot:SOT-23
+IC1 IC2 IC3 ,3,23-2005,LM4132A-1.8,tera_atomic_ic:LM4132A
+IC4 IC5 IC6 IC7 ,4,24-0051,TLE8102SG,infineon:INF-PG-DSO-12-11-EP_N_EPvias
+IC8 ,1,23-2002,LT1461ACS8-5,tera_atomic_ic:LT1461ACS8
+JP1 JP9 JP10 ,3, ,Jumper_NO_Small,tera_general:SOLDERJUMPER_2
+JP2 JP3 JP4 JP11 ,4, ,JUMPER3_NO,tera_general:SOLDERJUMPER_3
+L2 ,1,97-1001,CM_CHOKE,tera_rlc:L_ACT45B-XXX-2P_common-mode-choke
+P1 ,1,02-0905,Interlock,tera_Connectors_JST:JST_XH_B05B-XH-A_05x2.50mm_Straight
+P2 ,1,02-0902,12V_IL,tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight
+P3 ,1,02-1905,ExtGPIO,tera_Connectors_JST:JST_EH_B05B-EH-A_05x2.50mm_Straight
+P4 P5 P6 ,3,03-0204,LEM,tera_Connectors_Molex:Molex_PicoBlade_53398-0471_04x1.25mm_Straight
+P7 P9 ,2,02-0904,K_CH1,tera_Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight
+P8 P10 ,2,02-0904,K_CH2,tera_Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight
+P11 P13 ,2,02-0902,K_CH1,tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight
+P12 P14 ,2,02-0902,K_CH2,tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight
+P15 ,1,03-0209,SPI_Slaves,tera_Connectors_Molex:Molex_PicoBlade_53398-0971_09x1.25mm_Straight
+P16 ,1,02-0902,DI_Slaves,tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight
+P19 ,1,02-0902,12V_CRTL,tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight
+P20 ,1,05-1152,12V_PWR,tera_Connectors_Phoenix:MCV_1.5_2-GF-3.5
+P22 ,1,03-0202,TS1,tera_Connectors_Molex:Molex_PicoBlade_53398-0271_02x1.25mm_Straight
+P21 ,1,03-0202,TS3,tera_Connectors_Molex:Molex_PicoBlade_53398-0271_02x1.25mm_Straight
+P24 ,1,03-0202,TS2,tera_Connectors_Molex:Molex_PicoBlade_53398-0271_02x1.25mm_Straight
+P23 ,1,03-0202,TS4,tera_Connectors_Molex:Molex_PicoBlade_53398-0271_02x1.25mm_Straight
+P17 ,1,02-2902,CAN_CON_2pol,tera_Connectors_JST:JST_PH_B2B-PH-K_02x2.00mm_Straight
+PS1 ,1,99-0025,Stepdown_v6-3V3,Boards_Tera:DCDC_Stepdown_v6
+PS2 ,1,99-0026,Stepdown_v6-5V,Boards_Tera:DCDC_Stepdown_v6
+Q1 Q2 ,2,24-2050,BSS205N,tera_sot:SOT-23
+R1 R3 R5 ,3,11-330R,330R,tera_rlc:R_0603in
+R2 R4 R6 ,3,11-1K00,1K,tera_rlc:R_0805in
+R7 R8 R11 R12 R13 R16 R17 R18 R19 R20 R29 R30 ,12,11-12K0,12k,tera_rlc:R_0805in
+R10 R15 ,2,11-18K0,18k,tera_rlc:R_0805in
+R9 R14 ,2,11-10K0,10k,tera_rlc:R_0603in
+R22 R21 ,2,11-10K0,10k,tera_rlc:R_0805in
+R41 R42 R43 R44 ,4,11-1K00,1k,tera_rlc:R_0805in
+R32 ,1,11-2K20,2k2,tera_rlc:R_0805in
+R31 ,1,11-5K10,5k1,tera_rlc:R_0805in
+R34 R36 R33 R35 R38 R40 R37 R39 ,8, ,?R,tera_rlc:R_0603in
+R27 R28 ,2,11-60R4,60R,tera_rlc:R_0603in
+S1 ,1,95-0003,SWITCH_DPDT,tera_switches:CuK_JS202011CQN_DPDT
+U1 ,1,99-0003,STM32f4_board_v3-1,Boards_Tera:STM32f4-board_v3-1
+U5 ,1,20-1501,MAX3390EEUD,tera_atomic_ic:MAX3390EEUD
+U2 ,1,20-2004,SN74HC138DR,tera_atomic_ic:SN74HC138DR
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated Thu 16 Feb 2017 20:40:08 CET

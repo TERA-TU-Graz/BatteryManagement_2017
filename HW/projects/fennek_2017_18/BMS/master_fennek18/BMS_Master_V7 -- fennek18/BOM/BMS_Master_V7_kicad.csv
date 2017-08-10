@@ -1,0 +1,73 @@
+Title,BMS Master
+Revision,6
+Date,2017-01-06
+Generated,Wed 07 Jun 2017 14:42:16 CEST
+Company,TERA TU Graz
+Comment 1,Rene Pöschl
+Comment 2,
+Comment 3,
+Comment 4,
+Total Parts,117
+Total Unique Parts,52
+
+
+
+Ref,Qty,HPN,Value,Footprint,
+C7 C8 C6 C3 C14 C25 C26 C4 C18 C2 C19 C10 C12 C11 C13 C9 C22 C17 C15 ,19,52-100n,100n,tera_rlc:C_0603in
+C27 ,1,55-1u00,1u,tera_rlc:TantalC_SizeM-1608mm_H0.9mm
+C1 C20 ,2,52-4u70,4.7uF 25V,tera_rlc:C_0805in
+C5 C21 ,2,55-220p,220pF 2kV,tera_rlc:C_1206in_HV
+C16 ,1,52-47n0,47nF,tera_rlc:C_0603in
+D3 D5 D2 D1 D21 ,5,21-9001,3V3,tera_diodes:DO-216AA
+D4 ,1,21-0002,~Alert,tera_diodes:LED_0805
+D6 ,1,21-0002,~Fault,tera_diodes:LED_0805
+D20 ,1, ,5V,tera_diodes:DO-216AA
+D23 ,1,21-0002,3V3_OK,tera_diodes:LED_0805
+D22 ,1,21-0002,5V_OK,tera_diodes:LED_0805
+D15 D14 ,2,21-9011,SUPPRESSOR,tera_sot:SOT-23
+D7 ,1,21-0002,IL_OK,tera_diodes:LED_0805
+G1 ,1,23-3001,PSSI2021SAY,tera_atomic_ic:PSSI2021SAY
+JP3 JP2 ,2, ,JUMPER3_NO,tera_general:SOLDERJUMPER_3
+JP1 JP4 JP5 ,3, ,Jumper_NO_Small,tera_general:SOLDERJUMPER_2_1mm
+JP9 JP10 ,2, ,Jumper_NO_Small,tera_general:SOLDERJUMPER_2
+JP6 ,1, ,JUMPER3_NO,tera_general:SOLDERJUMPER_3_1mm
+K1 K3 K2 ,3,96-3001,ASSR-1218,tera_general:SO-4
+L1 L3 ,2,97-0017,4.7uH 50mA,tera_rlc:L_0603in
+L2 ,1,97-1001,CM_CHOKE,tera_rlc:L_ACT45B-XXX-2P_common-mode-choke
+P5 P4 ,2,03-0???,LEM,tera_Connectors_Molex:Molex_PicoBlade_53261-0471_04x1.25mm_Angled
+P2 ,1,03-0208,Host_slave,tera_Connectors_Molex:Molex_PicoBlade_53398-0871_08x1.25mm_Straight
+P17 P8 ,2,02-2002,CAN_CON_2pol,tera_Connectors_JST:JST_PH_S2B-PH-K_02x2.00mm_Angled
+P3 ,1,02-1905,ExtGPIO,tera_Connectors_JST:JST_EH_B05B-EH-A_05x2.50mm_Straight
+P1 ,1,02-1003,Buttons,tera_Connectors_JST:JST_EH_S03B-EH_03x2.50mm_Angled
+P7 ,1,02-2003,WheelSpeed,tera_Connectors_JST:JST_PH_S3B-PH-K_03x2.00mm_Angled
+P6 ,1, ,CONN_02X22,Pin_Headers:Pin_Header_Straight_2x22_Pitch2.54mm
+PS1 ,1,99-0025,Stepdown_v6-3V3,Boards_Tera:DCDC_Stepdown_v6
+PS2 ,1,99-0026,Stepdown_v6-5V,Boards_Tera:DCDC_Stepdown_v6
+Q2 Q1 ,2,24-2050,BSS205N,tera_atomic_infineon:BSS205N
+R7 R8 R4 R2 R24 R25 R26 ,7,11-1K00,1K,tera_rlc:R_0805in
+R41 R42 R43 R44 ,4,11-10K0,10k,tera_rlc:R_0603in
+R16 R17 R18 R15 R6 R9 ,6,11-100K,100k,tera_rlc:R_0603in
+R12 R13 R14 R19 R20 R21 R10 R11 ,8,11-1K00,1k,tera_rlc:R_0603in
+R3 ,1,11-10K0,10k,tera_rlc:R_0805in
+R1 R5 ,2,11-5K10,5k1,tera_rlc:R_0603in
+R32 ,1,11-2K20,2k2,tera_rlc:R_0805in
+R31 R36 ,2,11-5K10,5k1,tera_rlc:R_0805in
+R27 R28 ,2,11-60R4,60R,tera_rlc:R_0603in
+R33 ,1,11-120R,120R,tera_rlc:R_0603in
+R37 R22 ,2,11-470R,470,tera_rlc:R_0603in
+R35 R34 R23 R29 R30 ,5,11-1K00,1K,tera_rlc:R_0603in
+R38 ,1,11-0R00,0R,tera_rlc:R_0603in
+R39 ,1,11-22K0,22k,tera_rlc:R_0603in
+S1 ,1,95-0003,SWITCH_DPDT,tera_switches:CuK_JS202011CQN_DPDT
+U1 ,1,99-0003,STM32f4_board_v3-1,Boards_Tera:STM32f4-board_v3-1
+U5 ,1,20-1501,MAX3390EEUD,tera_atomic_ic:MAX3390EEUD
+U2 ,1,20-2004,SN74HC138DR,tera_atomic_ic:SN74HC138DR
+U4 U6 ,2,20-1500,ISO7241,tera_atomic_ic:ISO7241
+U3 ,1,90-1005,Muarta_LME1205SC,Tera_DC-DC:Muarta_LME-SIP
+U7 ,1,90-1006,Muarta_LME1212SC,Tera_DC-DC:Muarta_LME-SIP
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated Wed 07 Jun 2017 14:42:16 CEST
