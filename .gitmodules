@@ -1,3 +1,6 @@
 [submodule "SW/Master/Libraries/Teralib"]
 	path = SW/Master/Libraries/Teralib
 	url = git@github.com:TERA-TU-Graz/Software_Lib.git
+[submodule "HW/libs"]
+	path = HW/libs
+	url = git@github.com:TERA-TU-Graz/ECad_Library.git
