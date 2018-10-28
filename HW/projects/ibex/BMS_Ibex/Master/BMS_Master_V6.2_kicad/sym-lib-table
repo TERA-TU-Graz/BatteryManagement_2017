@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name BMS_Master_V6_kicad-rescue)(type Legacy)(uri ${KIPRJMOD}/BMS_Master_V6_kicad-rescue.lib)(options "")(descr ""))
+  (lib (name local_symbols)(type Legacy)(uri ${KIPRJMOD}/local_symbols.lib)(options "")(descr ""))
+)

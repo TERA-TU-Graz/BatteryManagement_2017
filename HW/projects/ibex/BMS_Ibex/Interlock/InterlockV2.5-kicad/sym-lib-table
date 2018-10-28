@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name Interlock-rescue)(type Legacy)(uri ${KIPRJMOD}/Interlock-rescue.lib)(options "")(descr ""))
+  (lib (name power1)(type Legacy)(uri /usr/share/kicad/library/power.lib)(options "")(descr ""))
+  (lib (name 74xx1)(type Legacy)(uri /usr/share/kicad/library/74xx.lib)(options "")(descr ""))
+  (lib (name interlock_power)(type Legacy)(uri ${KIPRJMOD}/local_libs/interlock_power.lib)(options "")(descr ""))
+)

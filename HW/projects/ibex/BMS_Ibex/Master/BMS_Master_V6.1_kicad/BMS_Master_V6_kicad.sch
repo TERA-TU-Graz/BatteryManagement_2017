@@ -1,44 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ft232rl
-LIBS:relais
-LIBS:Supply
-LIBS:tera_general
-LIBS:tera_switches
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
+EESchema Schematic File Version 4
 LIBS:BMS_Master_V6_kicad-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -148,7 +110,7 @@ F3 "CAN-" B L 9800 2100 60
 F4 "GND" I L 9800 2450 60 
 $EndSheet
 $Comp
-L +12V #PWR01
+L power:+12V #PWR01
 U 1 1 56FEA5A8
 P 1950 1150
 F 0 "#PWR01" H 1950 1000 50  0001 C CNN
@@ -159,7 +121,7 @@ F 3 "" H 1950 1150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR02
+L power:+3.3V #PWR02
 U 1 1 56FEB8F4
 P 2250 1350
 F 0 "#PWR02" H 2250 1200 50  0001 C CNN
@@ -170,7 +132,7 @@ F 3 "" H 2250 1350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR03
+L power:+5V #PWR03
 U 1 1 56FEBA50
 P 2100 1250
 F 0 "#PWR03" H 2100 1100 50  0001 C CNN
@@ -181,7 +143,7 @@ F 3 "" H 2100 1250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 56FEC261
 P 1900 1650
 F 0 "#PWR04" H 1900 1400 50  0001 C CNN
@@ -192,7 +154,7 @@ F 3 "" H 1900 1650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 5709711B
 P 9650 2500
 F 0 "#PWR05" H 9650 2250 50  0001 C CNN
@@ -203,7 +165,7 @@ F 3 "" H 9650 2500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 571624A7
 P 9150 5900
 F 0 "#PWR06" H 9150 5650 50  0001 C CNN
@@ -214,7 +176,7 @@ F 3 "" H 9150 5900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR07
+L power:GND #PWR07
 U 1 1 57164043
 P 7350 6200
 F 0 "#PWR07" H 7350 5950 50  0001 C CNN
@@ -225,7 +187,7 @@ F 3 "" H 7350 6200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR08
+L power:+3.3V #PWR08
 U 1 1 571685D4
 P 7150 4550
 F 0 "#PWR08" H 7150 4400 50  0001 C CNN
@@ -236,7 +198,7 @@ F 3 "" H 7150 4550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR09
+L power:+5V #PWR09
 U 1 1 5716C6FF
 P 8800 4450
 F 0 "#PWR09" H 8800 4300 50  0001 C CNN
@@ -247,7 +209,7 @@ F 3 "" H 8800 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR010
+L power:+3.3V #PWR010
 U 1 1 5716C857
 P 8650 4550
 F 0 "#PWR010" H 8650 4400 50  0001 C CNN
@@ -258,7 +220,7 @@ F 3 "" H 8650 4550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR011
+L power:+5V #PWR011
 U 1 1 571F6147
 P 5000 4400
 F 0 "#PWR011" H 5000 4250 50  0001 C CNN
@@ -269,7 +231,7 @@ F 3 "" H 5000 4400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 571F62C0
 P 5000 5200
 F 0 "#PWR012" H 5000 4950 50  0001 C CNN
@@ -280,7 +242,7 @@ F 3 "" H 5000 5200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X05 P1
+L Connector_Generic:Conn_01x05 P1
 U 1 1 572776F2
 P 4100 4600
 F 0 "P1" H 4100 4900 50  0000 C CNN
@@ -292,19 +254,19 @@ F 4 "02-0905" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L CONN_01X02 P2
+L Connector_Generic:Conn_01x02 P2
 U 1 1 572776FB
-P 4100 5400
-F 0 "P2" H 4100 5550 50  0000 L CNN
-F 1 "12V_IL" V 4250 5300 50  0000 L CNN
-F 2 "tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 4100 5400 50  0001 C CNN
-F 3 "" H 4100 5400 50  0000 C CNN
-F 4 "02-0902" H 0   0   50  0001 C CNN "HPN"
-	1    4100 5400
+P 4100 5450
+F 0 "P2" H 4100 5600 50  0000 L CNN
+F 1 "12V_IL" V 4250 5350 50  0000 L CNN
+F 2 "tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 4100 5450 50  0001 C CNN
+F 3 "" H 4100 5450 50  0000 C CNN
+F 4 "02-0902" H 0   50  50  0001 C CNN "HPN"
+	1    4100 5450
 	1    0    0    1   
 $EndComp
 $Comp
-L +12V #PWR013
+L power:+12V #PWR013
 U 1 1 5727BEE4
 P 3700 5300
 F 0 "#PWR013" H 3700 5150 50  0001 C CNN
@@ -315,7 +277,7 @@ F 3 "" H 3700 5300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L power:GND #PWR014
 U 1 1 5727F262
 P 3700 5500
 F 0 "#PWR014" H 3700 5250 50  0001 C CNN
@@ -326,7 +288,7 @@ F 3 "" H 3700 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L power:GND #PWR015
 U 1 1 57281F7A
 P 3700 4850
 F 0 "#PWR015" H 3700 4600 50  0001 C CNN
@@ -337,7 +299,7 @@ F 3 "" H 3700 4850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR016
+L power:+5V #PWR016
 U 1 1 57283E2B
 P 3700 4300
 F 0 "#PWR016" H 3700 4150 50  0001 C CNN
@@ -348,7 +310,7 @@ F 3 "" H 3700 4300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR017
+L power:+12V #PWR017
 U 1 1 56FCC5C9
 P 1150 4500
 F 0 "#PWR017" H 1150 4350 50  0001 C CNN
@@ -359,7 +321,7 @@ F 3 "" H 1150 4500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR018
+L power:GND #PWR018
 U 1 1 56FCF655
 P 1150 4900
 F 0 "#PWR018" H 1150 4650 50  0001 C CNN
@@ -370,7 +332,7 @@ F 3 "" H 1150 4900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper_NO_Small JP1
+L Device:Jumper_NO_Small JP1
 U 1 1 5701E943
 P 1200 4700
 F 0 "JP1" H 1200 4750 50  0000 C CNN
@@ -381,7 +343,7 @@ F 3 "" H 1200 4700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR019
+L power:+5V #PWR019
 U 1 1 57DE1EE6
 P 6950 4500
 F 0 "#PWR019" H 6950 4350 50  0001 C CNN
@@ -392,7 +354,7 @@ F 3 "" H 6950 4500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR020
+L power:GND #PWR020
 U 1 1 5813CDE1
 P 2750 7550
 F 0 "#PWR020" H 2750 7300 50  0001 C CNN
@@ -403,7 +365,7 @@ F 3 "" H 2750 7550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR021
+L power:+5V #PWR021
 U 1 1 5814095A
 P 1200 7400
 F 0 "#PWR021" H 1200 7250 50  0001 C CNN
@@ -414,7 +376,7 @@ F 3 "" H 1200 7400 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +3.3V #PWR022
+L power:+3.3V #PWR022
 U 1 1 58143753
 P 1150 5750
 F 0 "#PWR022" H 1150 5600 50  0001 C CNN
@@ -425,7 +387,7 @@ F 3 "" H 1150 5750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L STM32f4_board_v3-1 U1
+L tera_general:STM32f4_board_v3-1 U1
 U 1 1 581F9E37
 P 4050 1500
 F 0 "U1" H 4050 2200 60  0000 L CNN
@@ -437,7 +399,7 @@ F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L STM32f4_board_v3-1 U1
+L tera_general:STM32f4_board_v3-1 U1
 U 2 1 581FA2F9
 P 5600 1900
 F 0 "U1" H 5650 3000 60  0000 L CNN
@@ -449,7 +411,7 @@ F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L STM32f4_board_v3-1 U1
+L tera_general:STM32f4_board_v3-1 U1
 U 3 1 581FA586
 P 6950 1900
 F 0 "U1" H 6900 3000 60  0000 L CNN
@@ -461,7 +423,7 @@ F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L STM32f4_board_v3-1 U1
+L tera_general:STM32f4_board_v3-1 U1
 U 4 1 581FA726
 P 1950 6500
 F 0 "U1" H 1975 7487 60  0000 C CNN
@@ -473,7 +435,7 @@ F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L STM32f4_board_v3-1 U1
+L tera_general:STM32f4_board_v3-1 U1
 U 5 1 581FA8E0
 P 8950 2600
 F 0 "U1" H 9400 2500 60  0000 L CNN
@@ -485,7 +447,7 @@ F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L STM32f4_board_v3-1 U1
+L tera_general:STM32f4_board_v3-1 U1
 U 6 1 581FB0E4
 P 8800 2100
 F 0 "U1" H 8779 2447 60  0000 C CNN
@@ -497,7 +459,7 @@ F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L STM32f4_board_v3-1 U1
+L tera_general:STM32f4_board_v3-1 U1
 U 7 1 581FB2CA
 P 8900 3250
 F 0 "U1" H 9250 3200 60  0000 C CNN
@@ -509,7 +471,7 @@ F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L STM32f4_board_v3-1 U1
+L tera_general:STM32f4_board_v3-1 U1
 U 8 1 581FB4A8
 P 10150 1050
 F 0 "U1" H 10150 1550 60  0000 L CNN
@@ -521,7 +483,7 @@ F 4 "99-0003" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR023
+L power:+3.3V #PWR023
 U 1 1 58456FD2
 P 4850 4400
 F 0 "#PWR023" H 4850 4250 50  0001 C CNN
@@ -532,7 +494,7 @@ F 3 "" H 4850 4400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12P #PWR024
+L power:+12P #PWR024
 U 1 1 584732E5
 P 1800 1050
 F 0 "#PWR024" H 1800 900 50  0001 C CNN
@@ -543,7 +505,7 @@ F 3 "" H 1800 1050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12P #PWR025
+L power:+12P #PWR025
 U 1 1 58474964
 P 9100 4250
 F 0 "#PWR025" H 9100 4100 50  0001 C CNN
@@ -554,7 +516,7 @@ F 3 "" H 9100 4250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X05 P3
+L Connector_Generic:Conn_01x05 P3
 U 1 1 584A7C04
 P 2300 2500
 F 0 "P3" H 2300 2800 50  0000 C CNN
@@ -566,7 +528,7 @@ F 4 "02-1905" H 2300 2500 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR026
+L power:GND #PWR026
 U 1 1 584A9279
 P 2550 2750
 F 0 "#PWR026" H 2550 2500 50  0001 C CNN
@@ -577,7 +539,7 @@ F 3 "" H 2550 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR027
+L power:+3.3V #PWR027
 U 1 1 584AB990
 P 2550 2250
 F 0 "#PWR027" H 2550 2100 50  0001 C CNN
@@ -814,7 +776,7 @@ Wire Wire Line
 Wire Wire Line
 	9300 2100 9800 2100
 Wire Wire Line
-	2750 5800 2750 7550
+	2750 5800 2750 5900
 Wire Wire Line
 	2750 5800 2600 5800
 Wire Wire Line
@@ -840,9 +802,9 @@ Wire Wire Line
 Wire Wire Line
 	2600 7400 2750 7400
 Wire Wire Line
-	1200 7400 1350 7400
+	1200 7400 1300 7400
 Wire Wire Line
-	1150 5750 1150 7300
+	1150 5750 1150 5800
 Wire Wire Line
 	1150 7300 1350 7300
 Wire Wire Line
@@ -932,4 +894,54 @@ NoConn ~ 9350 2800
 NoConn ~ 9350 2900
 NoConn ~ 6000 1900
 NoConn ~ 6000 2000
+Wire Wire Line
+	2750 5900 2750 6000
+Wire Wire Line
+	2750 6000 2750 6100
+Wire Wire Line
+	2750 6100 2750 6200
+Wire Wire Line
+	2750 6200 2750 6300
+Wire Wire Line
+	2750 6300 2750 6400
+Wire Wire Line
+	2750 6400 2750 6500
+Wire Wire Line
+	2750 6500 2750 6600
+Wire Wire Line
+	2750 6600 2750 6700
+Wire Wire Line
+	2750 6700 2750 7100
+Wire Wire Line
+	2750 7100 2750 7300
+Wire Wire Line
+	2750 7400 2750 7500
+Wire Wire Line
+	1150 7100 1150 7300
+Wire Wire Line
+	1150 6700 1150 7100
+Wire Wire Line
+	1150 6600 1150 6700
+Wire Wire Line
+	1150 6500 1150 6600
+Wire Wire Line
+	1150 6400 1150 6500
+Wire Wire Line
+	1150 6300 1150 6400
+Wire Wire Line
+	1150 6200 1150 6300
+Wire Wire Line
+	1150 6100 1150 6200
+Wire Wire Line
+	1150 6000 1150 6100
+Wire Wire Line
+	1150 5900 1150 6000
+Wire Wire Line
+	1150 5800 1150 5900
+Wire Wire Line
+	2750 7500 2750 7550
+Wire Wire Line
+	2750 7300 2750 7400
+Wire Wire Line
+	1300 7400 1350 7400
 $EndSCHEMATC

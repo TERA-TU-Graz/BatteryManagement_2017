@@ -1,0 +1,43 @@
+Title,BMS Interlock
+Revision,2.1
+Date,2017-01-06
+Generated,Fri 03 Mar 2017 15:12:06 CET
+Company,TERA TU Graz
+Comment 1,Rene Pöschl
+Comment 2,
+Comment 3,
+Comment 4,
+Total Parts,29
+Total Unique Parts,22
+
+
+
+Ref,Qty,HPN,Value,Footprint,
+C1 ,1,52-4u70,4.7uF 25V,tera_rlc:C_0805in
+C2 ,1,55-220p,220pF 2kV,tera_rlc:C_1206in_HV
+D1 ,1,21-9003,18V,tera_diodes:DO-214AA
+D2 ,1,21-0002,12V_OK,tera_diodes:LED_0805
+D3 ,1,21-0002,VDD_OK,tera_diodes:LED_0805
+D4 ,1,21-0002,IL_OK,tera_diodes:LED_0805
+G1 ,1,23-3001,PSSI2021SAY,tera_atomic_ic:PSSI2021SAY
+JP1 JP2 ,2, ,first/middle,tera_general:SOLDERJUMPER_3
+JP3 ,1, ,I_sup_on,tera_general:SOLDERJUMPER_2
+JP4 ,1, ,Last In Line,tera_general:SOLDERJUMPER_2
+K1 K3 K2 ,3,96-3001,ASSR-1218,tera_general:SO-4
+L1 ,1,97-0016,4.7uH 1.2A,tera_rlc:L_muarta_LQH32PN
+P1 ,1,02-0902,12V,tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight
+P2 ,1,02-0905,crtl,tera_Connectors_JST:JST_XH_B05B-XH-A_05x2.50mm_Straight
+P4 ,1,02-1902,IL2,tera_Connectors_JST:JST_EH_B02B-EH-A_02x2.50mm_Straight
+P3 ,1,02-1902,IL1,tera_Connectors_JST:JST_EH_B02B-EH-A_02x2.50mm_Straight
+R3 ,1,11-120R,120R,tera_rlc:R_0603in
+R6 R1 ,2,11-470R,470,tera_rlc:R_0603in
+R5 R4 R2 ,3,11-1K00,1K,tera_rlc:R_0603in
+R7 ,1,11-12K0,12k,tera_rlc:R_0603in
+R8 R9 ,2,11-5K10,5k1,tera_rlc:R_0603in
+U1 ,1,90-1002,TMR_1-1212,traco_power:TMR_1-XX1X
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated Fri 03 Mar 2017 15:12:06 CET

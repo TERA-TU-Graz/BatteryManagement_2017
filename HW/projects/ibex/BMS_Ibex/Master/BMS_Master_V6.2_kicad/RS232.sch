@@ -1,0 +1,152 @@
+EESchema Schematic File Version 4
+LIBS:BMS_Master_V6_kicad-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 16 16
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Small R22
+U 1 1 5ACB92D4
+P 4050 2350
+F 0 "R22" V 4100 2450 50  0000 L CNN
+F 1 "1K" V 4100 2150 50  0000 L CNN
+F 2 "tera_rlc:R_0603in" H 4050 2350 50  0001 C CNN
+F 3 "" H 4050 2350 50  0000 C CNN
+F 4 "11-1K00" H 300 -1250 50  0001 C CNN "HPN"
+	1    4050 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 2350 3950 2350
+Wire Wire Line
+	4150 2350 4950 2350
+Wire Wire Line
+	4500 2350 4500 2600
+$Comp
+L Device:R_Small R37
+U 1 1 5ACB92DF
+P 4050 2450
+F 0 "R37" V 4100 2550 50  0000 L CNN
+F 1 "1K" V 4100 2250 50  0000 L CNN
+F 2 "tera_rlc:R_0603in" H 4050 2450 50  0001 C CNN
+F 3 "" H 4050 2450 50  0000 C CNN
+F 4 "11-1K00" H 300 -1150 50  0001 C CNN "HPN"
+	1    4050 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C34
+U 1 1 5ACB92E7
+P 4250 2700
+F 0 "C34" V 4200 2550 50  0000 L CNN
+F 1 "100n" V 4200 2750 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 4250 2700 50  0001 C CNN
+F 3 "" H 4250 2700 50  0000 C CNN
+F 4 "52-100n" H 100 -1200 50  0001 C CNN "HPN"
+	1    4250 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2450 4950 2450
+Wire Wire Line
+	4250 2450 4250 2600
+$Comp
+L Device:C_Small C35
+U 1 1 5ACB92F1
+P 4500 2700
+F 0 "C35" V 4450 2550 50  0000 L CNN
+F 1 "100n" V 4450 2750 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 4500 2700 50  0001 C CNN
+F 3 "" H 4500 2700 50  0000 C CNN
+F 4 "52-100n" H 350 -1200 50  0001 C CNN "HPN"
+	1    4500 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2450 3950 2450
+Connection ~ 4500 2350
+Connection ~ 4250 2450
+Text HLabel 4350 2950 3    40   Input ~ 0
+GND
+Wire Wire Line
+	4250 2800 4250 2900
+Wire Wire Line
+	4250 2900 4500 2900
+Wire Wire Line
+	4500 2900 4500 2800
+Wire Wire Line
+	4350 2900 4350 2950
+Connection ~ 4350 2900
+$Comp
+L Device:C_Small C32
+U 1 1 5ACB9382
+P 3500 2700
+F 0 "C32" V 3450 2550 50  0000 L CNN
+F 1 "100n" V 3450 2750 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 3500 2700 50  0001 C CNN
+F 3 "" H 3500 2700 50  0000 C CNN
+F 4 "52-100n" H -650 -1200 50  0001 C CNN "HPN"
+	1    3500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C33
+U 1 1 5ACB9389
+P 3750 2700
+F 0 "C33" V 3700 2550 50  0000 L CNN
+F 1 "100n" V 3700 2750 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 3750 2700 50  0001 C CNN
+F 3 "" H 3750 2700 50  0000 C CNN
+F 4 "52-100n" H -400 -1200 50  0001 C CNN "HPN"
+	1    3750 2700
+	1    0    0    -1  
+$EndComp
+Text HLabel 3600 2950 3    40   Input ~ 0
+GND
+Wire Wire Line
+	3500 2800 3500 2900
+Wire Wire Line
+	3500 2900 3750 2900
+Wire Wire Line
+	3750 2900 3750 2800
+Wire Wire Line
+	3600 2900 3600 2950
+Connection ~ 3600 2900
+Wire Wire Line
+	3750 2600 3750 2450
+Connection ~ 3750 2450
+Wire Wire Line
+	3500 2600 3500 2350
+Text HLabel 3250 2450 0    40   Input ~ 0
+TxD
+Text HLabel 3250 2350 0    40   Input ~ 0
+RxD
+Connection ~ 3500 2350
+$Comp
+L Connector_Generic:Conn_01x03 P15
+U 1 1 5ACB94E9
+P 5150 2450
+F 0 "P15" H 5227 2491 50  0000 L CNN
+F 1 "Debug_USART" H 5227 2400 50  0000 L CNN
+F 2 "tera_Connectors_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 5150 2450 50  0001 C CNN
+F 3 "" H 5150 2450 50  0000 C CNN
+	1    5150 2450
+	1    0    0    -1  
+$EndComp
+Text HLabel 4800 2950 3    40   Input ~ 0
+GND
+Wire Wire Line
+	4800 2950 4800 2550
+Wire Wire Line
+	4800 2550 4950 2550
+$EndSCHEMATC

@@ -1,48 +1,10 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ft232rl
-LIBS:relais
-LIBS:Supply
-LIBS:tera_general
-LIBS:tera_switches
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
+EESchema Schematic File Version 4
 LIBS:BMS_Master_V6_kicad-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 14
+Sheet 6 16
 Title "BMS Master"
 Date "2017-01-06"
 Rev "6"
@@ -179,21 +141,21 @@ Interlock_OK
 Text HLabel 2350 5100 0    60   Input ~ 0
 Interlock_OK
 Wire Wire Line
-	2300 2100 3150 2100
+	2300 2100 2450 2100
 Wire Wire Line
-	2450 2100 2450 6300
+	2450 2100 2450 3500
 Wire Wire Line
 	2450 3500 3150 3500
 Wire Wire Line
-	2300 2000 3150 2000
+	2300 2000 2500 2000
 Wire Wire Line
-	2500 2000 2500 6200
+	2500 2000 2500 3400
 Wire Wire Line
 	2500 3400 3150 3400
 Wire Wire Line
-	2300 1900 3150 1900
+	2300 1900 2550 1900
 Wire Wire Line
-	2550 1900 2550 6100
+	2550 1900 2550 3300
 Wire Wire Line
 	2550 3300 3150 3300
 Wire Wire Line
@@ -231,4 +193,22 @@ Connection ~ 2500 3400
 Connection ~ 2450 3500
 Connection ~ 2500 4800
 Connection ~ 2450 4900
+Wire Wire Line
+	2550 1900 3150 1900
+Wire Wire Line
+	2500 2000 3150 2000
+Wire Wire Line
+	2450 2100 3150 2100
+Wire Wire Line
+	2550 3300 2550 4700
+Wire Wire Line
+	2550 4700 2550 6100
+Wire Wire Line
+	2500 3400 2500 4800
+Wire Wire Line
+	2450 3500 2450 4900
+Wire Wire Line
+	2500 4800 2500 6200
+Wire Wire Line
+	2450 4900 2450 6300
 $EndSCHEMATC

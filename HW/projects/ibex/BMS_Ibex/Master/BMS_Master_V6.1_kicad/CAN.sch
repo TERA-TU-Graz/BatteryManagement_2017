@@ -1,44 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ft232rl
-LIBS:relais
-LIBS:Supply
-LIBS:tera_general
-LIBS:tera_switches
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
+EESchema Schematic File Version 4
 LIBS:BMS_Master_V6_kicad-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -53,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SUPPRESSOR D13
+L tera_general:SUPPRESSOR D13
 U 1 1 56F60DD7
 P 7300 3250
 AR Path="/56F507DC/56F600A4/56F60DD7" Ref="D13"  Part="1" 
@@ -68,7 +30,7 @@ F 4 "21-9011" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper_NO_Small JP7
+L Device:Jumper_NO_Small JP7
 U 1 1 56F60DD8
 P 5450 2250
 AR Path="/56F507DC/56F600A4/56F60DD8" Ref="JP7"  Part="1" 
@@ -82,7 +44,7 @@ F 3 "" H 5450 2250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper_NO_Small JP8
+L Device:Jumper_NO_Small JP8
 U 1 1 56F60DD9
 P 5450 3250
 AR Path="/56F507DC/56F600A4/56F60DD9" Ref="JP8"  Part="1" 
@@ -96,7 +58,7 @@ F 3 "" H 5450 3250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SUPPRESSOR D12
+L tera_general:SUPPRESSOR D12
 U 1 1 56F60DDA
 P 4650 3300
 AR Path="/56F507DC/56F600A4/56F60DDA" Ref="D12"  Part="1" 
@@ -111,7 +73,7 @@ F 4 "21-9011" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R24
+L Device:R R24
 U 1 1 56F60DDB
 P 6350 3850
 AR Path="/56F507DC/56F600A4/56F60DDB" Ref="R24"  Part="1" 
@@ -126,7 +88,7 @@ F 4 "11-60R4" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R25
+L Device:R R25
 U 1 1 56F60DDC
 P 6550 3850
 AR Path="/56F507DC/56F600A4/56F60DDC" Ref="R25"  Part="1" 
@@ -141,12 +103,13 @@ F 4 "11-60R4" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C15
+L Device:C C15
 U 1 1 56F60DDD
 P 6450 4150
 AR Path="/56F507DC/56F600A4/56F60DDD" Ref="C15"  Part="1" 
 AR Path="/56F507DC/56F5B634/56F60DDD" Ref="C16"  Part="1" 
 AR Path="/58175C82/56F60DDD" Ref="C16"  Part="1" 
+AR Path="/56F60DDD" Ref="C16"  Part="1" 
 F 0 "C16" H 6475 4250 50  0000 L CNN
 F 1 "47nF" H 6475 4050 50  0000 L CNN
 F 2 "tera_rlc:C_0603in" H 6750 4000 30  0001 C CNN
@@ -156,7 +119,7 @@ F 4 "52-47n0" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CM_CHOKE L1
+L tera_general:CM_CHOKE L1
 U 1 1 56F60DE1
 P 5450 2750
 AR Path="/56F507DC/56F600A4/56F60DE1" Ref="L1"  Part="1" 
@@ -171,7 +134,7 @@ F 4 "97-1001" H 0   0   50  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CAN_CON_2pol P17
+L tera_connectors:CAN_CON_2pol P17
 U 1 1 581338CD
 P 8750 2700
 F 0 "P17" H 8743 2527 50  0000 C CNN
@@ -183,7 +146,7 @@ F 4 "02-2902" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L SWITCH_DPDT S1
+L tera_switches:SWITCH_DPDT S1
 U 1 1 5816ED00
 P 6500 3150
 F 0 "S1" V 6462 3378 39  0000 L CNN

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Bus_Isolator_V3-2-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -380,21 +381,21 @@ F 3 "" H 3500 2900 50  0000 C CNN
 	1    3500 2900
 	1    0    0    -1  
 $EndComp
-Text Label 3700 3500 2    40   ~ 0
-SCLK_Master
-Text Label 3700 3600 2    40   ~ 0
-MOSI_Master
 Text Label 3700 3400 2    40   ~ 0
-MISO_Master
+SCLK_Master
+Text Label 3700 3500 2    40   ~ 0
+MOSI_Master
 Text Label 3700 3700 2    40   ~ 0
+MISO_Master
+Text Label 3700 3600 2    40   ~ 0
 NCS_Master
-Text Label 4300 3400 0    40   ~ 0
-MISO_slave
-Text Label 4300 3500 0    40   ~ 0
-SCLK_slave
-Text Label 4300 3600 0    40   ~ 0
-MOSI_Slave
 Text Label 4300 3700 0    40   ~ 0
+MISO_slave
+Text Label 4300 3400 0    40   ~ 0
+SCLK_slave
+Text Label 4300 3500 0    40   ~ 0
+MOSI_Slave
+Text Label 4300 3600 0    40   ~ 0
 NCS_Slave
 $Comp
 L R_Small R1
@@ -546,93 +547,93 @@ F 3 "" H 3300 5200 50  0000 C CNN
 	1    3300 5200
 	1    0    0    -1  
 $EndComp
-Text Label 5200 5900 0    40   ~ 0
+Text Label 5200 5800 0    40   ~ 0
 ~Alert_slave
-Text Label 5200 6000 0    40   ~ 0
+Text Label 5200 5900 0    40   ~ 0
 ~Fault_slave
-Text Label 3700 5900 2    40   ~ 0
+Text Label 3700 5800 2    40   ~ 0
 ~Alert_master
-Text Label 3700 6000 2    40   ~ 0
+Text Label 3700 5900 2    40   ~ 0
 ~Fault_master
 $Comp
 L CONN_01X02 P4
 U 1 1 57F73A80
-P 2900 5950
-F 0 "P4" H 2900 6100 50  0000 C CNN
-F 1 "Digital_Master" V 3000 5950 50  0000 C CNN
-F 2 "tera_Connectors_JST:JST_EH_B02B-EH-A_02x2.50mm_Straight" H 2900 5950 50  0001 C CNN
-F 3 "" H 2900 5950 50  0000 C CNN
-F 4 "02-1902" H 2900 5950 60  0001 C CNN "HPN"
-	1    2900 5950
+P 2900 5850
+F 0 "P4" H 2900 6000 50  0000 C CNN
+F 1 "Digital_Master" V 3000 5850 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_EH_B02B-EH-A_02x2.50mm_Straight" H 2900 5850 50  0001 C CNN
+F 3 "" H 2900 5850 50  0000 C CNN
+F 4 "02-1902" H 2900 5850 60  0001 C CNN "HPN"
+	1    2900 5850
 	-1   0    0    1   
 $EndComp
 $Comp
 L GND_slave #PWR025
 U 1 1 57F75110
-P 4700 6500
-F 0 "#PWR025" H 4700 6250 50  0001 C CNN
-F 1 "GND_slave" V 4700 6250 50  0000 C CNN
-F 2 "" H 4700 6500 50  0000 C CNN
-F 3 "" H 4700 6500 50  0000 C CNN
-	1    4700 6500
+P 4700 6400
+F 0 "#PWR025" H 4700 6150 50  0001 C CNN
+F 1 "GND_slave" V 4700 6150 50  0000 C CNN
+F 2 "" H 4700 6400 50  0000 C CNN
+F 3 "" H 4700 6400 50  0000 C CNN
+	1    4700 6400
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND_slave #PWR026
 U 1 1 57F75154
-P 4900 6500
-F 0 "#PWR026" H 4900 6250 50  0001 C CNN
-F 1 "GND_slave" V 4900 6250 50  0000 C CNN
-F 2 "" H 4900 6500 50  0000 C CNN
-F 3 "" H 4900 6500 50  0000 C CNN
-	1    4900 6500
+P 4900 6400
+F 0 "#PWR026" H 4900 6150 50  0001 C CNN
+F 1 "GND_slave" V 4900 6150 50  0000 C CNN
+F 2 "" H 4900 6400 50  0000 C CNN
+F 3 "" H 4900 6400 50  0000 C CNN
+	1    4900 6400
 	1    0    0    -1  
 $EndComp
 $Comp
 L R_Small R2
 U 1 1 57F7587F
-P 4700 6300
-F 0 "R2" H 4500 6350 50  0000 L CNN
-F 1 "10k" H 4500 6250 50  0000 L CNN
-F 2 "tera_rlc:R_0805in" H 4700 6300 50  0001 C CNN
-F 3 "" H 4700 6300 50  0000 C CNN
-F 4 "11-10K0" H 4700 6300 60  0001 C CNN "HPN"
-	1    4700 6300
+P 4700 6200
+F 0 "R2" H 4500 6250 50  0000 L CNN
+F 1 "10k" H 4500 6150 50  0000 L CNN
+F 2 "tera_rlc:R_0805in" H 4700 6200 50  0001 C CNN
+F 3 "" H 4700 6200 50  0000 C CNN
+F 4 "11-10K0" H 4700 6200 60  0001 C CNN "HPN"
+	1    4700 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L R_Small R3
 U 1 1 57F75B79
-P 4900 6300
-F 0 "R3" H 4959 6346 50  0000 L CNN
-F 1 "10k" H 4959 6255 50  0000 L CNN
-F 2 "tera_rlc:R_0805in" H 4900 6300 50  0001 C CNN
-F 3 "" H 4900 6300 50  0000 C CNN
-F 4 "11-10K0" H 4900 6300 60  0001 C CNN "HPN"
-	1    4900 6300
+P 4900 6200
+F 0 "R3" H 4959 6246 50  0000 L CNN
+F 1 "10k" H 4959 6155 50  0000 L CNN
+F 2 "tera_rlc:R_0805in" H 4900 6200 50  0001 C CNN
+F 3 "" H 4900 6200 50  0000 C CNN
+F 4 "11-10K0" H 4900 6200 60  0001 C CNN "HPN"
+	1    4900 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND_slave #PWR027
 U 1 1 57F76ABA
-P 4350 5800
-F 0 "#PWR027" H 4350 5550 50  0001 C CNN
-F 1 "GND_slave" V 4350 5550 50  0000 C CNN
-F 2 "" H 4350 5800 50  0000 C CNN
-F 3 "" H 4350 5800 50  0000 C CNN
-	1    4350 5800
+P 4450 5700
+F 0 "#PWR027" H 4450 5450 50  0001 C CNN
+F 1 "GND_slave" V 4450 5450 50  0000 C CNN
+F 2 "" H 4450 5700 50  0000 C CNN
+F 3 "" H 4450 5700 50  0000 C CNN
+	1    4450 5700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR028
 U 1 1 57F77062
-P 3550 5700
-F 0 "#PWR028" H 3550 5450 50  0001 C CNN
-F 1 "GND" H 3550 5550 50  0000 C CNN
-F 2 "" H 3550 5700 50  0000 C CNN
-F 3 "" H 3550 5700 50  0000 C CNN
-	1    3550 5700
-	0    1    1    0   
+P 3350 6050
+F 0 "#PWR028" H 3350 5800 50  0001 C CNN
+F 1 "GND" H 3350 5900 50  0000 C CNN
+F 2 "" H 3350 6050 50  0000 C CNN
+F 3 "" H 3350 6050 50  0000 C CNN
+	1    3350 6050
+	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_01X08 P2
@@ -680,8 +681,8 @@ Text Label 6000 3700 2    40   ~ 0
 MOSI_Slave
 Text Label 6000 3800 2    40   ~ 0
 NCS_Slave
-NoConn ~ 4300 5700
-NoConn ~ 3700 5800
+NoConn ~ 4300 6000
+NoConn ~ 3700 5700
 NoConn ~ 1350 3650
 NoConn ~ 1350 3750
 $Comp
@@ -843,21 +844,19 @@ Wire Wire Line
 	3700 5500 3700 5150
 Connection ~ 3700 5150
 Wire Wire Line
+	3100 5800 3700 5800
+Wire Wire Line
 	3100 5900 3700 5900
 Wire Wire Line
-	3100 6000 3700 6000
+	4700 6100 4700 5900
 Wire Wire Line
-	4700 6200 4700 6000
+	4900 6100 4900 5800
 Wire Wire Line
-	4900 6200 4900 5900
+	4700 6400 4700 6300
 Wire Wire Line
-	4700 6500 4700 6400
+	4900 6400 4900 6300
 Wire Wire Line
-	4900 6500 4900 6400
-Wire Wire Line
-	4350 5800 4300 5800
-Wire Wire Line
-	3550 5700 3700 5700
+	4300 5700 4450 5700
 Wire Wire Line
 	5850 4000 5850 3900
 Wire Wire Line
@@ -867,11 +866,11 @@ Wire Wire Line
 Wire Wire Line
 	5850 3200 6000 3200
 Wire Wire Line
-	4300 5900 5200 5900
+	4300 5800 5200 5800
 Wire Wire Line
-	4300 6000 5200 6000
-Connection ~ 4900 5900
-Connection ~ 4700 6000
+	4300 5900 5200 5900
+Connection ~ 4900 5800
+Connection ~ 4700 5900
 Wire Wire Line
 	1500 3050 1500 3150
 Connection ~ 1500 3150
@@ -879,4 +878,8 @@ Wire Wire Line
 	2700 1200 2700 1250
 Wire Notes Line
 	4000 550  4000 7600
+Wire Wire Line
+	3700 6000 3350 6000
+Wire Wire Line
+	3350 6000 3350 6050
 $EndSCHEMATC

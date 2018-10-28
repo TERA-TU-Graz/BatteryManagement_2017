@@ -3,7 +3,7 @@
   (general
     (links 127)
     (no_connects 0)
-    (area 101.424999 80.924999 159.075001 126.075001)
+    (area 95.367857 79.3425 167.822619 127.7925)
     (thickness 1.6)
     (drawings 13)
     (tracks 309)
@@ -31,7 +31,7 @@
     (34 B.Paste user)
     (35 F.Paste user)
     (36 B.SilkS user)
-    (37 F.SilkS user)
+    (37 F.SilkS user hide)
     (38 B.Mask user)
     (39 F.Mask user)
     (40 Dwgs.User user)
@@ -86,7 +86,7 @@
     (solder_mask_min_width 0.06)
     (aux_axis_origin 105 84.5)
     (grid_origin 105 84.5)
-    (visible_elements FFFFBF7F)
+    (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x010f0_ffffffff)
       (usegerberextensions false)

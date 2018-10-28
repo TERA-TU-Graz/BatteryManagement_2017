@@ -1,48 +1,10 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ft232rl
-LIBS:relais
-LIBS:Supply
-LIBS:tera_general
-LIBS:tera_switches
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
+EESchema Schematic File Version 4
 LIBS:BMS_Master_V6_kicad-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 14
+Sheet 12 16
 Title "BMS Master"
 Date "2017-01-06"
 Rev "6"
@@ -53,33 +15,35 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_01X02 P19
+L Connector_Generic:Conn_01x02 P19
 U 1 1 56F5D172
-P 750 2650
-F 0 "P19" H 700 2500 50  0000 C CNN
-F 1 "12V_CRTL" V 850 2650 50  0000 C CNN
-F 2 "tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 750 2650 50  0001 C CNN
-F 3 "" H 750 2650 50  0000 C CNN
-F 4 "02-0902" H 0   0   50  0001 C CNN "HPN"
-	1    750  2650
+P 750 2700
+F 0 "P19" H 750 2500 50  0000 C CNN
+F 1 "12V_CRTL" V 850 2700 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 750 2700 50  0001 C CNN
+F 3 "" H 750 2700 50  0000 C CNN
+F 4 "02-0902" H 0   50  50  0001 C CNN "HPN"
+	1    750  2700
 	-1   0    0    1   
 $EndComp
 $Comp
-L ZENER D16
+L Device:D_Zener D16
 U 1 1 56F5D22A
-P 1500 2850
-F 0 "D16" V 1454 2929 50  0000 L CNN
-F 1 "18V" V 1545 2929 50  0000 L CNN
-F 2 "tera_diodes:DO-214AA_with_vias_in_pad" H 1500 2850 50  0001 C CNN
-F 3 "" H 1500 2850 50  0000 C CNN
-F 4 "21-9003" H 0   0   50  0001 C CNN "HPN"
-	1    1500 2850
+P 1500 2800
+F 0 "D16" V 1454 2879 50  0000 L CNN
+F 1 "18V" V 1545 2879 50  0000 L CNN
+F 2 "tera_diodes:DO-214AA_with_vias_in_pad" H 1500 2800 50  0001 C CNN
+F 3 "" H 1500 2800 50  0000 C CNN
+F 4 "21-9003" H 0   -50 50  0001 C CNN "HPN"
+	1    1500 2800
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D18
+L BMS_Master_V6_kicad-rescue:LED-RESCUE-BMS_Master_V6_kicad D18
 U 1 1 56F5D2A9
 P 1900 3200
+AR Path="/56F5D2A9" Ref="D18"  Part="1" 
+AR Path="/56F5D14B/56F5D2A9" Ref="D18"  Part="1" 
 F 0 "D18" V 1946 3092 50  0000 R CNN
 F 1 "12V_CRTL_OK" V 1855 3092 50  0000 R CNN
 F 2 "tera_diodes:LED_0805" H 1900 3200 50  0001 C CNN
@@ -89,7 +53,7 @@ F 4 "21-0002" H 0   0   50  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R29
+L Device:R R29
 U 1 1 56F5D2F3
 P 1900 2800
 F 0 "R29" H 1970 2846 50  0000 L CNN
@@ -101,7 +65,7 @@ F 4 "11-12K0" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L DCDC_Stepdown_v6 PS1
+L tera_general:DCDC_Stepdown_v6 PS1
 U 1 1 56F5D54A
 P 4150 2600
 AR Path="/56F5D54A" Ref="PS1"  Part="1" 
@@ -115,7 +79,7 @@ F 4 "99-0025" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L DCDC_Stepdown_v6 PS2
+L tera_general:DCDC_Stepdown_v6 PS2
 U 1 1 56F5D766
 P 4150 4150
 AR Path="/56F5D766" Ref="PS2"  Part="1" 
@@ -129,33 +93,10 @@ F 4 "99-0026" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L ZENER D21
-U 1 1 56F5DE81
-P 5050 2850
-F 0 "D21" V 5004 2929 50  0000 L CNN
-F 1 "3V3" V 5095 2929 50  0000 L CNN
-F 2 "tera_diodes:DO-216AA" H 5050 2850 50  0001 C CNN
-F 3 "" H 5050 2850 50  0000 C CNN
-F 4 "21-9001" H 0   0   50  0001 C CNN "HPN"
-	1    5050 2850
-	0    1    1    0   
-$EndComp
-$Comp
-L ZENER D20
-U 1 1 56F5DF65
-P 5000 4400
-F 0 "D20" V 4954 4479 50  0000 L CNN
-F 1 "5V" V 5045 4479 50  0000 L CNN
-F 2 "tera_diodes:DO-216AA" H 5000 4400 50  0001 C CNN
-F 3 "" H 5000 4400 50  0000 C CNN
-	1    5000 4400
-	0    1    1    0   
-$EndComp
-$Comp
-L PWR_FLAG #FLG028
+L power:PWR_FLAG #FLG032
 U 1 1 56F5ECA0
 P 1250 2550
-F 0 "#FLG028" H 1250 2645 50  0001 C CNN
+F 0 "#FLG032" H 1250 2645 50  0001 C CNN
 F 1 "PWR_FLAG" H 1250 2774 50  0000 C CNN
 F 2 "" H 1250 2550 50  0000 C CNN
 F 3 "" H 1250 2550 50  0000 C CNN
@@ -163,9 +104,11 @@ F 3 "" H 1250 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D23
+L BMS_Master_V6_kicad-rescue:LED-RESCUE-BMS_Master_V6_kicad D23
 U 1 1 56F5F9F1
 P 5400 3200
+AR Path="/56F5F9F1" Ref="D23"  Part="1" 
+AR Path="/56F5D14B/56F5F9F1" Ref="D23"  Part="1" 
 F 0 "D23" V 5446 3092 50  0000 R CNN
 F 1 "3V3_OK" V 5355 3092 50  0000 R CNN
 F 2 "tera_diodes:LED_0805" H 5400 3200 50  0001 C CNN
@@ -175,21 +118,23 @@ F 4 "21-0002" H 0   0   50  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R32
+L Device:R R32
 U 1 1 56F5F9F7
 P 5400 2800
 F 0 "R32" H 5470 2846 50  0000 L CNN
 F 1 "2k2" H 5470 2755 50  0000 L CNN
-F 2 "tera_rlc:R_0805in" V 5330 2800 50  0001 C CNN
+F 2 "tera_rlc:R_0603in" V 5330 2800 50  0001 C CNN
 F 3 "" H 5400 2800 50  0000 C CNN
 F 4 "11-2K20" H 0   0   50  0001 C CNN "HPN"
 	1    5400 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D22
+L BMS_Master_V6_kicad-rescue:LED-RESCUE-BMS_Master_V6_kicad D22
 U 1 1 56F5FC4A
 P 5300 4750
+AR Path="/56F5FC4A" Ref="D22"  Part="1" 
+AR Path="/56F5D14B/56F5FC4A" Ref="D22"  Part="1" 
 F 0 "D22" V 5346 4642 50  0000 R CNN
 F 1 "5V_OK" V 5255 4642 50  0000 R CNN
 F 2 "tera_diodes:LED_0805" H 5300 4750 50  0001 C CNN
@@ -199,7 +144,7 @@ F 4 "21-0002" H 0   0   50  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R31
+L Device:R R31
 U 1 1 56F5FC50
 P 5300 4350
 F 0 "R31" H 5370 4396 50  0000 L CNN
@@ -211,33 +156,35 @@ F 4 "11-5K10" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P20
+L Connector_Generic:Conn_01x02 P20
 U 1 1 56F9CA97
-P 750 4200
-F 0 "P20" H 700 4050 50  0000 C CNN
-F 1 "12V_PWR" V 850 4200 50  0000 C CNN
-F 2 "tera_Connectors_Phoenix:MCV_1.5_2-GF-3.5" H 750 4200 50  0001 C CNN
-F 3 "" H 750 4200 50  0000 C CNN
-F 4 "05-1152" H 0   0   50  0001 C CNN "HPN"
-	1    750  4200
+P 750 4250
+F 0 "P20" H 750 4050 50  0000 C CNN
+F 1 "12V_PWR" V 850 4250 50  0000 C CNN
+F 2 "tera_Connectors_Phoenix:PhoenixContact_MC-GF_02x3.50mm_Angled_ThreadedFlange" H 750 4250 50  0001 C CNN
+F 3 "" H 750 4250 50  0000 C CNN
+F 4 "05-1152" H 0   50  50  0001 C CNN "HPN"
+	1    750  4250
 	-1   0    0    1   
 $EndComp
 $Comp
-L ZENER D17
+L Device:D_Zener D17
 U 1 1 56F9CA9D
-P 1500 4400
-F 0 "D17" V 1454 4479 50  0000 L CNN
-F 1 "18V" V 1545 4479 50  0000 L CNN
-F 2 "tera_diodes:DO-214AA_with_vias_in_pad" H 1500 4400 50  0001 C CNN
-F 3 "" H 1500 4400 50  0000 C CNN
-F 4 "21-9003" H 0   0   50  0001 C CNN "HPN"
-	1    1500 4400
+P 1500 4350
+F 0 "D17" V 1454 4429 50  0000 L CNN
+F 1 "18V" V 1545 4429 50  0000 L CNN
+F 2 "tera_diodes:DO-214AA_with_vias_in_pad" H 1500 4350 50  0001 C CNN
+F 3 "" H 1500 4350 50  0000 C CNN
+F 4 "21-9003" H 0   -50 50  0001 C CNN "HPN"
+	1    1500 4350
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D19
+L BMS_Master_V6_kicad-rescue:LED-RESCUE-BMS_Master_V6_kicad D19
 U 1 1 56F9CAA3
 P 1900 4750
+AR Path="/56F9CAA3" Ref="D19"  Part="1" 
+AR Path="/56F5D14B/56F9CAA3" Ref="D19"  Part="1" 
 F 0 "D19" V 1946 4642 50  0000 R CNN
 F 1 "12V_PWR_OK" V 1855 4642 50  0000 R CNN
 F 2 "tera_diodes:LED_0805" H 1900 4750 50  0001 C CNN
@@ -247,7 +194,7 @@ F 4 "21-0002" H 0   0   50  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R30
+L Device:R R30
 U 1 1 56F9CAA9
 P 1900 4350
 F 0 "R30" H 1970 4396 50  0000 L CNN
@@ -259,10 +206,10 @@ F 4 "11-12K0" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG029
+L power:PWR_FLAG #FLG033
 U 1 1 56F9CAB5
 P 1250 4100
-F 0 "#FLG029" H 1250 4195 50  0001 C CNN
+F 0 "#FLG033" H 1250 4195 50  0001 C CNN
 F 1 "PWR_FLAG" H 1250 4324 50  0000 C CNN
 F 2 "" H 1250 4100 50  0000 C CNN
 F 3 "" H 1250 4100 50  0000 C CNN
@@ -270,10 +217,10 @@ F 3 "" H 1250 4100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG030
+L power:PWR_FLAG #FLG034
 U 1 1 56F9CABE
 P 1050 4350
-F 0 "#FLG030" H 1050 4445 50  0001 C CNN
+F 0 "#FLG034" H 1050 4445 50  0001 C CNN
 F 1 "PWR_FLAG" H 1050 4573 50  0000 C CNN
 F 2 "" H 1050 4350 50  0000 C CNN
 F 3 "" H 1050 4350 50  0000 C CNN
@@ -301,13 +248,13 @@ Text Label 3550 4150 2    60   ~ 0
 Text HLabel 5600 5000 2    60   Output ~ 0
 GND
 Wire Wire Line
-	1300 3050 1500 3050
+	1300 2950 1500 2950
 Wire Wire Line
-	950  2600 2000 2600
+	950  2600 1250 2600
 Wire Wire Line
 	1500 2600 1500 2650
 Wire Wire Line
-	1300 2700 1300 3450
+	1300 2700 1300 2950
 Wire Wire Line
 	950  2700 1300 2700
 Wire Wire Line
@@ -321,9 +268,9 @@ Wire Wire Line
 Wire Wire Line
 	3550 4250 3750 4250
 Wire Wire Line
-	4550 4150 5450 4150
+	4550 4150 5300 4150
 Wire Wire Line
-	4550 2600 5550 2600
+	4550 2600 5400 2600
 Wire Wire Line
 	5400 2600 5400 2650
 Wire Wire Line
@@ -333,27 +280,23 @@ Wire Wire Line
 Wire Wire Line
 	5300 4550 5300 4500
 Wire Wire Line
-	5050 2650 5050 2600
-Wire Wire Line
-	5000 4200 5000 4150
-Wire Wire Line
 	1900 2600 1900 2650
 Wire Wire Line
 	1900 3000 1900 2950
 Wire Wire Line
-	1300 3450 5600 3450
+	1300 3450 1900 3450
 Wire Wire Line
 	1900 3450 1900 3400
 Wire Wire Line
-	1300 4600 1500 4600
+	1300 4500 1500 4500
 Wire Wire Line
-	950  4150 2000 4150
+	950  4150 1250 4150
 Wire Wire Line
 	1500 4150 1500 4200
 Wire Wire Line
-	1300 4250 1300 5000
+	1300 4250 1300 4500
 Wire Wire Line
-	950  4250 1300 4250
+	950  4250 1050 4250
 Wire Wire Line
 	1250 4100 1250 4150
 Wire Wire Line
@@ -363,17 +306,13 @@ Wire Wire Line
 Wire Wire Line
 	1900 4550 1900 4500
 Wire Wire Line
-	1300 5000 5600 5000
+	1300 5000 1900 5000
 Wire Wire Line
 	1900 5000 1900 4950
 Wire Wire Line
 	3550 2700 3550 3450
 Wire Wire Line
 	3550 4250 3550 5000
-Wire Wire Line
-	5000 4600 5000 5000
-Wire Wire Line
-	5050 3050 5050 3450
 Wire Wire Line
 	5400 3400 5400 3450
 Wire Wire Line
@@ -382,15 +321,13 @@ Wire Wire Line
 	4550 2700 4550 3450
 Wire Wire Line
 	4550 4250 4550 5000
-Connection ~ 1300 3050
+Connection ~ 1300 2950
 Connection ~ 1500 2600
 Connection ~ 1250 2600
-Connection ~ 5000 4150
-Connection ~ 5050 2600
 Connection ~ 5300 4150
 Connection ~ 5400 2600
 Connection ~ 1900 2600
-Connection ~ 1300 4600
+Connection ~ 1300 4500
 Connection ~ 1500 4150
 Connection ~ 1250 4150
 Connection ~ 1050 4250
@@ -401,8 +338,240 @@ Connection ~ 3550 5000
 Connection ~ 5300 5000
 Connection ~ 5400 3450
 Connection ~ 3550 3450
-Connection ~ 5000 5000
-Connection ~ 5050 3450
 Connection ~ 4550 3450
 Connection ~ 4550 5000
+$Comp
+L Supply:TSR_0.5-2433 G2
+U 1 1 5AB8AF7C
+P 10150 2550
+F 0 "G2" H 10125 2897 60  0000 C CNN
+F 1 "TSR_0.5-2433" H 10125 2791 60  0000 C CNN
+F 2 "traco_power:TSR_0.5" H 10050 2750 60  0001 C CNN
+F 3 "" H 10150 2550 60  0001 C CNN
+	1    10150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Supply:TSR_0.5-2450 G1
+U 1 1 5AB8AF83
+P 10150 1700
+F 0 "G1" H 10125 2047 60  0000 C CNN
+F 1 "TSR_0.5-2450" H 10125 1941 60  0000 C CNN
+F 2 "traco_power:TSR_0.5" H 10050 1900 60  0001 C CNN
+F 3 "" H 10150 1700 60  0001 C CNN
+	1    10150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Small L3
+U 1 1 5AB8AF8A
+P 9050 2450
+F 0 "L3" V 8872 2450 50  0000 C CNN
+F 1 "3u3" V 8963 2450 50  0000 C CNN
+F 2 "tera_rlc:L_0805in" H 9050 2450 50  0001 C CNN
+F 3 "" H 9050 2450 50  0000 C CNN
+	1    9050 2450
+	0    1    1    0   
+$EndComp
+Text Notes 8500 2250 0    30   ~ 0
+Example inductor: \nCPI0805E3R3R-10 
+$Comp
+L Device:C_Small C31
+U 1 1 5AB8AF92
+P 9250 2700
+F 0 "C31" H 9342 2746 50  0000 L CNN
+F 1 "4u7" H 9342 2655 50  0000 L CNN
+F 2 "tera_rlc:C_0805in" H 9342 2609 50  0001 L CNN
+F 3 "" H 9250 2700 50  0000 C CNN
+	1    9250 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C29
+U 1 1 5AB8AF99
+P 8800 2700
+F 0 "C29" H 8892 2746 50  0000 L CNN
+F 1 "4u7" H 8892 2655 50  0000 L CNN
+F 2 "tera_rlc:C_0805in" H 8892 2609 50  0001 L CNN
+F 3 "" H 8800 2700 50  0000 C CNN
+	1    8800 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 2450 9250 2450
+Wire Wire Line
+	9250 2600 9250 2450
+Connection ~ 9250 2450
+Wire Wire Line
+	8800 2600 8800 2450
+Wire Wire Line
+	8600 2450 8800 2450
+Connection ~ 8800 2450
+Wire Wire Line
+	10150 2850 10150 2750
+Wire Wire Line
+	8600 2850 8800 2850
+Wire Wire Line
+	9250 2850 9250 2800
+Wire Wire Line
+	8800 2850 8800 2800
+Connection ~ 9250 2850
+Text HLabel 10400 2450 2    60   Output ~ 0
++3V3
+Text HLabel 8600 2850 0    60   Input ~ 0
+GND
+Connection ~ 8800 2850
+$Comp
+L Device:L_Small L1
+U 1 1 5AB8AFAF
+P 9050 1600
+F 0 "L1" V 8872 1600 50  0000 C CNN
+F 1 "3u3" V 8963 1600 50  0000 C CNN
+F 2 "tera_rlc:L_0805in" H 9050 1600 50  0001 C CNN
+F 3 "" H 9050 1600 50  0000 C CNN
+	1    9050 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C30
+U 1 1 5AB8AFB6
+P 9250 1850
+F 0 "C30" H 9342 1896 50  0000 L CNN
+F 1 "4u7" H 9342 1805 50  0000 L CNN
+F 2 "tera_rlc:C_0805in" H 9342 1759 50  0001 L CNN
+F 3 "" H 9250 1850 50  0000 C CNN
+	1    9250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C19
+U 1 1 5AB8AFBD
+P 8800 1850
+F 0 "C19" H 8892 1896 50  0000 L CNN
+F 1 "4u7" H 8892 1805 50  0000 L CNN
+F 2 "tera_rlc:C_0805in" H 8892 1759 50  0001 L CNN
+F 3 "" H 8800 1850 50  0000 C CNN
+	1    8800 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1600 9250 1600
+Wire Wire Line
+	9250 1750 9250 1600
+Connection ~ 9250 1600
+Wire Wire Line
+	8800 1750 8800 1600
+Wire Wire Line
+	8600 1600 8800 1600
+Connection ~ 8800 1600
+Wire Wire Line
+	8600 2000 8800 2000
+Wire Wire Line
+	9250 2000 9250 1950
+Wire Wire Line
+	8800 2000 8800 1950
+Connection ~ 9250 2000
+Text HLabel 8600 2000 0    60   Input ~ 0
+GND
+Connection ~ 8800 2000
+Wire Wire Line
+	10150 2000 10150 1900
+Text HLabel 10400 1600 2    60   Output ~ 0
++5V
+Text Notes 7900 1250 0    60   ~ 0
+Replacement for TERA DC/DC\n\nInput filter should not be necessary for our application.
+Wire Notes Line
+	7000 500  7000 3250
+Wire Notes Line
+	7000 3250 11350 3250
+$Comp
+L power:PWR_FLAG #FLG035
+U 1 1 5AB8AFD6
+P 9400 1550
+F 0 "#FLG035" H 9400 1645 50  0001 C CNN
+F 1 "PWR_FLAG" H 9400 1774 50  0000 C CNN
+F 2 "" H 9400 1550 50  0000 C CNN
+F 3 "" H 9400 1550 50  0000 C CNN
+	1    9400 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1550 9400 1600
+Connection ~ 9400 1600
+$Comp
+L power:PWR_FLAG #FLG036
+U 1 1 5AB8AFDE
+P 9400 2400
+F 0 "#FLG036" H 9400 2495 50  0001 C CNN
+F 1 "PWR_FLAG" H 9400 2624 50  0000 C CNN
+F 2 "" H 9400 2400 50  0000 C CNN
+F 3 "" H 9400 2400 50  0000 C CNN
+	1    9400 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 2400 9400 2450
+Connection ~ 9400 2450
+Text Label 8600 1600 2    60   ~ 0
++12V_CRTL
+Text Label 8600 2450 2    60   ~ 0
++12V_CRTL
+Wire Wire Line
+	1300 2950 1300 3450
+Wire Wire Line
+	1500 2600 1900 2600
+Wire Wire Line
+	1250 2600 1500 2600
+Wire Wire Line
+	5300 4150 5450 4150
+Wire Wire Line
+	5400 2600 5550 2600
+Wire Wire Line
+	1900 2600 2000 2600
+Wire Wire Line
+	1300 4500 1300 5000
+Wire Wire Line
+	1500 4150 1900 4150
+Wire Wire Line
+	1250 4150 1500 4150
+Wire Wire Line
+	1050 4250 1300 4250
+Wire Wire Line
+	1900 4150 2000 4150
+Wire Wire Line
+	1900 3450 3550 3450
+Wire Wire Line
+	1900 5000 3550 5000
+Wire Wire Line
+	3550 5000 4550 5000
+Wire Wire Line
+	5300 5000 5600 5000
+Wire Wire Line
+	5400 3450 5600 3450
+Wire Wire Line
+	3550 3450 4550 3450
+Wire Wire Line
+	4550 3450 5400 3450
+Wire Wire Line
+	4550 5000 5300 5000
+Wire Wire Line
+	9250 2450 9400 2450
+Wire Wire Line
+	8800 2450 8950 2450
+Wire Wire Line
+	9250 2850 10150 2850
+Wire Wire Line
+	8800 2850 9250 2850
+Wire Wire Line
+	9250 1600 9400 1600
+Wire Wire Line
+	8800 1600 8950 1600
+Wire Wire Line
+	9250 2000 10150 2000
+Wire Wire Line
+	8800 2000 9250 2000
+Wire Wire Line
+	9400 1600 9850 1600
+Wire Wire Line
+	9400 2450 9850 2450
 $EndSCHEMATC

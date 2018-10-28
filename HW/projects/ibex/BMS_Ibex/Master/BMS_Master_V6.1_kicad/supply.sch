@@ -1,44 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ft232rl
-LIBS:relais
-LIBS:Supply
-LIBS:tera_general
-LIBS:tera_switches
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
+EESchema Schematic File Version 4
 LIBS:BMS_Master_V6_kicad-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -53,19 +15,19 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_01X02 P19
+L Connector_Generic:Conn_01x02 P19
 U 1 1 56F5D172
-P 750 2650
-F 0 "P19" H 700 2500 50  0000 C CNN
-F 1 "12V_CRTL" V 850 2650 50  0000 C CNN
-F 2 "tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 750 2650 50  0001 C CNN
-F 3 "" H 750 2650 50  0000 C CNN
-F 4 "02-0902" H 0   0   50  0001 C CNN "HPN"
-	1    750  2650
+P 750 2700
+F 0 "P19" H 700 2550 50  0000 C CNN
+F 1 "12V_CRTL" V 850 2700 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 750 2700 50  0001 C CNN
+F 3 "" H 750 2700 50  0000 C CNN
+F 4 "02-0902" H 0   50  50  0001 C CNN "HPN"
+	1    750  2700
 	-1   0    0    1   
 $EndComp
 $Comp
-L ZENER D16
+L Device:D_Zener D16
 U 1 1 56F5D22A
 P 1500 2850
 F 0 "D16" V 1454 2929 50  0000 L CNN
@@ -77,7 +39,7 @@ F 4 "21-9003" H 0   0   50  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D18
+L Device:LED D18
 U 1 1 56F5D2A9
 P 1900 3200
 F 0 "D18" V 1946 3092 50  0000 R CNN
@@ -89,7 +51,7 @@ F 4 "21-0002" H 0   0   50  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R29
+L Device:R R29
 U 1 1 56F5D2F3
 P 1900 2800
 F 0 "R29" H 1970 2846 50  0000 L CNN
@@ -101,7 +63,7 @@ F 4 "11-12K0" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L DCDC_Stepdown_v6 PS1
+L tera_general:DCDC_Stepdown_v6 PS1
 U 1 1 56F5D54A
 P 4150 2600
 AR Path="/56F5D54A" Ref="PS1"  Part="1" 
@@ -115,7 +77,7 @@ F 4 "99-0025" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L DCDC_Stepdown_v6 PS2
+L tera_general:DCDC_Stepdown_v6 PS2
 U 1 1 56F5D766
 P 4150 4150
 AR Path="/56F5D766" Ref="PS2"  Part="1" 
@@ -129,7 +91,7 @@ F 4 "99-0026" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L ZENER D21
+L Device:D_Zener D21
 U 1 1 56F5DE81
 P 5050 2850
 F 0 "D21" V 5004 2929 50  0000 L CNN
@@ -141,7 +103,7 @@ F 4 "21-9001" H 0   0   50  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L ZENER D20
+L Device:D_Zener D20
 U 1 1 56F5DF65
 P 5000 4400
 F 0 "D20" V 4954 4479 50  0000 L CNN
@@ -152,7 +114,7 @@ F 3 "" H 5000 4400 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PWR_FLAG #FLG028
+L power:PWR_FLAG #FLG028
 U 1 1 56F5ECA0
 P 1250 2550
 F 0 "#FLG028" H 1250 2645 50  0001 C CNN
@@ -163,7 +125,7 @@ F 3 "" H 1250 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D23
+L Device:LED D23
 U 1 1 56F5F9F1
 P 5400 3200
 F 0 "D23" V 5446 3092 50  0000 R CNN
@@ -175,7 +137,7 @@ F 4 "21-0002" H 0   0   50  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R32
+L Device:R R32
 U 1 1 56F5F9F7
 P 5400 2800
 F 0 "R32" H 5470 2846 50  0000 L CNN
@@ -187,7 +149,7 @@ F 4 "11-2K20" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D22
+L Device:LED D22
 U 1 1 56F5FC4A
 P 5300 4750
 F 0 "D22" V 5346 4642 50  0000 R CNN
@@ -199,7 +161,7 @@ F 4 "21-0002" H 0   0   50  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R31
+L Device:R R31
 U 1 1 56F5FC50
 P 5300 4350
 F 0 "R31" H 5370 4396 50  0000 L CNN
@@ -211,19 +173,19 @@ F 4 "11-5K10" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P20
+L Connector_Generic:Conn_01x02 P20
 U 1 1 56F9CA97
-P 750 4200
-F 0 "P20" H 700 4050 50  0000 C CNN
-F 1 "12V_PWR" V 850 4200 50  0000 C CNN
-F 2 "tera_Connectors_Phoenix:MCV_1.5_2-GF-3.5" H 750 4200 50  0001 C CNN
-F 3 "" H 750 4200 50  0000 C CNN
-F 4 "05-1152" H 0   0   50  0001 C CNN "HPN"
-	1    750  4200
+P 750 4250
+F 0 "P20" H 700 4100 50  0000 C CNN
+F 1 "12V_PWR" V 850 4250 50  0000 C CNN
+F 2 "tera_Connectors_Phoenix:MCV_1.5_2-GF-3.5" H 750 4250 50  0001 C CNN
+F 3 "" H 750 4250 50  0000 C CNN
+F 4 "05-1152" H 0   50  50  0001 C CNN "HPN"
+	1    750  4250
 	-1   0    0    1   
 $EndComp
 $Comp
-L ZENER D17
+L Device:D_Zener D17
 U 1 1 56F9CA9D
 P 1500 4400
 F 0 "D17" V 1454 4479 50  0000 L CNN
@@ -235,7 +197,7 @@ F 4 "21-9003" H 0   0   50  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D19
+L Device:LED D19
 U 1 1 56F9CAA3
 P 1900 4750
 F 0 "D19" V 1946 4642 50  0000 R CNN
@@ -247,7 +209,7 @@ F 4 "21-0002" H 0   0   50  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R30
+L Device:R R30
 U 1 1 56F9CAA9
 P 1900 4350
 F 0 "R30" H 1970 4396 50  0000 L CNN
@@ -259,7 +221,7 @@ F 4 "11-12K0" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG029
+L power:PWR_FLAG #FLG029
 U 1 1 56F9CAB5
 P 1250 4100
 F 0 "#FLG029" H 1250 4195 50  0001 C CNN
@@ -270,7 +232,7 @@ F 3 "" H 1250 4100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG030
+L power:PWR_FLAG #FLG030
 U 1 1 56F9CABE
 P 1050 4350
 F 0 "#FLG030" H 1050 4445 50  0001 C CNN
@@ -301,13 +263,13 @@ Text Label 3550 4150 2    60   ~ 0
 Text HLabel 5600 5000 2    60   Output ~ 0
 GND
 Wire Wire Line
-	1300 3050 1500 3050
+	1300 3000 1500 3000
 Wire Wire Line
-	950  2600 2000 2600
+	950  2600 1250 2600
 Wire Wire Line
-	1500 2600 1500 2650
+	1500 2600 1500 2700
 Wire Wire Line
-	1300 2700 1300 3450
+	1300 2700 1300 3000
 Wire Wire Line
 	950  2700 1300 2700
 Wire Wire Line
@@ -321,39 +283,39 @@ Wire Wire Line
 Wire Wire Line
 	3550 4250 3750 4250
 Wire Wire Line
-	4550 4150 5450 4150
+	4550 4150 5000 4150
 Wire Wire Line
-	4550 2600 5550 2600
+	4550 2600 5050 2600
 Wire Wire Line
 	5400 2600 5400 2650
 Wire Wire Line
-	5400 3000 5400 2950
+	5400 3050 5400 2950
 Wire Wire Line
 	5300 4150 5300 4200
 Wire Wire Line
-	5300 4550 5300 4500
+	5300 4600 5300 4500
 Wire Wire Line
-	5050 2650 5050 2600
+	5050 2700 5050 2600
 Wire Wire Line
-	5000 4200 5000 4150
+	5000 4250 5000 4150
 Wire Wire Line
 	1900 2600 1900 2650
 Wire Wire Line
-	1900 3000 1900 2950
+	1900 3050 1900 2950
 Wire Wire Line
-	1300 3450 5600 3450
+	1300 3450 1900 3450
 Wire Wire Line
-	1900 3450 1900 3400
+	1900 3450 1900 3350
 Wire Wire Line
-	1300 4600 1500 4600
+	1300 4550 1500 4550
 Wire Wire Line
-	950  4150 2000 4150
+	950  4150 1250 4150
 Wire Wire Line
-	1500 4150 1500 4200
+	1500 4150 1500 4250
 Wire Wire Line
-	1300 4250 1300 5000
+	1300 4250 1300 4550
 Wire Wire Line
-	950  4250 1300 4250
+	950  4250 1050 4250
 Wire Wire Line
 	1250 4100 1250 4150
 Wire Wire Line
@@ -361,28 +323,28 @@ Wire Wire Line
 Wire Wire Line
 	1900 4150 1900 4200
 Wire Wire Line
-	1900 4550 1900 4500
+	1900 4600 1900 4500
 Wire Wire Line
-	1300 5000 5600 5000
+	1300 5000 1900 5000
 Wire Wire Line
-	1900 5000 1900 4950
+	1900 5000 1900 4900
 Wire Wire Line
 	3550 2700 3550 3450
 Wire Wire Line
 	3550 4250 3550 5000
 Wire Wire Line
-	5000 4600 5000 5000
+	5000 4550 5000 5000
 Wire Wire Line
-	5050 3050 5050 3450
+	5050 3000 5050 3450
 Wire Wire Line
-	5400 3400 5400 3450
+	5400 3350 5400 3450
 Wire Wire Line
-	5300 4950 5300 5000
+	5300 4900 5300 5000
 Wire Wire Line
 	4550 2700 4550 3450
 Wire Wire Line
 	4550 4250 4550 5000
-Connection ~ 1300 3050
+Connection ~ 1300 3000
 Connection ~ 1500 2600
 Connection ~ 1250 2600
 Connection ~ 5000 4150
@@ -390,7 +352,7 @@ Connection ~ 5050 2600
 Connection ~ 5300 4150
 Connection ~ 5400 2600
 Connection ~ 1900 2600
-Connection ~ 1300 4600
+Connection ~ 1300 4550
 Connection ~ 1500 4150
 Connection ~ 1250 4150
 Connection ~ 1050 4250
@@ -405,4 +367,50 @@ Connection ~ 5000 5000
 Connection ~ 5050 3450
 Connection ~ 4550 3450
 Connection ~ 4550 5000
+Wire Wire Line
+	1300 3000 1300 3450
+Wire Wire Line
+	1500 2600 1900 2600
+Wire Wire Line
+	1250 2600 1500 2600
+Wire Wire Line
+	5000 4150 5300 4150
+Wire Wire Line
+	5050 2600 5400 2600
+Wire Wire Line
+	5300 4150 5450 4150
+Wire Wire Line
+	5400 2600 5550 2600
+Wire Wire Line
+	1900 2600 2000 2600
+Wire Wire Line
+	1300 4550 1300 5000
+Wire Wire Line
+	1500 4150 1900 4150
+Wire Wire Line
+	1250 4150 1500 4150
+Wire Wire Line
+	1050 4250 1300 4250
+Wire Wire Line
+	1900 4150 2000 4150
+Wire Wire Line
+	1900 3450 3550 3450
+Wire Wire Line
+	1900 5000 3550 5000
+Wire Wire Line
+	3550 5000 4550 5000
+Wire Wire Line
+	5300 5000 5600 5000
+Wire Wire Line
+	5400 3450 5600 3450
+Wire Wire Line
+	3550 3450 4550 3450
+Wire Wire Line
+	5000 5000 5300 5000
+Wire Wire Line
+	5050 3450 5400 3450
+Wire Wire Line
+	4550 3450 5050 3450
+Wire Wire Line
+	4550 5000 5000 5000
 $EndSCHEMATC
