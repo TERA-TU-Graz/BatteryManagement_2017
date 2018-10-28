@@ -1,45 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:relais
-LIBS:Supply
-LIBS:tera_general
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_switches
-LIBS:local_power
-LIBS:ft232rl
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
+EESchema Schematic File Version 4
 LIBS:bms_board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -60,7 +21,7 @@ Celln-
 Text HLabel 2750 3200 0    60   Input ~ 0
 Celln+
 $Comp
-L R R1
+L bms_board-rescue:R R1
 U 1 1 56F08038
 P 3800 3400
 AR Path="/56F07FAD/56F08038" Ref="R1"  Part="1" 
@@ -91,7 +52,7 @@ AR Path="/585C2532/5868B11E/56F08038" Ref="R62"  Part="1"
 AR Path="/585C2532/5868B125/56F08038" Ref="R67"  Part="1" 
 AR Path="/585C2532/5868CA28/56F08038" Ref="R72"  Part="1" 
 AR Path="/585C2532/5868CA2F/56F08038" Ref="R77"  Part="1" 
-F 0 "R1" V 3700 3350 50  0000 L CNN
+F 0 "R77" V 3700 3350 50  0000 L CNN
 F 1 "2K2" V 3800 3350 50  0000 L CNN
 F 2 "tera_rlc:R_0603in" V 3730 3400 50  0001 C CNN
 F 3 "" H 3800 3400 50  0000 C CNN
@@ -101,7 +62,7 @@ F 5 "Balancer" V 3800 3400 60  0001 C CNN "AssemblyVariant"
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2
+L bms_board-rescue:LED D2
 U 1 1 56F0808B
 P 3800 3850
 AR Path="/56F07FAD/56F0808B" Ref="D2"  Part="1" 
@@ -132,7 +93,7 @@ AR Path="/585C2532/5868B11E/56F0808B" Ref="D26"  Part="1"
 AR Path="/585C2532/5868B125/56F0808B" Ref="D29"  Part="1" 
 AR Path="/585C2532/5868CA28/56F0808B" Ref="D32"  Part="1" 
 AR Path="/585C2532/5868CA2F/56F0808B" Ref="D35"  Part="1" 
-F 0 "D2" V 3846 3742 50  0000 R CNN
+F 0 "D35" V 3846 3742 50  0000 R CNN
 F 1 "LED" V 3755 3742 50  0000 R CNN
 F 2 "tera_diodes:LED_0805" H 3800 3850 50  0001 C CNN
 F 3 "" H 3800 3850 50  0000 C CNN
@@ -142,7 +103,7 @@ F 5 "Balancer" V 3800 3850 60  0001 C CNN "AssemblyVariant"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ZENER D1
+L bms_board-rescue:ZENER D1
 U 1 1 56F08187
 P 2850 3850
 AR Path="/56F07FAD/56F08187" Ref="D1"  Part="1" 
@@ -173,7 +134,7 @@ AR Path="/585C2532/5868B11E/56F08187" Ref="D25"  Part="1"
 AR Path="/585C2532/5868B125/56F08187" Ref="D28"  Part="1" 
 AR Path="/585C2532/5868CA28/56F08187" Ref="D31"  Part="1" 
 AR Path="/585C2532/5868CA2F/56F08187" Ref="D34"  Part="1" 
-F 0 "D1" V 2804 3929 50  0000 L CNN
+F 0 "D34" V 2804 3929 50  0000 L CNN
 F 1 "5.1V" V 2895 3929 50  0000 L CNN
 F 2 "tera_diodes:SOD-323" H 2850 3850 50  0001 C CNN
 F 3 "" H 2850 3850 50  0000 C CNN
@@ -182,7 +143,7 @@ F 4 "21-2001" V 2850 3850 60  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L ZENER D3
+L bms_board-rescue:ZENER D3
 U 1 1 56F08242
 P 4750 4500
 AR Path="/56F07FAD/56F08242" Ref="D3"  Part="1" 
@@ -213,7 +174,7 @@ AR Path="/585C2532/5868B11E/56F08242" Ref="D27"  Part="1"
 AR Path="/585C2532/5868B125/56F08242" Ref="D30"  Part="1" 
 AR Path="/585C2532/5868CA28/56F08242" Ref="D33"  Part="1" 
 AR Path="/585C2532/5868CA2F/56F08242" Ref="D36"  Part="1" 
-F 0 "D3" V 4704 4579 50  0000 L CNN
+F 0 "D36" V 4704 4579 50  0000 L CNN
 F 1 "5.1V" V 4795 4579 50  0000 L CNN
 F 2 "tera_diodes:SOD-323" H 4750 4500 50  0001 C CNN
 F 3 "" H 4750 4500 50  0000 C CNN
@@ -223,7 +184,7 @@ F 5 "Balancer" V 4750 4500 60  0001 C CNN "AssemblyVariant"
 	0    1    1    0   
 $EndComp
 $Comp
-L BSS205N Q1
+L tera_general:BSS205N Q1
 U 1 1 56F08379
 P 3950 4500
 AR Path="/56F07FAD/56F08379" Ref="Q1"  Part="1" 
@@ -254,7 +215,7 @@ AR Path="/585C2532/5868B11E/56F08379" Ref="Q11"  Part="1"
 AR Path="/585C2532/5868B125/56F08379" Ref="Q12"  Part="1" 
 AR Path="/585C2532/5868CA28/56F08379" Ref="Q13"  Part="1" 
 AR Path="/585C2532/5868CA2F/56F08379" Ref="Q14"  Part="1" 
-F 0 "Q3" H 4023 4596 50  0000 L CNN
+F 0 "Q14" H 4023 4596 50  0000 L CNN
 F 1 "BSS205N" H 3550 4350 50  0000 L CNN
 F 2 "tera_atomic_infineon:BSS205N" H 4050 4475 50  0001 L CIN
 F 3 "" H 4050 4625 50  0000 L CNN
@@ -264,7 +225,7 @@ F 5 "Balancer" H 3950 4500 60  0001 C CNN "AssemblyVariant"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R R3
+L bms_board-rescue:R R3
 U 1 1 56F084AC
 P 5150 4500
 AR Path="/56F07FAD/56F084AC" Ref="R3"  Part="1" 
@@ -295,7 +256,7 @@ AR Path="/585C2532/5868B11E/56F084AC" Ref="R64"  Part="1"
 AR Path="/585C2532/5868B125/56F084AC" Ref="R69"  Part="1" 
 AR Path="/585C2532/5868CA28/56F084AC" Ref="R74"  Part="1" 
 AR Path="/585C2532/5868CA2F/56F084AC" Ref="R79"  Part="1" 
-F 0 "R3" H 5220 4546 50  0000 L CNN
+F 0 "R79" H 5220 4546 50  0000 L CNN
 F 1 "2M" H 5220 4455 50  0000 L CNN
 F 2 "tera_rlc:R_0603in" V 5080 4500 50  0001 C CNN
 F 3 "" H 5150 4500 50  0000 C CNN
@@ -305,7 +266,7 @@ F 5 "Balancer" H 5150 4500 60  0001 C CNN "AssemblyVariant"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L bms_board-rescue:R R4
 U 1 1 56F085A7
 P 5550 4250
 AR Path="/56F07FAD/56F085A7" Ref="R4"  Part="1" 
@@ -336,7 +297,7 @@ AR Path="/585C2532/5868B11E/56F085A7" Ref="R66"  Part="1"
 AR Path="/585C2532/5868B125/56F085A7" Ref="R71"  Part="1" 
 AR Path="/585C2532/5868CA28/56F085A7" Ref="R76"  Part="1" 
 AR Path="/585C2532/5868CA2F/56F085A7" Ref="R81"  Part="1" 
-F 0 "R6" V 5343 4250 50  0000 C CNN
+F 0 "R81" V 5343 4250 50  0000 C CNN
 F 1 "1K" V 5434 4250 50  0000 C CNN
 F 2 "tera_rlc:R_0603in" V 5480 4250 50  0001 C CNN
 F 3 "" H 5550 4250 50  0000 C CNN
@@ -395,7 +356,7 @@ Wire Wire Line
 Connection ~ 2850 3200
 Connection ~ 4100 3200
 $Comp
-L C C1
+L bms_board-rescue:C C1
 U 1 1 56F0944E
 P 3200 3900
 AR Path="/56F07FAD/56F0944E" Ref="C1"  Part="1" 
@@ -426,7 +387,8 @@ AR Path="/585C2532/5868B11E/56F0944E" Ref="C43"  Part="1"
 AR Path="/585C2532/5868B125/56F0944E" Ref="C45"  Part="1" 
 AR Path="/585C2532/5868CA28/56F0944E" Ref="C47"  Part="1" 
 AR Path="/585C2532/5868CA2F/56F0944E" Ref="C49"  Part="1" 
-F 0 "C3" H 3315 3946 50  0000 L CNN
+AR Path="/56F0944E" Ref="C49"  Part="1" 
+F 0 "C49" H 3315 3946 50  0000 L CNN
 F 1 "100n" H 3315 3855 50  0000 L CNN
 F 2 "tera_rlc:C_0603in" H 3238 3750 50  0001 C CNN
 F 3 "" H 3200 3900 50  0000 C CNN
@@ -441,7 +403,7 @@ Wire Wire Line
 	3200 4050 3200 4750
 Connection ~ 3200 4750
 $Comp
-L R R2
+L bms_board-rescue:R R2
 U 1 1 5862B789
 P 4100 3400
 AR Path="/5859336D/5862B589/5862B789" Ref="R2"  Part="1" 
@@ -466,7 +428,7 @@ AR Path="/585C2532/5868B11E/5862B789" Ref="R63"  Part="1"
 AR Path="/585C2532/5868B125/5862B789" Ref="R68"  Part="1" 
 AR Path="/585C2532/5868CA28/5862B789" Ref="R73"  Part="1" 
 AR Path="/585C2532/5868CA2F/5862B789" Ref="R78"  Part="1" 
-F 0 "R2" H 4170 3446 50  0000 L CNN
+F 0 "R78" H 4170 3446 50  0000 L CNN
 F 1 "180R" H 4170 3355 50  0000 L CNN
 F 2 "tera_rlc:R_0805in" V 4030 3400 50  0001 C CNN
 F 3 "" H 4100 3400 50  0000 C CNN
@@ -476,7 +438,7 @@ F 5 "Balancer" H 4100 3400 60  0001 C CNN "AssemblyVariant"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L bms_board-rescue:C C4
 U 1 1 5862BE29
 P 5700 3450
 AR Path="/5859336D/5862B589/5862BE29" Ref="C4"  Part="1" 
@@ -501,7 +463,8 @@ AR Path="/585C2532/5868B11E/5862BE29" Ref="C44"  Part="1"
 AR Path="/585C2532/5868B125/5862BE29" Ref="C46"  Part="1" 
 AR Path="/585C2532/5868CA28/5862BE29" Ref="C48"  Part="1" 
 AR Path="/585C2532/5868CA2F/5862BE29" Ref="C50"  Part="1" 
-F 0 "C4" H 5815 3496 50  0000 L CNN
+AR Path="/5862BE29" Ref="C50"  Part="1" 
+F 0 "C50" H 5815 3496 50  0000 L CNN
 F 1 "100n 50V" H 5815 3405 50  0000 L CNN
 F 2 "tera_rlc:C_0805in" H 5738 3300 50  0001 C CNN
 F 3 "" H 5700 3450 50  0000 C CNN
@@ -510,7 +473,7 @@ F 4 "50-100n" H 5700 3450 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L bms_board-rescue:R R4
 U 1 1 5862BF0B
 P 5450 3200
 AR Path="/5859336D/5862B589/5862BF0B" Ref="R4"  Part="1" 
@@ -535,7 +498,7 @@ AR Path="/585C2532/5868B11E/5862BF0B" Ref="R65"  Part="1"
 AR Path="/585C2532/5868B125/5862BF0B" Ref="R70"  Part="1" 
 AR Path="/585C2532/5868CA28/5862BF0B" Ref="R75"  Part="1" 
 AR Path="/585C2532/5868CA2F/5862BF0B" Ref="R80"  Part="1" 
-F 0 "R4" V 5243 3200 50  0000 C CNN
+F 0 "R80" V 5243 3200 50  0000 C CNN
 F 1 "1K" V 5334 3200 50  0000 C CNN
 F 2 "tera_rlc:R_0603in" V 5380 3200 50  0001 C CNN
 F 3 "" H 5450 3200 50  0000 C CNN

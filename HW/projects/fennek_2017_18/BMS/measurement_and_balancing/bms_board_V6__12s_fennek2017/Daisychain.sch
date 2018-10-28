@@ -1,45 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:relais
-LIBS:Supply
-LIBS:tera_general
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_switches
-LIBS:local_power
-LIBS:ft232rl
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
+EESchema Schematic File Version 4
 LIBS:bms_board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -54,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L R_Small R29
+L Device:R_Small R29
 U 1 1 5882CD79
 P 4150 4850
 F 0 "R29" V 4100 5000 50  0000 C CNN
@@ -66,7 +27,7 @@ F 4 "11-1K00" V 4150 4850 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R26
+L Device:R_Small R26
 U 1 1 5882CD80
 P 4150 2450
 F 0 "R26" V 4100 2600 50  0000 C CNN
@@ -78,7 +39,7 @@ F 4 "11-1K00" V 4150 2450 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R27
+L Device:R_Small R27
 U 1 1 5882CD87
 P 4150 2550
 F 0 "R27" V 4100 2700 50  0000 C CNN
@@ -90,7 +51,7 @@ F 4 "11-1K00" V 4150 2550 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R28
+L Device:R_Small R28
 U 1 1 5882CD8E
 P 4150 2900
 F 0 "R28" V 4100 3050 50  0000 C CNN
@@ -102,7 +63,7 @@ F 4 "11-1K00" V 4150 2900 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R22
+L Device:R_Small R22
 U 1 1 5882CD95
 P 3600 3100
 F 0 "R22" V 3700 3150 50  0000 C CNN
@@ -114,7 +75,7 @@ F 4 "11-2M00" V 3600 3100 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R23
+L Device:R_Small R23
 U 1 1 5882CD9C
 P 3800 3100
 F 0 "R23" V 3900 3150 50  0000 C CNN
@@ -126,7 +87,7 @@ F 4 "11-2M00" V 3800 3100 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R25
+L Device:R_Small R25
 U 1 1 5882CDA3
 P 4000 3100
 F 0 "R25" V 4100 3150 50  0000 C CNN
@@ -138,7 +99,7 @@ F 4 "11-2M00" V 4000 3100 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R24
+L Device:R_Small R24
 U 1 1 5882CDAA
 P 3800 5100
 F 0 "R24" V 3900 5050 50  0000 C CNN
@@ -150,7 +111,7 @@ F 4 "11-2M00" V 3800 5100 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C36
+L Device:C_Small C36
 U 1 1 5882CDB7
 P 3400 4400
 F 0 "C36" V 3300 4200 50  0000 L CNN
@@ -162,7 +123,7 @@ F 4 "50-33p0" V 3400 4400 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C_Small C35
+L Device:C_Small C35
 U 1 1 5882CDBE
 P 3400 2350
 F 0 "C35" V 3500 2350 50  0000 L CNN
@@ -174,7 +135,7 @@ F 4 "50-33p0" V 3400 2350 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R33
+L Device:R_Small R33
 U 1 1 5882CDD7
 P 5750 4750
 F 0 "R33" V 5700 4600 50  0000 C CNN
@@ -186,7 +147,7 @@ F 4 "11-1K00" V 5750 4750 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R32
+L Device:R_Small R32
 U 1 1 5882CDDE
 P 5750 4650
 F 0 "R32" V 5700 4500 50  0000 C CNN
@@ -198,7 +159,7 @@ F 4 "11-1K00" V 5750 4650 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R31
+L Device:R_Small R31
 U 1 1 5882CDE5
 P 5750 4550
 F 0 "R31" V 5700 4400 50  0000 C CNN
@@ -210,7 +171,7 @@ F 4 "11-1K00" V 5750 4550 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R30
+L Device:R_Small R30
 U 1 1 5882CDEC
 P 5750 2800
 F 0 "R30" V 5700 2650 50  0000 C CNN
@@ -222,7 +183,7 @@ F 4 "11-1K00" V 5750 2800 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C_Small C40
+L Device:C_Small C40
 U 1 1 5882CDF3
 P 6250 3050
 F 0 "C40" V 6150 2850 50  0000 L CNN
@@ -234,7 +195,7 @@ F 4 "50-33p0" V 6250 3050 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C_Small C38
+L Device:C_Small C38
 U 1 1 5882CDFA
 P 6050 3050
 F 0 "C38" V 5950 2850 50  0000 L CNN
@@ -246,7 +207,7 @@ F 4 "50-33p0" V 6050 3050 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C_Small C37
+L Device:C_Small C37
 U 1 1 5882CE01
 P 5850 3050
 F 0 "C37" V 5750 2850 50  0000 L CNN
@@ -258,7 +219,7 @@ F 4 "50-33p0" V 5850 3050 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C_Small C39
+L Device:C_Small C39
 U 1 1 5882CE08
 P 6050 5100
 F 0 "C39" V 5950 4900 50  0000 L CNN
@@ -270,7 +231,7 @@ F 4 "50-33p0" V 6050 5100 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R_Small R34
+L Device:R_Small R34
 U 1 1 5882CE0F
 P 6450 2300
 F 0 "R34" V 6400 2450 50  0000 C CNN
@@ -282,7 +243,7 @@ F 4 "11-510K" V 6450 2300 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R_Small R35
+L Device:R_Small R35
 U 1 1 5882CE16
 P 6550 4300
 F 0 "R35" V 6450 4300 50  0000 C CNN
@@ -436,7 +397,7 @@ DRDY_2
 Text HLabel 7150 4850 2    60   Output ~ 0
 CONV_2
 $Comp
-L C_Small C53
+L Device:C_Small C53
 U 1 1 5866A39B
 P 4950 3000
 F 0 "C53" V 4850 2800 50  0000 L CNN
@@ -448,7 +409,7 @@ F 4 "50-100n" V 4950 3000 60  0001 C CNN "HPN"
 	0    1    -1   0   
 $EndComp
 $Comp
-L C_Small C52
+L Device:C_Small C52
 U 1 1 5866BB1F
 P 4950 2300
 F 0 "C52" V 4850 2100 50  0000 L CNN
@@ -468,7 +429,7 @@ VBatt-
 Text HLabel 4850 2300 0    60   Input ~ 0
 VBatt-
 $Comp
-L C_Small C54
+L Device:C_Small C54
 U 1 1 5868D075
 P 4950 2650
 F 0 "C54" V 4850 2450 50  0000 L CNN

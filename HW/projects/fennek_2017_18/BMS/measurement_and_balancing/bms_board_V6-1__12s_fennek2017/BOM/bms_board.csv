@@ -1,14 +1,14 @@
 Title,BMS Monitor / Balancer for Fennek 2017
 Revision,6
 Date,2017-01-06
-Generated,Sat 25 Mar 2017 17:30:07 CET
+Generated,Fri 29 Jun 2018 20:52:31 CEST
 Company,TERA TU Graz
 Comment 1,Rene Pöschl
 Comment 2,
 Comment 3,
 Comment 4,
-Total Parts,193
-Total Unique Parts,28
+Total Parts,195
+Total Unique Parts,30
 
 
 
@@ -23,9 +23,11 @@ D2 D5 D8 D11 D14 D17 D20 D23 D26 D29 D32 D35 ,12,Balancer,21-0003,LED,tera_diode
 D1 D4 D7 D10 D13 D16 D19 D22 D25 D28 D31 D34 ,12, ,21-2001,5.1V,tera_diodes:SOD-323
 D3 D6 D9 D12 D15 D18 D21 D24 D27 D30 D33 D36 ,12,Balancer,21-2001,5.1V,tera_diodes:SOD-323
 IC1 IC2 ,2, ,20-0006,TI-bq76pl536,tera_atomic_ic:TI_bq76PL536
-P1 ,1, ,02-0013,Battery_Interface,tera_Connectors_JST:JST_XH_S13B-XH-A_13x2.50mm_Angled
+JP1 ,1, , ,JUMPER3_NO,tera_general:SOLDERJUMPER_3_1mm
 P2 ,1, ,03-0202,TS1,tera_Connectors_Molex:Molex_PicoBlade_53261-0271_02x1.25mm_Angled
 P3 ,1, ,03-0202,TS2,tera_Connectors_Molex:Molex_PicoBlade_53261-0271_02x1.25mm_Angled
+P5 ,1, , ,CONN_01X07,tera_Connectors_JST:JST_XH_S07B-XH-A_07x2.50mm_Angled
+P1 ,1, , ,CONN_01X07,tera_Connectors_JST:JST_EH_S07B-EH_07x2.50mm_Angled
 P4 ,1, ,03-0210,Host_Interface,tera_Connectors_Molex:Molex_PicoBlade_53398-1071_10x1.25mm_Straight
 Q3 Q4 Q5 Q6 Q7 Q8 Q9 Q10 Q11 Q12 Q13 Q14 ,12,Balancer,24-2050,BSS205N,tera_atomic_infineon:BSS205N
 Q1 Q2 ,2, ,24-2050,BSS205N,tera_atomic_infineon:BSS205N
@@ -46,4 +48,4 @@ X1 X2 ,2, ,09-1003,Prog_Voltage,Socket_Strips:Socket_Strip_Straight_1x02
 
 
 BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
-Generated Sat 25 Mar 2017 17:30:07 CET
+Generated Fri 29 Jun 2018 20:52:31 CEST

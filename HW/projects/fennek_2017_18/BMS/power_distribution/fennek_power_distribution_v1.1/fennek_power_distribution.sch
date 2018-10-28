@@ -1,46 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:local_power
-LIBS:ft232rl
-LIBS:relais
-LIBS:Supply
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
-LIBS:tera_general
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_switches
-LIBS:tera_sensoric
+EESchema Schematic File Version 4
 LIBS:fennek_power_distribution-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -55,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_01X03 P1
+L Connector_Generic:Conn_01x03 P1
 U 1 1 5863D1BB
 P 1000 2550
 F 0 "P1" H 1078 2591 50  0000 L CNN
@@ -67,7 +27,7 @@ F 4 "05-1103" H 1000 2550 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR6
+L power:GND #PWR6
 U 1 1 5863D868
 P 1800 2750
 F 0 "#PWR6" H 1800 2500 50  0001 C CNN
@@ -78,7 +38,7 @@ F 3 "" H 1800 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L HV+ #PWR8
+L local_power:HV+ #PWR8
 U 1 1 5863D9C6
 P 2700 2350
 F 0 "#PWR8" H 2700 2200 50  0001 C CNN
@@ -89,7 +49,7 @@ F 3 "" H 2700 2350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L F_Small F1
+L Device:Fuse_Small F1
 U 1 1 5863DA17
 P 1500 2400
 F 0 "F1" H 1500 2585 50  0000 C CNN
@@ -101,7 +61,7 @@ F 4 "94-0101" H 1500 2400 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG1
+L power:PWR_FLAG #FLG1
 U 1 1 5863DA83
 P 1800 2300
 F 0 "#FLG1" H 1800 2395 50  0001 C CNN
@@ -112,7 +72,7 @@ F 3 "" H 1800 2300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ZENERsmall D1
+L Device:D_Zener_Small D1
 U 1 1 5863DB17
 P 1700 2550
 F 0 "D1" V 1654 2619 50  0000 L CNN
@@ -125,19 +85,19 @@ F 4 "21-9002" V 1700 2550 60  0001 C CNN "HPN"
 $EndComp
 NoConn ~ 1200 2550
 $Comp
-L CONN_01X04 P4
+L Connector_Generic:Conn_01x04 P4
 U 1 1 5863F70A
-P 3100 2150
-F 0 "P4" H 3178 2191 50  0000 L CNN
-F 1 "HV_Emergency_Stop_Relay" H 3178 2100 50  0000 L CNN
-F 2 "tera_Connectors_Phoenix:PhoenixContact_MSTBA-G_04x5.08mm_Angled" H 3100 2150 50  0001 C CNN
-F 3 "" H 3100 2150 50  0000 C CNN
-F 4 "05-1104" H 3100 2150 60  0001 C CNN "HPN"
-	1    3100 2150
+P 3150 2150
+F 0 "P4" H 3228 2191 50  0000 L CNN
+F 1 "HV_Emergency_Stop_Relay" H 3228 2100 50  0000 L CNN
+F 2 "tera_Connectors_Phoenix:PhoenixContact_MSTBA-G_04x5.08mm_Angled" H 3150 2150 50  0001 C CNN
+F 3 "" H 3150 2150 50  0000 C CNN
+F 4 "05-1104" H 3150 2150 60  0001 C CNN "HPN"
+	1    3150 2150
 	0    1    -1   0   
 $EndComp
 $Comp
-L R_Small R2
+L Device:R_Small R2
 U 1 1 5864126B
 P 3950 2400
 F 0 "R2" V 3754 2400 50  0000 C CNN
@@ -149,7 +109,7 @@ F 4 "17-470R" V 3950 2400 60  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil K1
+L relais:Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil K1
 U 2 1 58641406
 P 3950 2650
 F 0 "K1" V 3850 2650 60  0000 C CNN
@@ -161,19 +121,19 @@ F 4 "96-2005" V 3950 2650 60  0001 C CNN "HPN"
 	0    -1   1    0   
 $EndComp
 $Comp
-L CONN_01X02 P6
+L Connector_Generic:Conn_01x02 P6
 U 1 1 58641B67
-P 6150 2450
-F 0 "P6" H 6228 2491 50  0000 L CNN
-F 1 "MCU_HV_supply" H 6228 2400 50  0000 L CNN
-F 2 "tera_Connectors_Phoenix:PhoenixContact_MSTB-GF_02x5.08mm_Angled_ThreadedFlange" H 6227 2354 50  0001 L CNN
-F 3 "" H 6150 2450 50  0000 C CNN
-F 4 "05-1302" H 6150 2450 60  0001 C CNN "HPN"
-	1    6150 2450
+P 6150 2500
+F 0 "P6" H 6228 2541 50  0000 L CNN
+F 1 "MCU_HV_supply" H 6228 2450 50  0000 L CNN
+F 2 "tera_Connectors_Phoenix:PhoenixContact_MSTB-GF_02x5.08mm_Angled_ThreadedFlange" H 6227 2404 50  0001 L CNN
+F 3 "" H 6150 2500 50  0000 C CNN
+F 4 "05-1302" H 6150 2500 60  0001 C CNN "HPN"
+	1    6150 2500
 	1    0    0    1   
 $EndComp
 $Comp
-L GND #PWR19
+L power:GND #PWR19
 U 1 1 5864213B
 P 5850 2600
 F 0 "#PWR19" H 5850 2350 50  0001 C CNN
@@ -186,7 +146,7 @@ $EndComp
 NoConn ~ 4200 2650
 NoConn ~ 4200 2550
 $Comp
-L Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil K1
+L relais:Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil K1
 U 1 1 58643134
 P 8550 2000
 F 0 "K1" H 8600 2100 60  0000 L CNN
@@ -198,19 +158,19 @@ F 4 "96-2005" H 8550 2000 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X04 P10
+L Connector_Generic:Conn_01x04 P10
 U 1 1 58643784
-P 7750 2300
-F 0 "P10" H 7828 2341 50  0000 L CNN
-F 1 "Precharge_relays" H 7828 2250 50  0000 L CNN
-F 2 "tera_Connectors_JST:JST_EH_B04B-EH-A_04x2.50mm_Straight" H 7750 2300 50  0001 C CNN
-F 3 "" H 7750 2300 50  0000 C CNN
-F 4 "02-1904" H 7750 2300 60  0001 C CNN "HPN"
-	1    7750 2300
+P 7750 2350
+F 0 "P10" H 7828 2391 50  0000 L CNN
+F 1 "Precharge_relays" H 7828 2300 50  0000 L CNN
+F 2 "tera_Connectors_JST:JST_EH_B04B-EH-A_04x2.50mm_Straight" H 7750 2350 50  0001 C CNN
+F 3 "" H 7750 2350 50  0000 C CNN
+F 4 "02-1904" H 7750 2350 60  0001 C CNN "HPN"
+	1    7750 2350
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R11
+L Device:R_Small R11
 U 1 1 58644192
 P 8250 2450
 F 0 "R11" V 8450 2450 50  0000 C CNN
@@ -222,7 +182,7 @@ F 4 "13-510R" V 8250 2450 60  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L CP_Small C3
+L Device:CP_Small C3
 U 1 1 586449C4
 P 9700 2000
 F 0 "C3" H 9788 2046 50  0000 L CNN
@@ -234,7 +194,7 @@ F 4 "55-820u" H 9700 2000 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R13
+L Device:R_Small R13
 U 1 1 58644CEB
 P 9050 1800
 F 0 "R13" V 8854 1800 50  0000 C CNN
@@ -248,7 +208,7 @@ $EndComp
 Text Notes 9700 1750 0    40   ~ 0
 Delays turning off. \nEnsures that main \nrelay is turned of first.
 $Comp
-L C_Small C2
+L Device:C_Small C2
 U 1 1 58647508
 P 5550 1500
 F 0 "C2" V 5500 1450 50  0000 R CNN
@@ -260,7 +220,7 @@ F 4 "51-1n00" V 5550 1500 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_01X03 P5
+L Connector_Generic:Conn_01x03 P5
 U 1 1 58648896
 P 5450 950
 F 0 "P5" V 5415 1128 50  0000 L CNN
@@ -272,7 +232,7 @@ F 4 "03-0203" V 5450 950 60  0001 C CNN "HPN"
 	0    1    -1   0   
 $EndComp
 $Comp
-L C_Small C1
+L Device:C_Small C1
 U 1 1 5864A2A6
 P 2250 1500
 F 0 "C1" V 2200 1450 50  0000 R CNN
@@ -284,7 +244,7 @@ F 4 "51-1n00" V 2250 1500 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_01X03 P3
+L Connector_Generic:Conn_01x03 P3
 U 1 1 5864A2B0
 P 2150 950
 F 0 "P3" V 2115 1128 50  0000 L CNN
@@ -296,7 +256,7 @@ F 4 "03-0203" V 2150 950 60  0001 C CNN "HPN"
 	0    1    -1   0   
 $EndComp
 $Comp
-L R_Small R14
+L Device:R_Small R14
 U 1 1 5864CFE0
 P 9450 1800
 F 0 "R14" V 9254 1800 50  0000 C CNN
@@ -308,7 +268,7 @@ F 4 "14-22R0" V 9450 1800 60  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L TEN_30-xxxx_single_output U1
+L Supply:TEN_30-xxxx_single_output U1
 U 1 1 5866B6D2
 P 1550 4700
 F 0 "U1" H 1550 4950 60  0000 C CNN
@@ -320,19 +280,19 @@ F 4 "90-1031" H 1550 4700 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P13
+L Connector_Generic:Conn_01x02 P13
 U 1 1 5866C1DE
-P 10600 5700
-F 0 "P13" H 10677 5741 50  0000 L CNN
-F 1 "SEM_telemetry_supply" H 10550 5850 40  0000 L CNN
-F 2 "tera_Connectors_Phoenix:PhoenixContact_MC-GF_02x3.50mm_Angled_ThreadedFlange" H 10677 5604 50  0001 L CNN
-F 3 "" H 10600 5700 50  0000 C CNN
-F 4 "05-1252" H 10600 5700 60  0001 C CNN "HPN"
-	1    10600 5700
+P 10600 5750
+F 0 "P13" H 10677 5791 50  0000 L CNN
+F 1 "SEM_telemetry_supply" H 10550 5900 40  0000 L CNN
+F 2 "tera_Connectors_Phoenix:PhoenixContact_MC-GF_02x3.50mm_Angled_ThreadedFlange" H 10677 5654 50  0001 L CNN
+F 3 "" H 10600 5750 50  0000 C CNN
+F 4 "05-1252" H 10600 5750 60  0001 C CNN "HPN"
+	1    10600 5750
 	1    0    0    1   
 $EndComp
 $Comp
-L ZENERsmall D12
+L Device:D_Zener_Small D12
 U 1 1 5866C5E6
 P 10150 5700
 F 0 "D12" V 10104 5769 50  0000 L CNN
@@ -344,7 +304,7 @@ F 4 "21-9008" V 10150 5700 60  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L F_Small F7
+L Device:Fuse_Small F7
 U 1 1 5866CDBA
 P 9250 5500
 F 0 "F7" H 9250 5685 50  0000 C CNN
@@ -357,7 +317,7 @@ F 4 "94-1000" H 9250 5500 60  0001 C CNN "HPN"
 $EndComp
 NoConn ~ 8100 5700
 $Comp
-L GND #PWR25
+L power:GND #PWR25
 U 1 1 5866EFBA
 P 7950 5950
 F 0 "#PWR25" H 7950 5700 50  0001 C CNN
@@ -372,7 +332,7 @@ HV_switched
 Text GLabel 4450 2300 1    60   Output ~ 0
 HV_switched
 $Comp
-L HV+ #PWR24
+L local_power:HV+ #PWR24
 U 1 1 58677169
 P 7900 5250
 F 0 "#PWR24" H 7900 5100 50  0001 C CNN
@@ -383,7 +343,7 @@ F 3 "" H 7900 5250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L JUMPER3_NO JP1
+L tera_general:JUMPER3_NO JP1
 U 1 1 5867830A
 P 7550 5300
 F 0 "JP1" H 7550 5501 50  0000 C CNN
@@ -394,7 +354,7 @@ F 3 "" H 7550 5300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L F_Small F2
+L Device:Fuse_Small F2
 U 1 1 5867ABD3
 P 2500 4550
 F 0 "F2" H 2500 4735 50  0000 C CNN
@@ -406,7 +366,7 @@ F 4 "94-1000" H 2500 4550 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L ZENERsmall D4
+L Device:D_Zener_Small D4
 U 1 1 5867ACDC
 P 2700 4700
 F 0 "D4" V 2654 4769 50  0000 L CNN
@@ -418,7 +378,7 @@ F 4 "21-9008" V 2700 4700 60  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L HV+ #PWR3
+L local_power:HV+ #PWR3
 U 1 1 5867CF4D
 P 800 4550
 F 0 "#PWR3" H 800 4400 50  0001 C CNN
@@ -429,7 +389,7 @@ F 3 "" H 800 4550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR4
+L power:GND #PWR4
 U 1 1 5867DAE8
 P 800 4850
 F 0 "#PWR4" H 800 4600 50  0001 C CNN
@@ -442,7 +402,7 @@ $EndComp
 NoConn ~ 1050 4700
 NoConn ~ 2050 4800
 $Comp
-L GND #PWR9
+L power:GND #PWR9
 U 1 1 5867E963
 P 2700 4900
 F 0 "#PWR9" H 2700 4650 50  0001 C CNN
@@ -453,7 +413,7 @@ F 3 "" H 2700 4900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR10
+L power:+12V #PWR10
 U 1 1 5867EF81
 P 2900 4400
 F 0 "#PWR10" H 2900 4250 50  0001 C CNN
@@ -464,7 +424,7 @@ F 3 "" H 2900 4400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L F_Small F3
+L Device:Fuse_Small F3
 U 1 1 58680389
 P 4100 4550
 F 0 "F3" H 4100 4735 50  0000 C CNN
@@ -476,19 +436,19 @@ F 4 "94-5010" H 4100 4550 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X04 P7
+L Connector_Generic:Conn_01x04 P7
 U 1 1 586815E9
-P 6250 4600
-F 0 "P7" H 6300 4850 50  0000 C CNN
-F 1 "BMS_supply" V 6350 4600 50  0000 C CNN
-F 2 "tera_Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 6250 4600 50  0001 C CNN
-F 3 "" H 6250 4600 50  0000 C CNN
-F 4 "02-0904" H 6250 4600 60  0001 C CNN "HPN"
-	1    6250 4600
+P 6250 4550
+F 0 "P7" H 6300 4800 50  0000 C CNN
+F 1 "BMS_supply" V 6350 4550 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 6250 4550 50  0001 C CNN
+F 3 "" H 6250 4550 50  0000 C CNN
+F 4 "02-0904" H 6250 4550 60  0001 C CNN "HPN"
+	1    6250 4550
 	1    0    0    -1  
 $EndComp
 $Comp
-L F_Small F5
+L Device:Fuse_Small F5
 U 1 1 58684411
 P 5100 4850
 F 0 "F5" H 5100 5035 50  0000 C CNN
@@ -500,7 +460,7 @@ F 4 "94-5010" H 5100 4850 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR22
+L power:GND #PWR22
 U 1 1 58685A41
 P 6000 4650
 F 0 "#PWR22" H 6000 4400 50  0001 C CNN
@@ -511,7 +471,7 @@ F 3 "" H 6000 4650 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR21
+L power:GND #PWR21
 U 1 1 58685BF0
 P 6000 4450
 F 0 "#PWR21" H 6000 4200 50  0001 C CNN
@@ -522,7 +482,7 @@ F 3 "" H 6000 4450 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L F_Small F4
+L Device:Fuse_Small F4
 U 1 1 58687758
 P 4100 6150
 F 0 "F4" H 4100 6050 50  0000 C CNN
@@ -534,19 +494,19 @@ F 4 "94-5010" H 4100 6150 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P8
+L Connector_Generic:Conn_01x02 P8
 U 1 1 58688B14
-P 6250 6200
-F 0 "P8" H 6168 5925 50  0000 C CNN
-F 1 "HMI_supply" H 6168 6016 50  0000 C CNN
-F 2 "tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 6168 6017 50  0001 C CNN
-F 3 "" H 6250 6200 50  0000 C CNN
-F 4 "02-0902" H 6250 6200 60  0001 C CNN "HPN"
-	1    6250 6200
+P 6250 6250
+F 0 "P8" H 6168 5975 50  0000 C CNN
+F 1 "HMI_supply" H 6168 6066 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 6168 6067 50  0001 C CNN
+F 3 "" H 6250 6250 50  0000 C CNN
+F 4 "02-0902" H 6250 6250 60  0001 C CNN "HPN"
+	1    6250 6250
 	1    0    0    1   
 $EndComp
 $Comp
-L GND #PWR23
+L power:GND #PWR23
 U 1 1 5868A649
 P 6000 6250
 F 0 "#PWR23" H 6000 6000 50  0001 C CNN
@@ -557,19 +517,19 @@ F 3 "" H 6000 6250 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_01X02 P9
+L Connector_Generic:Conn_01x02 P9
 U 1 1 5868A77D
-P 6250 6650
-F 0 "P9" H 6168 6375 50  0000 C CNN
-F 1 "Future_use" H 6168 6466 50  0000 C CNN
-F 2 "tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 6168 6467 50  0001 C CNN
-F 3 "" H 6250 6650 50  0000 C CNN
-F 4 "02-0902" H 6250 6650 60  0001 C CNN "HPN"
-	1    6250 6650
+P 6250 6700
+F 0 "P9" H 6168 6425 50  0000 C CNN
+F 1 "Future_use" H 6168 6516 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 6168 6517 50  0001 C CNN
+F 3 "" H 6250 6700 50  0000 C CNN
+F 4 "02-0902" H 6250 6700 60  0001 C CNN "HPN"
+	1    6250 6700
 	1    0    0    1   
 $EndComp
 $Comp
-L F_Small F6
+L Device:Fuse_Small F6
 U 1 1 5868A887
 P 5150 6600
 F 0 "F6" H 5150 6785 50  0000 C CNN
@@ -581,7 +541,7 @@ F 4 "94-5010" H 5150 6600 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR20
+L power:GND #PWR20
 U 1 1 5868AB31
 P 5950 6700
 F 0 "#PWR20" H 5950 6450 50  0001 C CNN
@@ -592,7 +552,7 @@ F 3 "" H 5950 6700 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil K2
+L relais:Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil K2
 U 2 1 5868F6C3
 P 3350 4750
 F 0 "K2" V 3250 4750 60  0000 C CNN
@@ -604,7 +564,7 @@ F 4 "96-2005" V 3350 4750 60  0001 C CNN "HPN"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil K2
+L relais:Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil K2
 U 1 1 58691E37
 P 2300 6200
 F 0 "K2" H 2350 6300 60  0000 L CNN
@@ -616,19 +576,19 @@ F 4 "96-2005" H 2300 6200 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X04 P2
+L Connector_Generic:Conn_01x04 P2
 U 1 1 58691E3D
-P 1500 6500
-F 0 "P2" H 1578 6541 50  0000 L CNN
-F 1 "12V_relays" H 1578 6450 50  0000 L CNN
-F 2 "tera_Connectors_JST:JST_EH_B04B-EH-A_04x2.50mm_Straight" H 1500 6500 50  0001 C CNN
-F 3 "" H 1500 6500 50  0000 C CNN
-F 4 "02-1904" H 1500 6500 60  0001 C CNN "HPN"
-	1    1500 6500
+P 1500 6550
+F 0 "P2" H 1578 6591 50  0000 L CNN
+F 1 "12V_relays" H 1578 6500 50  0000 L CNN
+F 2 "tera_Connectors_JST:JST_EH_B04B-EH-A_04x2.50mm_Straight" H 1500 6550 50  0001 C CNN
+F 3 "" H 1500 6550 50  0000 C CNN
+F 4 "02-1904" H 1500 6550 60  0001 C CNN "HPN"
+	1    1500 6550
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R1
+L Device:R_Small R1
 U 1 1 58691E5D
 P 2000 6650
 F 0 "R1" V 2200 6650 50  0000 C CNN
@@ -640,7 +600,7 @@ F 4 "13-510R" V 2000 6650 60  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L +12V #PWR5
+L power:+12V #PWR5
 U 1 1 586966D5
 P 1550 5900
 F 0 "#PWR5" H 1550 5750 50  0001 C CNN
@@ -655,31 +615,31 @@ NoConn ~ 3600 4650
 NoConn ~ 1700 6450
 NoConn ~ 1700 6350
 $Comp
-L CONN_01X04 P11
+L Connector_Generic:Conn_01x04 P11
 U 1 1 5869AAEB
-P 7900 1000
-F 0 "P11" H 7978 1041 50  0000 L CNN
-F 1 "Main_relay" H 7978 950 50  0000 L CNN
-F 2 "tera_Connectors_JST:JST_EH_B04B-EH-A_04x2.50mm_Straight" H 7900 1000 50  0001 C CNN
-F 3 "" H 7900 1000 50  0000 C CNN
-F 4 "02-1904" H 7900 1000 60  0001 C CNN "HPN"
-	1    7900 1000
+P 7900 1050
+F 0 "P11" H 7978 1091 50  0000 L CNN
+F 1 "Main_relay" H 7978 1000 50  0000 L CNN
+F 2 "tera_Connectors_JST:JST_EH_B04B-EH-A_04x2.50mm_Straight" H 7900 1050 50  0001 C CNN
+F 3 "" H 7900 1050 50  0000 C CNN
+F 4 "02-1904" H 7900 1050 60  0001 C CNN "HPN"
+	1    7900 1050
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_01X02 P12
+L Connector_Generic:Conn_01x02 P12
 U 1 1 5869B22F
-P 9400 1000
-F 0 "P12" H 9550 950 50  0000 C CNN
-F 1 "Main_relay_coil" H 9750 1050 50  0000 C CNN
-F 2 "tera_Connectors_JST:JST_EH_B02B-EH-A_02x2.50mm_Straight" H 9318 817 50  0001 C CNN
-F 3 "" H 9400 1000 50  0000 C CNN
-F 4 "02-1902" H 9400 1000 60  0001 C CNN "HPN"
-	1    9400 1000
+P 9400 1050
+F 0 "P12" H 9550 1000 50  0000 C CNN
+F 1 "Main_relay_coil" H 9750 1100 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_EH_B02B-EH-A_02x2.50mm_Straight" H 9318 867 50  0001 C CNN
+F 3 "" H 9400 1050 50  0000 C CNN
+F 4 "02-1902" H 9400 1050 60  0001 C CNN "HPN"
+	1    9400 1050
 	1    0    0    1   
 $EndComp
 $Comp
-L D_Small D10
+L Device:D_Small D10
 U 1 1 5869C2E8
 P 8500 850
 F 0 "D10" H 8500 1055 50  0000 C CNN
@@ -691,7 +651,7 @@ F 4 "21-1105" H 8500 850 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R_Small R12
+L Device:R_Small R12
 U 1 1 5869D2E7
 P 8250 1150
 F 0 "R12" V 8450 1150 50  0000 C CNN
@@ -703,7 +663,7 @@ F 4 "13-10R0" V 8250 1150 60  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L IRLML2246TRPBF-1 Q1
+L tera_general:IRLML2246TRPBF-1 Q1
 U 1 1 586ACC5A
 P 3950 5150
 F 0 "Q1" H 3800 5050 50  0000 L CNN
@@ -715,7 +675,7 @@ F 4 "24-2253" H 3950 5150 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R3
+L Device:R_Small R3
 U 1 1 586B7AAD
 P 3950 5450
 F 0 "R3" H 4009 5496 50  0000 L CNN
@@ -727,7 +687,7 @@ F 4 "11-12K0" H 3950 5450 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D5
+L Device:LED_Small D5
 U 1 1 586BC4F0
 P 3950 5650
 F 0 "D5" V 3950 5600 50  0000 R CNN
@@ -739,7 +699,7 @@ F 4 "21-0001" V 3950 5650 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR11
+L power:GND #PWR11
 U 1 1 586BE962
 P 3950 5750
 F 0 "#PWR11" H 3950 5500 50  0001 C CNN
@@ -750,7 +710,7 @@ F 3 "" H 3950 5750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L IRLML2246TRPBF-1 Q3
+L tera_general:IRLML2246TRPBF-1 Q3
 U 1 1 586BF6F5
 P 4950 5150
 F 0 "Q3" H 5038 5154 50  0000 L CNN
@@ -762,7 +722,7 @@ F 4 "24-2253" H 4950 5150 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R7
+L Device:R_Small R7
 U 1 1 586BF6FE
 P 4950 5450
 F 0 "R7" H 5009 5496 50  0000 L CNN
@@ -774,7 +734,7 @@ F 4 "11-12K0" H 4950 5450 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D7
+L Device:LED_Small D7
 U 1 1 586BF704
 P 4950 5650
 F 0 "D7" V 4950 5600 50  0000 R CNN
@@ -786,7 +746,7 @@ F 4 "21-0001" V 4950 5650 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR15
+L power:GND #PWR15
 U 1 1 586BF70A
 P 4950 5750
 F 0 "#PWR15" H 4950 5500 50  0001 C CNN
@@ -797,7 +757,7 @@ F 3 "" H 4950 5750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R5
+L Device:R_Small R5
 U 1 1 586C064C
 P 4250 5450
 F 0 "R5" H 4309 5496 50  0000 L CNN
@@ -809,7 +769,7 @@ F 4 "11-100K" H 4250 5450 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR13
+L power:GND #PWR13
 U 1 1 586C08A3
 P 4250 5550
 F 0 "#PWR13" H 4250 5300 50  0001 C CNN
@@ -820,7 +780,7 @@ F 3 "" H 4250 5550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R9
+L Device:R_Small R9
 U 1 1 586C11CA
 P 5250 5450
 F 0 "R9" H 5309 5496 50  0000 L CNN
@@ -832,7 +792,7 @@ F 4 "11-100K" H 5250 5450 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR17
+L power:GND #PWR17
 U 1 1 586C12A6
 P 5250 5550
 F 0 "#PWR17" H 5250 5300 50  0001 C CNN
@@ -843,7 +803,7 @@ F 3 "" H 5250 5550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L IRLML2246TRPBF-1 Q2
+L tera_general:IRLML2246TRPBF-1 Q2
 U 1 1 586C6D8A
 P 3950 6900
 F 0 "Q2" H 4038 6904 50  0000 L CNN
@@ -855,7 +815,7 @@ F 4 "24-2253" H 3950 6900 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R4
+L Device:R_Small R4
 U 1 1 586C6D91
 P 3950 7200
 F 0 "R4" H 4009 7246 50  0000 L CNN
@@ -867,7 +827,7 @@ F 4 "11-12K0" H 3950 7200 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D6
+L Device:LED_Small D6
 U 1 1 586C6D97
 P 3950 7400
 F 0 "D6" V 3950 7350 50  0000 R CNN
@@ -879,7 +839,7 @@ F 4 "21-0001" V 3950 7400 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR12
+L power:GND #PWR12
 U 1 1 586C6D9D
 P 3950 7500
 F 0 "#PWR12" H 3950 7250 50  0001 C CNN
@@ -890,7 +850,7 @@ F 3 "" H 3950 7500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R6
+L Device:R_Small R6
 U 1 1 586C6DA5
 P 4250 7200
 F 0 "R6" H 4309 7246 50  0000 L CNN
@@ -902,7 +862,7 @@ F 4 "11-100K" H 4250 7200 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR14
+L power:GND #PWR14
 U 1 1 586C6DAB
 P 4250 7300
 F 0 "#PWR14" H 4250 7050 50  0001 C CNN
@@ -913,7 +873,7 @@ F 3 "" H 4250 7300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L IRLML2246TRPBF-1 Q4
+L tera_general:IRLML2246TRPBF-1 Q4
 U 1 1 586C6F6C
 P 5000 6900
 F 0 "Q4" H 5088 6904 50  0000 L CNN
@@ -925,7 +885,7 @@ F 4 "24-2253" H 5000 6900 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R8
+L Device:R_Small R8
 U 1 1 586C6F73
 P 5000 7200
 F 0 "R8" H 5059 7246 50  0000 L CNN
@@ -937,7 +897,7 @@ F 4 "11-12K0" H 5000 7200 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D8
+L Device:LED_Small D8
 U 1 1 586C6F79
 P 5000 7400
 F 0 "D8" V 5000 7350 50  0000 R CNN
@@ -949,7 +909,7 @@ F 4 "21-0001" V 5000 7400 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR16
+L power:GND #PWR16
 U 1 1 586C6F7F
 P 5000 7500
 F 0 "#PWR16" H 5000 7250 50  0001 C CNN
@@ -960,7 +920,7 @@ F 3 "" H 5000 7500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R10
+L Device:R_Small R10
 U 1 1 586C6F87
 P 5300 7200
 F 0 "R10" H 5359 7246 50  0000 L CNN
@@ -972,7 +932,7 @@ F 4 "11-100K" H 5300 7200 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR18
+L power:GND #PWR18
 U 1 1 586C6F8D
 P 5300 7300
 F 0 "#PWR18" H 5300 7050 50  0001 C CNN
@@ -989,14 +949,14 @@ Wire Wire Line
 Wire Wire Line
 	1200 2650 1200 2700
 Wire Wire Line
-	1200 2700 1800 2700
+	1200 2700 1700 2700
 Wire Wire Line
 	1700 2700 1700 2650
 Wire Wire Line
 	1800 2700 1800 2750
 Connection ~ 1700 2700
 Wire Wire Line
-	1600 2400 2100 2400
+	1600 2400 1700 2400
 Wire Wire Line
 	1700 2400 1700 2450
 Connection ~ 1700 2400
@@ -1016,13 +976,13 @@ Wire Wire Line
 Wire Wire Line
 	4250 2850 4200 2850
 Wire Wire Line
-	4250 2400 4250 2850
+	4250 2400 4250 2750
 Wire Wire Line
 	4250 2750 4200 2750
 Wire Wire Line
 	3700 2750 3750 2750
 Wire Wire Line
-	3700 2400 3700 2750
+	3700 2400 3700 2650
 Wire Wire Line
 	3700 2650 3750 2650
 Connection ~ 3700 2400
@@ -1034,13 +994,13 @@ Wire Wire Line
 Wire Wire Line
 	5850 2500 5950 2500
 Wire Wire Line
-	8350 1800 8950 1800
+	8350 1800 8550 1800
 Wire Wire Line
 	8550 1800 8550 1850
 Wire Wire Line
 	8150 1800 8000 1800
 Wire Wire Line
-	8000 1800 8000 2250
+	8000 1800 8000 2150
 Wire Wire Line
 	8000 2250 7950 2250
 Wire Wire Line
@@ -1052,9 +1012,9 @@ Connection ~ 8550 1800
 Wire Wire Line
 	8850 2100 8850 2200
 Wire Wire Line
-	8550 2200 9700 2200
+	8550 2200 8850 2200
 Wire Wire Line
-	8550 2150 8550 2450
+	8550 2150 8550 2200
 Wire Wire Line
 	8550 2350 7950 2350
 Connection ~ 8550 2200
@@ -1098,16 +1058,16 @@ Wire Wire Line
 Wire Wire Line
 	5700 1300 5550 1300
 Wire Wire Line
-	5550 1150 5550 1400
+	5550 1150 5550 1200
 Connection ~ 5550 1300
 Wire Wire Line
 	5450 1150 5450 1700
 Wire Wire Line
-	5350 1150 5350 1700
+	5350 1150 5350 1200
 Wire Wire Line
 	5350 1700 5300 1700
 Wire Wire Line
-	2300 2400 2950 2400
+	2300 2400 2400 2400
 Wire Wire Line
 	2000 2400 2000 2350
 Wire Wire Line
@@ -1125,26 +1085,26 @@ Wire Wire Line
 Wire Wire Line
 	2400 1300 2250 1300
 Wire Wire Line
-	2250 1150 2250 1400
+	2250 1150 2250 1200
 Connection ~ 2250 1300
 Wire Wire Line
 	2150 1150 2150 1700
 Wire Wire Line
-	2050 1150 2050 1700
+	2050 1150 2050 1200
 Wire Wire Line
 	2050 1700 2000 1700
 Wire Wire Line
 	2700 2350 2700 2400
 Connection ~ 2700 2400
 Wire Wire Line
-	9350 5500 10400 5500
+	9350 5500 10150 5500
 Wire Wire Line
 	10400 5500 10400 5650
 Wire Wire Line
 	10150 5500 10150 5600
 Connection ~ 10150 5500
 Wire Wire Line
-	9100 5900 10400 5900
+	9100 5900 10150 5900
 Wire Wire Line
 	10400 5900 10400 5750
 Wire Wire Line
@@ -1153,7 +1113,7 @@ Connection ~ 10150 5900
 Wire Wire Line
 	7950 5900 8100 5900
 Wire Wire Line
-	7950 5800 7950 5950
+	7950 5800 7950 5900
 Wire Wire Line
 	8100 5800 7950 5800
 Connection ~ 7950 5900
@@ -1162,17 +1122,17 @@ Wire Wire Line
 Wire Wire Line
 	7950 5600 7950 5500
 Wire Wire Line
-	7500 5500 8100 5500
+	7500 5500 7550 5500
 Connection ~ 7950 5500
 Wire Wire Line
 	4450 2400 4450 2300
 Connection ~ 4450 2400
 Wire Wire Line
-	5600 2400 5950 2400
+	5600 2400 5700 2400
 Wire Wire Line
-	4050 2400 5400 2400
+	4050 2400 4250 2400
 Wire Wire Line
-	3250 2400 3850 2400
+	3250 2400 3350 2400
 Wire Wire Line
 	7900 5250 7900 5300
 Wire Wire Line
@@ -1196,9 +1156,9 @@ Wire Wire Line
 Wire Wire Line
 	2150 4600 2150 4550
 Wire Wire Line
-	2150 4550 2400 4550
+	2150 4550 2250 4550
 Wire Wire Line
-	2600 4550 4000 4550
+	2600 4550 2700 4550
 Wire Wire Line
 	2700 4550 2700 4600
 Wire Wire Line
@@ -1208,7 +1168,7 @@ Wire Wire Line
 Wire Wire Line
 	2150 4850 2700 4850
 Wire Wire Line
-	2700 4800 2700 4900
+	2700 4800 2700 4850
 Connection ~ 2700 4850
 Connection ~ 2700 4550
 Wire Wire Line
@@ -1218,38 +1178,38 @@ Wire Wire Line
 	3100 4850 3150 4850
 Connection ~ 3100 4550
 Wire Wire Line
-	3600 4850 5000 4850
+	3600 4850 3700 4850
 Wire Wire Line
 	3600 4950 3700 4950
 Wire Wire Line
-	3700 4850 3700 6600
+	3700 4850 3700 4950
 Connection ~ 3700 4850
 Wire Wire Line
-	5200 4850 5700 4850
+	5200 4850 5250 4850
 Wire Wire Line
 	5700 4850 5700 4750
 Wire Wire Line
 	5700 4750 6050 4750
 Wire Wire Line
-	4200 4550 6050 4550
+	4200 4550 4250 4550
 Wire Wire Line
 	6000 4650 6050 4650
 Wire Wire Line
-	3700 6150 4000 6150
+	3700 6150 3950 6150
 Connection ~ 3700 4950
 Wire Wire Line
-	4200 6150 6050 6150
+	4200 6150 4250 6150
 Wire Wire Line
 	6000 6250 6050 6250
 Wire Wire Line
-	5250 6600 6050 6600
+	5250 6600 5300 6600
 Wire Wire Line
-	3700 6600 5050 6600
+	3700 6600 5000 6600
 Connection ~ 3700 6150
 Wire Wire Line
 	5950 6700 6050 6700
 Wire Wire Line
-	3100 4550 3100 4850
+	3100 4550 3100 4750
 Wire Wire Line
 	3150 4750 3100 4750
 Connection ~ 3100 4750
@@ -1263,7 +1223,7 @@ Connection ~ 2300 6000
 Wire Wire Line
 	2600 6300 2600 6400
 Wire Wire Line
-	2300 6350 2300 6650
+	2300 6350 2300 6400
 Wire Wire Line
 	2300 6550 1700 6550
 Connection ~ 2300 6400
@@ -1273,13 +1233,13 @@ Wire Wire Line
 	2300 6650 2100 6650
 Connection ~ 2300 6550
 Wire Wire Line
-	2100 6000 2600 6000
+	2100 6000 2300 6000
 Wire Wire Line
 	2600 6400 2300 6400
 Wire Wire Line
 	1550 6000 1550 5900
 Wire Wire Line
-	8100 850  8400 850 
+	8100 850  8200 850 
 Wire Wire Line
 	8100 950  8200 950 
 Wire Wire Line
@@ -1288,16 +1248,16 @@ Connection ~ 8200 850
 Wire Wire Line
 	8400 1050 8400 1150
 Wire Wire Line
-	8350 1150 9200 1150
+	8350 1150 8400 1150
 Wire Wire Line
 	8150 1150 8100 1150
 Wire Wire Line
-	8600 850  9200 850 
+	8600 850  9050 850 
 Wire Wire Line
 	3950 4550 3950 5050
 Connection ~ 3950 4550
 Wire Wire Line
-	4250 4550 4250 5350
+	4250 4550 4250 5150
 Wire Wire Line
 	4250 5150 4150 5150
 Connection ~ 4250 4550
@@ -1307,21 +1267,21 @@ Wire Wire Line
 	4950 5050 4950 4850
 Connection ~ 4950 4850
 Wire Wire Line
-	5250 4850 5250 5350
+	5250 4850 5250 5150
 Connection ~ 5250 4850
 Connection ~ 4250 5150
 Connection ~ 5250 5150
 Wire Wire Line
 	4250 6900 4150 6900
 Wire Wire Line
-	4250 6150 4250 7100
+	4250 6150 4250 6900
 Connection ~ 4250 6900
 Wire Wire Line
 	5300 6900 5200 6900
 Wire Wire Line
 	5000 6800 5000 6600
 Wire Wire Line
-	5300 6600 5300 7100
+	5300 6600 5300 6900
 Connection ~ 5300 6900
 Wire Wire Line
 	3950 6800 3950 6150
@@ -1330,7 +1290,7 @@ Connection ~ 4250 6150
 Connection ~ 5000 6600
 Connection ~ 5300 6600
 $Comp
-L PWR_FLAG #FLG2
+L power:PWR_FLAG #FLG2
 U 1 1 5870F6DD
 P 2000 1200
 F 0 "#FLG2" H 2000 1295 50  0001 C CNN
@@ -1344,7 +1304,7 @@ Wire Wire Line
 	2000 1200 2050 1200
 Connection ~ 2050 1200
 $Comp
-L PWR_FLAG #FLG3
+L power:PWR_FLAG #FLG3
 U 1 1 58710B56
 P 2300 1200
 F 0 "#FLG3" H 2300 1295 50  0001 C CNN
@@ -1358,7 +1318,7 @@ Wire Wire Line
 	2300 1200 2250 1200
 Connection ~ 2250 1200
 $Comp
-L PWR_FLAG #FLG9
+L power:PWR_FLAG #FLG9
 U 1 1 5871110B
 P 5600 1200
 F 0 "#FLG9" H 5600 1295 50  0001 C CNN
@@ -1369,7 +1329,7 @@ F 3 "" H 5600 1200 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L PWR_FLAG #FLG8
+L power:PWR_FLAG #FLG8
 U 1 1 587111D0
 P 5300 1200
 F 0 "#FLG8" H 5300 1295 50  0001 C CNN
@@ -1386,7 +1346,7 @@ Wire Wire Line
 	5550 1200 5600 1200
 Connection ~ 5550 1200
 $Comp
-L PWR_FLAG #FLG4
+L power:PWR_FLAG #FLG4
 U 1 1 5871485B
 P 2550 2450
 F 0 "#FLG4" H 2550 2545 50  0001 C CNN
@@ -1400,7 +1360,7 @@ Wire Wire Line
 	2550 2450 2550 2400
 Connection ~ 2550 2400
 $Comp
-L PWR_FLAG #FLG6
+L power:PWR_FLAG #FLG6
 U 1 1 58715044
 P 3350 2450
 F 0 "#FLG6" H 3350 2545 50  0001 C CNN
@@ -1414,7 +1374,7 @@ Wire Wire Line
 	3350 2450 3350 2400
 Connection ~ 3350 2400
 $Comp
-L PWR_FLAG #FLG7
+L power:PWR_FLAG #FLG7
 U 1 1 58716F31
 P 4550 2450
 F 0 "#FLG7" H 4550 2545 50  0001 C CNN
@@ -1428,7 +1388,7 @@ Wire Wire Line
 	4550 2450 4550 2400
 Connection ~ 4550 2400
 $Comp
-L PWR_FLAG #FLG10
+L power:PWR_FLAG #FLG10
 U 1 1 58718C6E
 P 5900 2350
 F 0 "#FLG10" H 5900 2445 50  0001 C CNN
@@ -1442,7 +1402,7 @@ Wire Wire Line
 	5900 2350 5900 2400
 Connection ~ 5900 2400
 $Comp
-L PWR_FLAG #FLG5
+L power:PWR_FLAG #FLG5
 U 1 1 5871C2EA
 P 2750 4450
 F 0 "#FLG5" H 2750 4545 50  0001 C CNN
@@ -1456,7 +1416,7 @@ Wire Wire Line
 	2750 4450 2750 4550
 Connection ~ 2750 4550
 $Comp
-L PWR_FLAG #FLG11
+L power:PWR_FLAG #FLG11
 U 1 1 5871E2DE
 P 7500 5500
 F 0 "#FLG11" H 7500 5595 50  0001 C CNN
@@ -1470,7 +1430,7 @@ Connection ~ 7550 5500
 Text Notes 9450 1250 0    40   ~ 0
 Omron G9EB1B12DC\nCoil: 12VDC/207mA (58Ohm)
 $Comp
-L D_Small D9
+L Device:D_Small D9
 U 1 1 586ADF50
 P 8250 1800
 F 0 "D9" H 8250 2005 50  0000 C CNN
@@ -1482,7 +1442,7 @@ F 4 "21-1105" H 8250 1800 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L D_Small D11
+L Device:D_Small D11
 U 1 1 586AE041
 P 8850 2000
 F 0 "D11" H 8950 2050 50  0000 C CNN
@@ -1494,7 +1454,7 @@ F 4 "21-1105" H 8850 2000 60  0001 C CNN "HPN"
 	0    -1   1    0   
 $EndComp
 $Comp
-L D_Small D2
+L Device:D_Small D2
 U 1 1 586AFD3E
 P 2000 6000
 F 0 "D2" H 2000 6205 50  0000 C CNN
@@ -1506,7 +1466,7 @@ F 4 "21-1105" H 2000 6000 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L D_Small D3
+L Device:D_Small D3
 U 1 1 586B2A07
 P 2600 6200
 F 0 "D3" H 2600 6000 50  0000 C CNN
@@ -1528,7 +1488,7 @@ Text Notes 6100 2700 0    60   ~ 0
 Wire Wire Line
 	6050 4450 6000 4450
 $Comp
-L D_Small D13
+L Device:D_Small D13
 U 1 1 586C4178
 P 9050 1000
 F 0 "D13" H 9050 900 50  0000 C CNN
@@ -1569,7 +1529,7 @@ GND_telemetry
 Text Label 9600 5500 0    40   ~ 0
 +12V_telemetry
 $Comp
-L ACS722LLCTR-20AB-T IC1
+L tera_sensoric:ACS722LLCTR-20AB-T IC1
 U 1 1 58AC5CE9
 P 2200 2000
 F 0 "IC1" H 2350 2350 60  0000 R CNN
@@ -1581,7 +1541,7 @@ F 4 "98-0013" H 2200 1500 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ACS722LLCTR-20AB-T IC2
+L tera_sensoric:ACS722LLCTR-20AB-T IC2
 U 1 1 58AC6448
 P 5500 2000
 F 0 "IC2" H 5650 2350 60  0000 R CNN
@@ -1593,7 +1553,7 @@ F 4 "98-0013" H 5500 1500 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L THD_12-xxxx_single_output U2
+L Supply:THD_12-xxxx_single_output U2
 U 1 1 5866B9F7
 P 8600 5700
 F 0 "U2" H 8600 6000 60  0000 C CNN
@@ -1609,7 +1569,7 @@ Wire Wire Line
 Text Notes 7650 2850 0    40   ~ 0
 Holding voltage: 0.4 Un => R11 max = 600 Ohm
 $Comp
-L THD_12-xxxx_single_output U3
+L Supply:THD_12-xxxx_single_output U3
 U 1 1 59202526
 P 1500 3750
 F 0 "U3" H 1500 4150 60  0000 C CNN
@@ -1622,7 +1582,7 @@ F 4 "90-1021" H 1500 3750 60  0001 C CNN "HPN"
 $EndComp
 NoConn ~ 1000 3750
 $Comp
-L GND #PWR2
+L power:GND #PWR2
 U 1 1 59206457
 P 800 4000
 F 0 "#PWR2" H 800 3750 50  0001 C CNN
@@ -1635,14 +1595,14 @@ $EndComp
 Wire Wire Line
 	800  4000 800  3950
 Wire Wire Line
-	800  3950 1000 3950
+	800  3950 900  3950
 Wire Wire Line
 	1000 3850 900  3850
 Wire Wire Line
 	900  3850 900  3950
 Connection ~ 900  3950
 $Comp
-L HV+ #PWR1
+L local_power:HV+ #PWR1
 U 1 1 5920676F
 P 800 3450
 F 0 "#PWR1" H 800 3300 50  0001 C CNN
@@ -1657,12 +1617,12 @@ Wire Wire Line
 Wire Wire Line
 	950  3650 1000 3650
 Wire Wire Line
-	800  3550 1000 3550
+	800  3550 950  3550
 Connection ~ 950  3550
 Wire Wire Line
 	800  3550 800  3450
 $Comp
-L GND #PWR7
+L power:GND #PWR7
 U 1 1 59207ACB
 P 2100 4000
 F 0 "#PWR7" H 2100 3750 50  0001 C CNN
@@ -1683,4 +1643,134 @@ Wire Wire Line
 Connection ~ 2250 4550
 Text Label 2250 3550 0    60   ~ 0
 12VDC_after_traco
+Wire Wire Line
+	1700 2700 1800 2700
+Wire Wire Line
+	1700 2400 1800 2400
+Wire Wire Line
+	1800 2400 2000 2400
+Wire Wire Line
+	3700 2400 3850 2400
+Wire Wire Line
+	3700 2650 3700 2750
+Wire Wire Line
+	4250 2750 4250 2850
+Wire Wire Line
+	4250 2400 4450 2400
+Wire Wire Line
+	8000 2150 8000 2250
+Wire Wire Line
+	8550 1800 8850 1800
+Wire Wire Line
+	8550 2200 8550 2350
+Wire Wire Line
+	8550 2350 8550 2450
+Wire Wire Line
+	8850 1800 8950 1800
+Wire Wire Line
+	8850 2200 9700 2200
+Wire Wire Line
+	5300 2400 5400 2400
+Wire Wire Line
+	5700 2400 5900 2400
+Wire Wire Line
+	5550 1300 5550 1400
+Wire Wire Line
+	2000 2400 2100 2400
+Wire Wire Line
+	2400 2400 2550 2400
+Wire Wire Line
+	2250 1300 2250 1400
+Wire Wire Line
+	2700 2400 2950 2400
+Wire Wire Line
+	10150 5500 10400 5500
+Wire Wire Line
+	10150 5900 10400 5900
+Wire Wire Line
+	7950 5900 7950 5950
+Wire Wire Line
+	7950 5500 8100 5500
+Wire Wire Line
+	4450 2400 4550 2400
+Wire Wire Line
+	2700 4850 2700 4900
+Wire Wire Line
+	2700 4550 2750 4550
+Wire Wire Line
+	2900 4550 3100 4550
+Wire Wire Line
+	3100 4550 3950 4550
+Wire Wire Line
+	3700 4850 4950 4850
+Wire Wire Line
+	3700 4950 3700 6150
+Wire Wire Line
+	3700 6150 3700 6600
+Wire Wire Line
+	3100 4750 3100 4850
+Wire Wire Line
+	2300 6000 2600 6000
+Wire Wire Line
+	2300 6400 2300 6550
+Wire Wire Line
+	2300 6550 2300 6650
+Wire Wire Line
+	8200 850  8400 850 
+Wire Wire Line
+	3950 4550 4000 4550
+Wire Wire Line
+	4250 4550 6050 4550
+Wire Wire Line
+	4950 4850 5000 4850
+Wire Wire Line
+	5250 4850 5700 4850
+Wire Wire Line
+	4250 5150 4250 5350
+Wire Wire Line
+	5250 5150 5250 5350
+Wire Wire Line
+	4250 6900 4250 7100
+Wire Wire Line
+	5300 6900 5300 7100
+Wire Wire Line
+	3950 6150 4000 6150
+Wire Wire Line
+	4250 6150 6050 6150
+Wire Wire Line
+	5000 6600 5050 6600
+Wire Wire Line
+	5300 6600 6050 6600
+Wire Wire Line
+	2050 1200 2050 1700
+Wire Wire Line
+	2250 1200 2250 1300
+Wire Wire Line
+	5350 1200 5350 1700
+Wire Wire Line
+	5550 1200 5550 1300
+Wire Wire Line
+	2550 2400 2700 2400
+Wire Wire Line
+	3350 2400 3700 2400
+Wire Wire Line
+	4550 2400 5300 2400
+Wire Wire Line
+	5900 2400 5950 2400
+Wire Wire Line
+	2750 4550 2900 4550
+Wire Wire Line
+	7550 5500 7950 5500
+Wire Wire Line
+	9050 850  9200 850 
+Wire Wire Line
+	8400 1150 9050 1150
+Wire Wire Line
+	9050 1150 9200 1150
+Wire Wire Line
+	900  3950 1000 3950
+Wire Wire Line
+	950  3550 1000 3550
+Wire Wire Line
+	2250 4550 2400 4550
 $EndSCHEMATC

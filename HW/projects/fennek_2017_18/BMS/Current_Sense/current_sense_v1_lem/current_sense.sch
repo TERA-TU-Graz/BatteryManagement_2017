@@ -1,45 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ft232rl
-LIBS:relais
-LIBS:Supply
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
-LIBS:tera_general
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_sensoric
-LIBS:tera_switches
-LIBS:lem_v1-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+LIBS:current_sense-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -54,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L HO_25-NP/SP33 IC1
+L tera_general:HO_25-NP_SP33 IC1
 U 1 1 59360AFD
 P 5100 2800
 F 0 "IC1" H 5100 3347 60  0000 C CNN
@@ -68,7 +29,7 @@ $EndComp
 Wire Wire Line
 	4200 2200 4600 2200
 Wire Wire Line
-	4600 2200 4600 2700
+	4600 2200 4600 2500
 Wire Wire Line
 	4600 2500 4700 2500
 Wire Wire Line
@@ -80,7 +41,7 @@ Connection ~ 4600 2600
 Wire Wire Line
 	4700 2900 4600 2900
 Wire Wire Line
-	4600 2900 4600 3250
+	4600 2900 4600 3000
 Wire Wire Line
 	4600 3250 4200 3250
 Wire Wire Line
@@ -91,7 +52,7 @@ Wire Wire Line
 Connection ~ 4600 3100
 NoConn ~ 5500 2800
 $Comp
-L CONN_01X04 P3
+L current_sense-rescue:CONN_01X04 P3
 U 1 1 59360F1D
 P 8200 2850
 F 0 "P3" H 8118 2475 50  0000 C CNN
@@ -103,15 +64,15 @@ F 4 "03-0004" H 8200 2850 60  0001 C CNN "HPN"
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	5550 3000 5550 3400
+	5550 3000 5550 3100
 Wire Wire Line
 	5550 3000 5500 3000
 Wire Wire Line
-	5500 2600 6300 2600
+	5500 2600 5950 2600
 Wire Wire Line
 	5500 2900 6300 2900
 $Comp
-L PWR_FLAG #FLG01
+L power1:PWR_FLAG #FLG01
 U 1 1 5936111B
 P 7800 2550
 F 0 "#FLG01" H 7800 2645 50  0001 C CNN
@@ -124,7 +85,7 @@ $EndComp
 Wire Wire Line
 	7800 2550 7800 2700
 $Comp
-L PWR_FLAG #FLG02
+L power1:PWR_FLAG #FLG02
 U 1 1 5936115D
 P 7800 3150
 F 0 "#FLG02" H 7800 3245 50  0001 C CNN
@@ -137,7 +98,7 @@ $EndComp
 Wire Wire Line
 	7800 3150 7800 3000
 $Comp
-L CONN_01X03 P1
+L current_sense-rescue:CONN_01X03 P1
 U 1 1 593612EB
 P 4000 2300
 F 0 "P1" H 4150 2250 50  0000 C CNN
@@ -149,7 +110,7 @@ F 4 "05-1003" H 4000 2300 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_01X03 P2
+L current_sense-rescue:CONN_01X03 P2
 U 1 1 5936143F
 P 4000 3150
 F 0 "P2" H 4078 3191 50  0000 L CNN
@@ -163,7 +124,7 @@ $EndComp
 Wire Wire Line
 	4200 2300 4300 2300
 Wire Wire Line
-	4300 2300 4300 3150
+	4300 2300 4300 2400
 Wire Wire Line
 	4300 2400 4200 2400
 Wire Wire Line
@@ -179,7 +140,7 @@ HV+_out
 Text Label 4300 2800 1    60   ~ 0
 HV-
 $Comp
-L GND #PWR03
+L power1:GND #PWR03
 U 1 1 59361FC6
 P 5550 3400
 F 0 "#PWR03" H 5550 3150 50  0001 C CNN
@@ -190,7 +151,7 @@ F 3 "" H 5550 3400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR04
+L power1:VCC #PWR04
 U 1 1 59362089
 P 6300 2400
 F 0 "#PWR04" H 6300 2250 50  0001 C CNN
@@ -211,7 +172,7 @@ Signal
 Text Label 8000 2800 2    60   ~ 0
 Standby
 $Comp
-L VCC #PWR05
+L power1:VCC #PWR05
 U 1 1 5937E95D
 P 7500 2550
 F 0 "#PWR05" H 7500 2400 50  0001 C CNN
@@ -224,12 +185,12 @@ $EndComp
 Wire Wire Line
 	7500 2550 7500 2700
 Wire Wire Line
-	7500 2700 8000 2700
+	7500 2700 7800 2700
 Connection ~ 7800 2700
 Wire Wire Line
-	7500 3000 8000 3000
+	7500 3000 7800 3000
 $Comp
-L GND #PWR06
+L power1:GND #PWR06
 U 1 1 5937EA9C
 P 7500 3050
 F 0 "#PWR06" H 7500 2800 50  0001 C CNN
@@ -243,9 +204,9 @@ Wire Wire Line
 	7500 3050 7500 3000
 Connection ~ 7800 3000
 Wire Wire Line
-	6300 2500 5500 2500
+	6300 2500 6150 2500
 $Comp
-L C_Small C1
+L current_sense-rescue:C_Small C1
 U 1 1 5937EC82
 P 5750 3100
 F 0 "C1" V 5700 2950 50  0000 L CNN
@@ -257,7 +218,7 @@ F 4 "50-47n0" H 5750 3100 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C2
+L current_sense-rescue:C_Small C2
 U 1 1 5937EF96
 P 5950 3100
 F 0 "C2" V 5900 2950 50  0000 L CNN
@@ -269,7 +230,7 @@ F 4 "50-47n0" H 5950 3100 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C3
+L current_sense-rescue:C_Small C3
 U 1 1 5937EFBE
 P 6150 3100
 F 0 "C3" V 6100 2950 50  0000 L CNN
@@ -289,7 +250,7 @@ Connection ~ 6150 2500
 Wire Wire Line
 	5750 3200 5750 3300
 Wire Wire Line
-	5550 3300 6150 3300
+	5550 3300 5750 3300
 Connection ~ 5550 3300
 Wire Wire Line
 	5950 3300 5950 3200
@@ -304,4 +265,32 @@ Wire Wire Line
 	5750 3000 5750 2700
 Wire Wire Line
 	5750 2700 5500 2700
+Wire Wire Line
+	4600 2500 4600 2600
+Wire Wire Line
+	4600 2600 4600 2700
+Wire Wire Line
+	4600 3000 4600 3100
+Wire Wire Line
+	4600 3100 4600 3250
+Wire Wire Line
+	4300 3050 4300 3150
+Wire Wire Line
+	4300 2400 4300 3050
+Wire Wire Line
+	7800 2700 8000 2700
+Wire Wire Line
+	7800 3000 8000 3000
+Wire Wire Line
+	5950 2600 6300 2600
+Wire Wire Line
+	6150 2500 5500 2500
+Wire Wire Line
+	5550 3300 5550 3400
+Wire Wire Line
+	5750 3300 5950 3300
+Wire Wire Line
+	5950 3300 6150 3300
+Wire Wire Line
+	5550 3100 5550 3300
 $EndSCHEMATC

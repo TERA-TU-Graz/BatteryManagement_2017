@@ -1,9 +1,6 @@
-(kicad_pcb (version 4) (host pcbnew no-vcs-found-product)
+(kicad_pcb (version 20171130) (host pcbnew 6.0.0-rc1-unknown-r13685-202b35bc)
 
   (general
-    (links 172)
-    (no_connects 0)
-    (area 66.924999 56.924999 182.575001 122.075001)
     (thickness 1.6)
     (drawings 38)
     (tracks 183)
@@ -47,7 +44,7 @@
   )
 
   (setup
-    (last_trace_width 1.25)
+    (last_trace_width 0.25)
     (user_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 0.75)
@@ -60,8 +57,6 @@
     (zone_clearance 0.5)
     (zone_45_only no)
     (trace_min 0.2)
-    (segment_width 0.2)
-    (edge_width 0.15)
     (via_size 0.75)
     (via_drill 0.3)
     (via_min_size 0.65)
@@ -75,6 +70,8 @@
     (uvias_allowed no)
     (uvia_min_size 0.2)
     (uvia_min_drill 0.1)
+    (edge_width 0.15)
+    (segment_width 0.2)
     (pcb_text_width 0.3)
     (pcb_text_size 1.5 1.5)
     (mod_edge_width 0.15)
@@ -90,6 +87,9 @@
     (pcbplotparams
       (layerselection 0x010f0_ffffffff)
       (usegerberextensions false)
+      (usegerberattributes false)
+      (usegerberadvancedattributes false)
+      (creategerberjobfile false)
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
@@ -98,7 +98,7 @@
       (useauxorigin true)
       (hpglpennumber 1)
       (hpglpenspeed 20)
-      (hpglpendiameter 15)
+      (hpglpendiameter 15.000000)
       (psnegative false)
       (psa4output false)
       (plotreference true)
@@ -110,7 +110,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory gerber/))
+      (outputdirectory "gerber/"))
   )
 
   (net 0 "")
@@ -2592,10 +2592,10 @@
     (tags svg2mod)
     (attr smd)
     (fp_text reference svg2mod (at 0 -5.714667) (layer F.SilkS) hide
-      (effects (font (thickness 0.3048)))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)))
     )
     (fp_text value G*** (at 0 5.714667) (layer F.SilkS) hide
-      (effects (font (thickness 0.3048)))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)))
     )
     (fp_poly (pts (xy -0.000023 -2.666667) (xy -0.000023 -2.400911) (xy 0.040353 -2.400866) (xy 0.080672 -2.400733)
       (xy 0.120934 -2.400511) (xy 0.161139 -2.400201) (xy 0.201285 -2.399802) (xy 0.241372 -2.399316)
@@ -3656,10 +3656,10 @@
     (tags svg2mod)
     (attr smd)
     (fp_text reference svg2mod (at 0 7.048 180) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value G*** (at 0 -7.048 180) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_poly (pts (xy -0.000034 4) (xy -0.000034 3.601367) (xy 0.060529 3.6013) (xy 0.121008 3.6011)
       (xy 0.181401 3.600767) (xy 0.241708 3.600301) (xy 0.301927 3.599703) (xy 0.362059 3.598974)

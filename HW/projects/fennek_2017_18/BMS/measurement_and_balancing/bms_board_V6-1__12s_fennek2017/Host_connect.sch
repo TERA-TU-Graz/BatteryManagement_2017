@@ -1,45 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:relais
-LIBS:Supply
-LIBS:tera_general
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_switches
-LIBS:local_power
-LIBS:ft232rl
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
+EESchema Schematic File Version 4
 LIBS:bms_board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -54,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_01X10 P4
+L bms_board-rescue:CONN_01X10 P4
 U 1 1 5886A607
 P 3300 2300
 F 0 "P4" H 3377 2338 50  0000 L CNN
@@ -66,7 +27,7 @@ F 4 "03-0210" H 3300 2300 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L BSS205N Q1
+L tera_general:BSS205N Q1
 U 1 1 5886A60E
 P 2200 3000
 F 0 "Q1" H 2273 3096 50  0000 L CNN
@@ -78,7 +39,7 @@ F 4 "24-2050" H 2200 3000 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L BSS205N Q2
+L tera_general:BSS205N Q2
 U 1 1 5886A615
 P 2600 3000
 F 0 "Q2" H 2673 3096 50  0000 L CNN
@@ -90,7 +51,7 @@ F 4 "24-2050" H 2600 3000 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R36
+L bms_board-rescue:R_Small R36
 U 1 1 5886A628
 P 2200 1650
 F 0 "R36" V 2100 1700 50  0000 C CNN
@@ -102,7 +63,7 @@ F 4 "11-10K0" V 2200 1650 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R37
+L bms_board-rescue:R_Small R37
 U 1 1 5886A635
 P 2600 1650
 F 0 "R37" V 2500 1700 50  0000 C CNN
@@ -153,7 +114,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 1850 3100 1850
 Wire Wire Line
-	3050 1350 3050 1850
+	3050 1100 3050 1850
 Wire Wire Line
 	1700 2050 2000 2050
 Wire Wire Line
@@ -194,9 +155,30 @@ Text HLabel 2550 3400 0    60   Input ~ 0
 VBatt-
 Wire Wire Line
 	2600 3400 2550 3400
-Connection ~ 2600 1350
-Wire Wire Line
-	3050 1350 2200 1350
-Text Label 2200 1350 0    60   ~ 0
+Text Label 3050 1100 0    60   ~ 0
 +5V_Host
+$Comp
+L tera_general:JUMPER3_NO JP1
+U 1 1 5AA2DEC2
+P 2400 1100
+F 0 "JP1" H 2400 1301 50  0000 C CNN
+F 1 "JUMPER3_NO" H 2400 1210 50  0000 C CNN
+F 2 "tera_general:SOLDERJUMPER_3_1mm" H 2400 1210 50  0001 C CNN
+F 3 "" H 2400 1100 50  0000 C CNN
+	1    2400 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1100 3050 1100
+Wire Wire Line
+	2600 1350 2200 1350
+Wire Wire Line
+	2400 1200 2400 1350
+Connection ~ 2400 1350
+Text HLabel 2000 1100 0    60   Input ~ 0
+5V
+Wire Wire Line
+	2000 1100 2100 1100
+Text Label 2500 1350 0    60   ~ 0
++5V_DO
 $EndSCHEMATC

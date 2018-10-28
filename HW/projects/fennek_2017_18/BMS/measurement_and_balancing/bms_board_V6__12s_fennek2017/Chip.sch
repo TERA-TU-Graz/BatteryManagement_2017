@@ -1,45 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:relais
-LIBS:Supply
-LIBS:tera_general
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_switches
-LIBS:local_power
-LIBS:ft232rl
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
+EESchema Schematic File Version 4
 LIBS:bms_board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -54,12 +15,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L C C2
+L Device:C C2
 U 1 1 58593A62
 P 5950 3050
 AR Path="/5859336D/58593A62" Ref="C2"  Part="1" 
 AR Path="/585C2532/58593A62" Ref="C19"  Part="1" 
-F 0 "C19" H 6065 3096 50  0000 L CNN
+AR Path="/58593A62" Ref="C19"  Part="1" 
+F 0 "C2" H 6065 3096 50  0000 L CNN
 F 1 "10u" H 6065 3005 50  0000 L CNN
 F 2 "tera_rlc:C_0805in" H 5988 2900 50  0001 C CNN
 F 3 "" H 5950 3050 50  0000 C CNN
@@ -68,12 +30,13 @@ F 4 "53-10u0" H 5950 3050 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C7
+L Device:C C7
 U 1 1 58593A6F
 P 7250 2350
 AR Path="/5859336D/58593A6F" Ref="C7"  Part="1" 
 AR Path="/585C2532/58593A6F" Ref="C24"  Part="1" 
-F 0 "C24" H 7365 2396 50  0000 L CNN
+AR Path="/58593A6F" Ref="C24"  Part="1" 
+F 0 "C7" H 7365 2396 50  0000 L CNN
 F 1 "2.2u" H 7365 2305 50  0000 L CNN
 F 2 "tera_rlc:C_0805in" H 7288 2200 50  0001 C CNN
 F 3 "" H 7250 2350 50  0000 C CNN
@@ -82,12 +45,13 @@ F 4 "52-2u20" H 7250 2350 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C11
+L Device:C C11
 U 1 1 58593A82
 P 7550 3100
 AR Path="/5859336D/58593A82" Ref="C11"  Part="1" 
 AR Path="/585C2532/58593A82" Ref="C28"  Part="1" 
-F 0 "C28" V 7500 3150 50  0000 L CNN
+AR Path="/58593A82" Ref="C28"  Part="1" 
+F 0 "C11" V 7500 3150 50  0000 L CNN
 F 1 "2.2u" V 7665 3055 50  0000 L CNN
 F 2 "tera_rlc:C_0805in" H 7588 2950 50  0001 C CNN
 F 3 "" H 7550 3100 50  0000 C CNN
@@ -96,12 +60,13 @@ F 4 "52-2u20" V 7550 3100 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C12
+L Device:C C12
 U 1 1 58593A89
 P 7700 3400
 AR Path="/5859336D/58593A89" Ref="C12"  Part="1" 
 AR Path="/585C2532/58593A89" Ref="C29"  Part="1" 
-F 0 "C29" V 7650 3450 50  0000 L CNN
+AR Path="/58593A89" Ref="C29"  Part="1" 
+F 0 "C12" V 7650 3450 50  0000 L CNN
 F 1 "100n" V 7750 3100 50  0000 L CNN
 F 2 "tera_rlc:C_0603in" H 7738 3250 50  0001 C CNN
 F 3 "" H 7700 3400 50  0000 C CNN
@@ -110,12 +75,13 @@ F 4 "52-100n" V 7700 3400 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C14
+L Device:C C14
 U 1 1 58593A90
 P 7900 3100
 AR Path="/5859336D/58593A90" Ref="C14"  Part="1" 
 AR Path="/585C2532/58593A90" Ref="C31"  Part="1" 
-F 0 "C31" V 7850 3150 50  0000 L CNN
+AR Path="/58593A90" Ref="C31"  Part="1" 
+F 0 "C14" V 7850 3150 50  0000 L CNN
 F 1 "2.2u" V 8015 3055 50  0000 L CNN
 F 2 "tera_rlc:C_0805in" H 7938 2950 50  0001 C CNN
 F 3 "" H 7900 3100 50  0000 C CNN
@@ -124,12 +90,13 @@ F 4 "52-2u20" V 7900 3100 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C15
+L Device:C C15
 U 1 1 58593A97
 P 8050 3400
 AR Path="/5859336D/58593A97" Ref="C15"  Part="1" 
 AR Path="/585C2532/58593A97" Ref="C32"  Part="1" 
-F 0 "C32" V 8000 3450 50  0000 L CNN
+AR Path="/58593A97" Ref="C32"  Part="1" 
+F 0 "C15" V 8000 3450 50  0000 L CNN
 F 1 "100n" V 8100 3100 50  0000 L CNN
 F 2 "tera_rlc:C_0603in" H 8088 3250 50  0001 C CNN
 F 3 "" H 8050 3400 50  0000 C CNN
@@ -138,26 +105,27 @@ F 4 "52-100n" V 8050 3400 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 X1
+L Connector_Generic:Conn_01x02 X1
 U 1 1 58593A9E
-P 8500 2800
+P 8500 2850
 AR Path="/5859336D/58593A9E" Ref="X1"  Part="1" 
 AR Path="/585C2532/58593A9E" Ref="X2"  Part="1" 
-F 0 "X2" H 8419 2519 50  0000 C CNN
-F 1 "Prog_Voltage" H 8419 2610 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 8500 2800 50  0001 C CNN
-F 3 "" H 8500 2800 50  0000 C CNN
-F 4 "09-1003" H 8500 2800 60  0001 C CNN "HPN"
-	1    8500 2800
+F 0 "X1" H 8419 2569 50  0000 C CNN
+F 1 "Prog_Voltage" H 8419 2660 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 8500 2850 50  0001 C CNN
+F 3 "" H 8500 2850 50  0000 C CNN
+F 4 "09-1003" H 8500 2850 60  0001 C CNN "HPN"
+	1    8500 2850
 	1    0    0    1   
 $EndComp
 $Comp
-L C C5
+L Device:C C5
 U 1 1 58593AAB
 P 7100 3100
 AR Path="/5859336D/58593AAB" Ref="C5"  Part="1" 
 AR Path="/585C2532/58593AAB" Ref="C22"  Part="1" 
-F 0 "C22" V 7050 3150 50  0000 L CNN
+AR Path="/58593AAB" Ref="C22"  Part="1" 
+F 0 "C5" V 7050 3150 50  0000 L CNN
 F 1 "2.2u" V 7150 2850 50  0000 L CNN
 F 2 "tera_rlc:C_0805in" H 7138 2950 50  0001 C CNN
 F 3 "" H 7100 3100 50  0000 C CNN
@@ -166,12 +134,13 @@ F 4 "52-2u20" V 7100 3100 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C8
+L Device:C C8
 U 1 1 58593AB2
 P 7250 3250
 AR Path="/5859336D/58593AB2" Ref="C8"  Part="1" 
 AR Path="/585C2532/58593AB2" Ref="C25"  Part="1" 
-F 0 "C25" V 7200 3300 50  0000 L CNN
+AR Path="/58593AB2" Ref="C25"  Part="1" 
+F 0 "C8" V 7200 3300 50  0000 L CNN
 F 1 "100n" V 7100 3150 50  0000 L CNN
 F 2 "tera_rlc:C_0603in" H 7288 3100 50  0001 C CNN
 F 3 "" H 7250 3250 50  0000 C CNN
@@ -180,12 +149,13 @@ F 4 "52-100n" V 7250 3250 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C1
+L Device:C C1
 U 1 1 58593ACB
 P 5650 2500
 AR Path="/5859336D/58593ACB" Ref="C1"  Part="1" 
 AR Path="/585C2532/58593ACB" Ref="C18"  Part="1" 
-F 0 "C18" V 5700 2300 50  0000 L CNN
+AR Path="/58593ACB" Ref="C18"  Part="1" 
+F 0 "C1" V 5700 2300 50  0000 L CNN
 F 1 "100n 50V" V 5800 2300 50  0000 L CNN
 F 2 "tera_rlc:C_0805in" H 5688 2350 50  0001 C CNN
 F 3 "" H 5650 2500 50  0000 C CNN
@@ -194,12 +164,12 @@ F 4 "50-100n" V 5650 2500 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L TI-bq76pl536-multiunit IC1
+L bms_board-rescue:TI-bq76pl536-multiunit IC1
 U 8 1 58593AD2
 P 6450 2750
 AR Path="/5859336D/58593AD2" Ref="IC1"  Part="8" 
 AR Path="/585C2532/58593AD2" Ref="IC2"  Part="8" 
-F 0 "IC2" H 6450 3437 60  0000 C CNN
+F 0 "IC1" H 6450 3437 60  0000 C CNN
 F 1 "TI-bq76pl536" H 6600 3350 60  0000 C CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 6550 5250 60  0001 C CNN
 F 3 "" H 6650 2700 60  0000 C CNN
@@ -214,11 +184,11 @@ Wire Wire Line
 Wire Wire Line
 	7500 2350 7400 2350
 Wire Wire Line
-	6950 2350 7100 2350
+	6950 2350 7000 2350
 Wire Wire Line
 	5650 2650 5950 2650
 Wire Wire Line
-	6950 2750 8300 2750
+	6950 2750 7550 2750
 Wire Wire Line
 	7550 2750 7550 2950
 Wire Wire Line
@@ -226,7 +196,7 @@ Wire Wire Line
 Wire Wire Line
 	8200 2650 8200 2750
 Wire Wire Line
-	6950 2650 8200 2650
+	6950 2650 7900 2650
 Connection ~ 8200 2750
 Wire Wire Line
 	8300 2900 8300 2850
@@ -238,14 +208,14 @@ Connection ~ 7100 2850
 Wire Wire Line
 	7250 3450 7250 3400
 Wire Wire Line
-	7100 3450 7250 3450
+	7100 3450 7200 3450
 Wire Wire Line
 	7100 3450 7100 3250
 Connection ~ 7200 3450
 Wire Wire Line
 	8050 3700 8050 3550
 Wire Wire Line
-	7550 3700 8050 3700
+	7550 3700 7700 3700
 Wire Wire Line
 	7800 3700 7800 3750
 Wire Wire Line
@@ -262,23 +232,23 @@ Wire Wire Line
 Wire Wire Line
 	8050 2650 8050 3250
 Wire Wire Line
-	6950 2850 7250 2850
+	6950 2850 7100 2850
 Wire Wire Line
-	5650 2350 5950 2350
+	5650 2350 5800 2350
 Wire Wire Line
 	5800 2450 5950 2450
 Wire Wire Line
-	5800 2200 5800 2450
+	5800 2200 5800 2350
 Connection ~ 5800 2350
 Wire Wire Line
 	6250 3350 6250 3450
 Wire Wire Line
-	6250 3450 6650 3450
+	6250 3450 6450 3450
 Wire Wire Line
 	6650 3450 6650 3350
 Connection ~ 6450 3450
 Wire Wire Line
-	6450 3350 6450 3550
+	6450 3350 6450 3450
 Wire Wire Line
 	6550 3350 6550 3450
 Connection ~ 6550 3450
@@ -287,13 +257,13 @@ Connection ~ 7900 2650
 Connection ~ 7700 2750
 Connection ~ 7550 2750
 $Comp
-L TI-bq76pl536-multiunit IC?
+L bms_board-rescue:TI-bq76pl536-multiunit IC?
 U 1 1 58595E80
 P 4050 3350
 AR Path="/58595E80" Ref="IC?"  Part="1" 
 AR Path="/5859336D/58595E80" Ref="IC1"  Part="1" 
 AR Path="/585C2532/58595E80" Ref="IC2"  Part="1" 
-F 0 "IC2" H 4050 3937 60  0000 C CNN
+F 0 "IC1" H 4050 3937 60  0000 C CNN
 F 1 "TI-bq76pl536" H 4050 3831 60  0000 C CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 4150 5850 60  0001 C CNN
 F 3 "" H 4250 3300 60  0000 C CNN
@@ -334,13 +304,13 @@ VC2
 Text HLabel 1250 4400 0    60   Input ~ 0
 VC1
 $Comp
-L TI-bq76pl536-multiunit IC?
+L bms_board-rescue:TI-bq76pl536-multiunit IC?
 U 4 1 585A3EA2
 P 2050 5650
 AR Path="/585A3EA2" Ref="IC?"  Part="4" 
 AR Path="/5859336D/585A3EA2" Ref="IC1"  Part="4" 
 AR Path="/585C2532/585A3EA2" Ref="IC2"  Part="4" 
-F 0 "IC2" H 2400 5700 60  0000 C CNN
+F 0 "IC1" H 2400 5700 60  0000 C CNN
 F 1 "TI-bq76pl536" H 2600 5600 60  0000 C CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 2150 8150 60  0001 C CNN
 F 3 "" H 2350 5600 60  0000 C CNN
@@ -349,13 +319,13 @@ F 4 "20-0006" H 2050 5650 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L TI-bq76pl536-multiunit IC?
+L bms_board-rescue:TI-bq76pl536-multiunit IC?
 U 2 1 585A3EA9
 P 2050 6500
 AR Path="/585A3EA9" Ref="IC?"  Part="2" 
 AR Path="/5859336D/585A3EA9" Ref="IC1"  Part="2" 
 AR Path="/585C2532/585A3EA9" Ref="IC2"  Part="2" 
-F 0 "IC2" H 2278 6553 60  0000 L CNN
+F 0 "IC1" H 2278 6553 60  0000 L CNN
 F 1 "TI-bq76pl536" H 2278 6447 60  0000 L CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 2150 9000 60  0001 C CNN
 F 3 "" H 2350 6450 60  0000 C CNN
@@ -364,13 +334,13 @@ F 4 "20-0006" H 2050 6500 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L TI-bq76pl536-multiunit IC?
+L bms_board-rescue:TI-bq76pl536-multiunit IC?
 U 3 1 585A3EB0
 P 2050 7300
 AR Path="/585A3EB0" Ref="IC?"  Part="3" 
 AR Path="/5859336D/585A3EB0" Ref="IC1"  Part="3" 
 AR Path="/585C2532/585A3EB0" Ref="IC2"  Part="3" 
-F 0 "IC2" H 2278 7353 60  0000 L CNN
+F 0 "IC1" H 2278 7353 60  0000 L CNN
 F 1 "TI-bq76pl536" H 2278 7247 60  0000 L CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 2150 9800 60  0001 C CNN
 F 3 "" H 2350 7250 60  0000 C CNN
@@ -379,20 +349,20 @@ F 4 "20-0006" H 2050 7300 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 5650 1750 5650
+	1500 5650 1650 5650
 Wire Wire Line
 	1750 5550 1650 5550
 Wire Wire Line
 	1650 5550 1650 5650
 Connection ~ 1650 5650
 $Comp
-L TI-bq76pl536-multiunit IC?
+L bms_board-rescue:TI-bq76pl536-multiunit IC?
 U 5 1 585A712E
 P 9800 3200
 AR Path="/585A712E" Ref="IC?"  Part="5" 
 AR Path="/5859336D/585A712E" Ref="IC1"  Part="5" 
 AR Path="/585C2532/585A712E" Ref="IC2"  Part="5" 
-F 0 "IC2" H 9750 2513 60  0000 C CNN
+F 0 "IC1" H 9750 2513 60  0000 C CNN
 F 1 "TI-bq76pl536" H 9750 2619 60  0000 C CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 9900 5700 60  0001 C CNN
 F 3 "" H 10000 3150 60  0000 C CNN
@@ -401,13 +371,13 @@ F 4 "20-0006" H 9800 3200 60  0001 C CNN "HPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L TI-bq76pl536-multiunit IC?
+L bms_board-rescue:TI-bq76pl536-multiunit IC?
 U 6 1 585A7135
 P 9300 5100
 AR Path="/585A7135" Ref="IC?"  Part="6" 
 AR Path="/5859336D/585A7135" Ref="IC1"  Part="6" 
 AR Path="/585C2532/585A7135" Ref="IC2"  Part="6" 
-F 0 "IC2" H 9072 5047 60  0000 R CNN
+F 0 "IC1" H 9072 5047 60  0000 R CNN
 F 1 "TI-bq76pl536" H 9072 5153 60  0000 R CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 9400 7600 60  0001 C CNN
 F 3 "" H 9500 5050 60  0000 C CNN
@@ -416,13 +386,13 @@ F 4 "20-0006" H 9300 5100 60  0001 C CNN "HPN"
 	0    -1   1    0   
 $EndComp
 $Comp
-L TI-bq76pl536-multiunit IC?
+L bms_board-rescue:TI-bq76pl536-multiunit IC?
 U 7 1 585A713C
 P 9400 1400
 AR Path="/585A713C" Ref="IC?"  Part="7" 
 AR Path="/5859336D/585A713C" Ref="IC1"  Part="7" 
 AR Path="/585C2532/585A713C" Ref="IC2"  Part="7" 
-F 0 "IC2" H 9400 2100 60  0000 C CNN
+F 0 "IC1" H 9400 2100 60  0000 C CNN
 F 1 "TI-bq76pl536" H 9400 2000 60  0000 C CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 9500 3900 60  0001 C CNN
 F 3 "" H 9600 1350 60  0000 C CNN
@@ -484,18 +454,18 @@ NoConn ~ 1750 5750
 Wire Wire Line
 	7000 2350 7000 1900
 Wire Wire Line
-	7000 1900 7300 1900
+	7000 1900 7100 1900
 Connection ~ 7000 2350
 Text HLabel 7300 1900 2    60   Output ~ 0
 +5V
 NoConn ~ 6950 2450
 $Comp
-L PWR_FLAG #FLG020
+L power:PWR_FLAG #FLG020
 U 1 1 589693DC
 P 7100 1900
 AR Path="/5859336D/589693DC" Ref="#FLG020"  Part="1" 
 AR Path="/585C2532/589693DC" Ref="#FLG021"  Part="1" 
-F 0 "#FLG021" H 7100 1995 50  0001 C CNN
+F 0 "#FLG020" H 7100 1995 50  0001 C CNN
 F 1 "PWR_FLAG" H 7100 2124 50  0000 C CNN
 F 2 "" H 7100 1900 50  0000 C CNN
 F 3 "" H 7100 1900 50  0000 C CNN
@@ -525,31 +495,31 @@ $EndSheet
 Wire Wire Line
 	1450 1400 1350 1400
 Wire Wire Line
-	1350 1400 1350 1800
+	1350 1400 1350 1600
 Wire Wire Line
 	1350 1800 1450 1800
 Wire Wire Line
 	1450 2100 1350 2100
 Wire Wire Line
-	1350 2100 1350 2500
+	1350 2100 1350 2300
 Wire Wire Line
 	1350 2500 1450 2500
 Wire Wire Line
 	1450 2800 1350 2800
 Wire Wire Line
-	1350 2800 1350 3200
+	1350 2800 1350 3000
 Wire Wire Line
 	1350 3200 1450 3200
 Wire Wire Line
 	1450 3500 1350 3500
 Wire Wire Line
-	1350 3500 1350 3900
+	1350 3500 1350 3700
 Wire Wire Line
 	1350 3900 1450 3900
 Wire Wire Line
 	1450 4200 1350 4200
 Wire Wire Line
-	1350 4200 1350 4600
+	1350 4200 1350 4400
 Wire Wire Line
 	1350 4600 1450 4600
 Wire Wire Line
@@ -707,4 +677,50 @@ VBatt-
 Wire Wire Line
 	5650 2750 5650 2650
 Connection ~ 5650 2650
+Wire Wire Line
+	8200 2750 8300 2750
+Wire Wire Line
+	7100 2850 7250 2850
+Wire Wire Line
+	7200 3450 7250 3450
+Wire Wire Line
+	7800 3700 7900 3700
+Wire Wire Line
+	7700 3700 7800 3700
+Wire Wire Line
+	7900 3700 8050 3700
+Wire Wire Line
+	5800 2350 5950 2350
+Wire Wire Line
+	5800 2350 5800 2450
+Wire Wire Line
+	6450 3450 6550 3450
+Wire Wire Line
+	6450 3450 6450 3550
+Wire Wire Line
+	6550 3450 6650 3450
+Wire Wire Line
+	8050 2650 8200 2650
+Wire Wire Line
+	7900 2650 8050 2650
+Wire Wire Line
+	7700 2750 8200 2750
+Wire Wire Line
+	7550 2750 7700 2750
+Wire Wire Line
+	1650 5650 1750 5650
+Wire Wire Line
+	7000 2350 7100 2350
+Wire Wire Line
+	7100 1900 7300 1900
+Wire Wire Line
+	1350 4400 1350 4600
+Wire Wire Line
+	1350 3700 1350 3900
+Wire Wire Line
+	1350 3000 1350 3200
+Wire Wire Line
+	1350 2300 1350 2500
+Wire Wire Line
+	1350 1600 1350 1800
 $EndSCHEMATC

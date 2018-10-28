@@ -1,46 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:local_power
-LIBS:ft232rl
-LIBS:relais
-LIBS:Supply
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
-LIBS:tera_general
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_switches
-LIBS:tera_sensoric
+EESchema Schematic File Version 4
 LIBS:fennek_power_distribution-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -84,10 +44,6 @@ F1 "telemetry.sch" 60
 F2 "Vbatt_Switched" I R 5900 1100 60 
 F3 "+Vbatt" I R 5900 1000 60 
 F4 "-Vbatt" I R 5900 1250 60 
-F5 "IL_prev-" O L 4650 1600 60 
-F6 "IL_next-" I R 5900 1600 60 
-F7 "IL_prev+" I L 4650 1500 60 
-F8 "IL_next+" O R 5900 1500 60 
 $EndSheet
 $Sheet
 S 4650 2000 1250 2950
@@ -99,20 +55,20 @@ F3 "SCLK" I L 4650 3450 60
 F4 "MOSI" I L 4650 3550 60 
 F5 "MISO" T L 4650 3650 60 
 F6 "MainRelay_Fault" O L 4650 3800 60 
-F7 "Interlock_OK" I L 4650 2550 60 
+F7 "Interlock_OK" I L 4650 2850 60 
 F8 "VBatt_Switched" O R 5900 2200 60 
 F9 "ISense_Main" O L 4650 4500 60 
-F10 "+3V3" I L 4650 2750 60 
+F10 "+3V3" I L 4650 2350 60 
 F11 "ISense_MCU" O L 4650 4200 60 
-F12 "+5V" I L 4650 2850 60 
+F12 "+5V" I L 4650 2450 60 
 F13 "PreCharge_Fault" O L 4650 3900 60 
 F14 "NCS_MainRelay" I L 4650 3350 60 
 F15 "NCS_PreCharger" I L 4650 3250 60 
 F16 "+VBatt" O R 5900 2100 60 
 F17 "-VBatt" O R 5900 2350 60 
 F18 "GND_BN" I L 4650 4800 60 
-F19 "IL_prev-" O R 5900 2650 60 
-F20 "IL_prev+" I R 5900 2550 60 
+F19 "IL_prev-" O L 4650 3100 60 
+F20 "IL_prev+" I L 4650 3000 60 
 F21 "IL_next+" O R 5900 3000 60 
 F22 "IL_next-" I R 5900 3100 60 
 $EndSheet
@@ -121,12 +77,12 @@ Wire Wire Line
 Wire Wire Line
 	6300 5550 5900 5550
 Wire Wire Line
-	6300 1000 6300 5550
+	6300 1000 6300 2100
 Connection ~ 6300 2100
 Wire Wire Line
 	6150 5850 5900 5850
 Wire Wire Line
-	6150 4350 6150 5850
+	6150 4350 6150 5300
 Wire Wire Line
 	6150 4350 5900 4350
 Wire Wire Line
@@ -139,24 +95,24 @@ Wire Wire Line
 	2450 5300 6150 5300
 Connection ~ 6150 5300
 Wire Wire Line
-	2450 2750 4650 2750
+	2450 2350 4650 2350
 Wire Wire Line
-	2450 2850 4650 2850
+	2450 2450 4000 2450
 Wire Wire Line
-	4000 2850 4000 5650
+	4000 2450 4000 5650
 Wire Wire Line
 	4000 5650 4650 5650
-Connection ~ 4000 2850
+Connection ~ 4000 2450
 Wire Wire Line
-	4100 2550 4100 6050
+	4100 2850 4100 6050
 Wire Wire Line
 	4650 6350 4200 6350
 Wire Wire Line
 	4200 6350 4200 3450
 Wire Wire Line
-	2450 3450 4650 3450
+	2450 3450 4200 3450
 Wire Wire Line
-	2450 3550 4650 3550
+	2450 3550 4300 3550
 Wire Wire Line
 	4300 3550 4300 6450
 Wire Wire Line
@@ -166,7 +122,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 6550 4400 3650
 Wire Wire Line
-	2450 3650 4650 3650
+	2450 3650 4400 3650
 Wire Wire Line
 	2450 4200 4650 4200
 Wire Wire Line
@@ -189,16 +145,16 @@ Wire Wire Line
 Wire Wire Line
 	5900 2350 6400 2350
 Wire Wire Line
-	6400 7000 6400 1250
+	6400 7000 6400 2350
 Wire Wire Line
-	5900 7000 6400 7000
+	5900 7000 6050 7000
 Connection ~ 6400 2350
 Wire Wire Line
-	2450 7000 4650 7000
+	2450 7000 3750 7000
 Wire Wire Line
 	4650 4800 3750 4800
 Wire Wire Line
-	3750 4800 3750 7100
+	3750 4800 3750 7000
 Connection ~ 3750 7000
 Wire Wire Line
 	4500 7000 4500 7400
@@ -211,7 +167,7 @@ Connection ~ 4500 7000
 Text Notes 4500 7600 0    50   ~ 0
 Rules 2017 do not require\nan isolation between HV and LV
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 59336D82
 P 3750 7100
 F 0 "#PWR01" H 3750 6850 50  0001 C CNN
@@ -222,13 +178,14 @@ F 3 "" H 3750 7100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X03 P2
+L Connector_Generic:Conn_01x03 P2
 U 1 1 5931B4E9
 P 6950 6450
 F 0 "P2" H 7100 6350 50  0000 C CNN
 F 1 "Interlock" H 7200 6550 50  0000 C CNN
 F 2 "tera_Connectors_JST:JST_EH_S03B-EH_03x2.50mm_Angled" H 6868 6217 50  0001 C CNN
 F 3 "" H 6950 6450 50  0000 C CNN
+F 4 "02-1003" H 6950 6450 60  0001 C CNN "HPN"
 	1    6950 6450
 	1    0    0    1   
 $EndComp
@@ -264,9 +221,9 @@ F0 "Master Connector" 50
 F1 "master_connector.sch" 50
 F2 "+12VDC_BMS" I R 2450 5200 60 
 F3 "+12VDC_BMS_Switched" I R 2450 5300 60 
-F4 "+3V3" O R 2450 2750 60 
-F5 "+5V" O R 2450 2850 60 
-F6 "Interlock_OK" O R 2450 2550 60 
+F4 "+3V3" O R 2450 2350 60 
+F5 "+5V" O R 2450 2450 60 
+F6 "Interlock_OK" O R 2450 2850 60 
 F7 "ISense_MCU" I R 2450 4200 60 
 F8 "ISense_Main" I R 2450 4500 60 
 F9 "PreCharge_Fault" I R 2450 3900 60 
@@ -279,36 +236,12 @@ F15 "SPI_CLK" O R 2450 3450 60
 F16 "SPI_MOSI" O R 2450 3550 60 
 F17 "SPI_MISO" T R 2450 3650 60 
 F18 "GND_BN" I R 2450 7000 60 
-F19 "IL_master-" I R 2450 2450 60 
-F20 "IL_master+" O R 2450 2350 60 
+F19 "IL_master-" I R 2450 3100 60 
+F20 "IL_master+" O R 2450 3000 60 
 $EndSheet
 Wire Wire Line
-	2450 2550 4650 2550
-Connection ~ 4100 2550
-Wire Wire Line
-	2450 2450 3750 2450
-Wire Wire Line
-	3750 2450 3750 1600
-Wire Wire Line
-	3750 1600 4650 1600
-Wire Wire Line
-	4650 1500 3650 1500
-Wire Wire Line
-	3650 1500 3650 2350
-Wire Wire Line
-	3650 2350 2450 2350
-Wire Wire Line
-	5900 1500 6150 1500
-Wire Wire Line
-	6150 1500 6150 2550
-Wire Wire Line
-	6150 2550 5900 2550
-Wire Wire Line
-	5900 1600 6100 1600
-Wire Wire Line
-	6100 1600 6100 2650
-Wire Wire Line
-	6100 2650 5900 2650
+	2450 2850 4100 2850
+Connection ~ 4100 2850
 Wire Wire Line
 	5900 6050 6700 6050
 Wire Wire Line
@@ -321,4 +254,32 @@ Wire Wire Line
 	6600 3100 6600 6150
 Wire Wire Line
 	6600 6150 5900 6150
+Wire Wire Line
+	2450 3000 4650 3000
+Wire Wire Line
+	4650 3100 2450 3100
+Wire Wire Line
+	6300 2100 6300 5550
+Wire Wire Line
+	6150 5300 6150 5850
+Wire Wire Line
+	4000 2450 4650 2450
+Wire Wire Line
+	4400 3650 4650 3650
+Wire Wire Line
+	4300 3550 4650 3550
+Wire Wire Line
+	4200 3450 4650 3450
+Wire Wire Line
+	6400 2350 6400 1250
+Wire Wire Line
+	3750 7000 4500 7000
+Wire Wire Line
+	3750 7000 3750 7100
+Wire Wire Line
+	6050 7000 6400 7000
+Wire Wire Line
+	4500 7000 4650 7000
+Wire Wire Line
+	4100 2850 4650 2850
 $EndSCHEMATC

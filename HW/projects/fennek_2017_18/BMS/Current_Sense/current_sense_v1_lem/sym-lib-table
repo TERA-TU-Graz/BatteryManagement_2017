@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name current_sense-rescue)(type Legacy)(uri ${KIPRJMOD}/current_sense-rescue.lib)(options "")(descr ""))
+  (lib (name power1)(type Legacy)(uri /usr/share/kicad/library/power.lib)(options "")(descr ""))
+  (lib (name 74xx1)(type Legacy)(uri /usr/share/kicad/library/74xx.lib)(options "")(descr ""))
+)

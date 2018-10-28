@@ -1,46 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:local_power
-LIBS:ft232rl
-LIBS:relais
-LIBS:Supply
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
-LIBS:tera_general
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_switches
-LIBS:tera_sensoric
+EESchema Schematic File Version 4
 LIBS:fennek_power_distribution-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -55,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ZENERsmall D2
+L Device:D_Zener_Small D2
 U 1 1 592C8AEE
 P 3150 2800
 F 0 "D2" V 3104 2869 50  0000 L CNN
@@ -67,7 +27,7 @@ F 4 "21-9008" V 3150 2800 60  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L F_Small F3
+L Device:Fuse_Small F3
 U 1 1 592C8B10
 P 4600 2650
 F 0 "F3" H 4600 2835 50  0000 C CNN
@@ -79,7 +39,7 @@ F 4 "94-5010" H 4600 2650 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L F_Small F5
+L Device:Fuse_Small F5
 U 1 1 592C8B20
 P 5600 2950
 F 0 "F5" H 5600 3135 50  0000 C CNN
@@ -91,7 +51,7 @@ F 4 "94-5010" H 5600 2950 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L F_Small F4
+L Device:Fuse_Small F4
 U 1 1 592C8B34
 P 4600 5100
 F 0 "F4" H 4600 5000 50  0000 C CNN
@@ -103,31 +63,31 @@ F 4 "94-5010" H 4600 5100 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P8
+L Connector_Generic:Conn_01x02 P8
 U 1 1 592C8B3C
-P 7050 5150
-F 0 "P8" H 6968 4875 50  0000 C CNN
-F 1 "HMI_supply" H 6968 4966 50  0000 C CNN
-F 2 "tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 6968 4967 50  0001 C CNN
-F 3 "" H 7050 5150 50  0000 C CNN
-F 4 "02-0???" H 7050 5150 60  0001 C CNN "HPN"
-	1    7050 5150
+P 7050 5200
+F 0 "P8" H 6968 4925 50  0000 C CNN
+F 1 "HMI_supply" H 6968 5016 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 6968 5017 50  0001 C CNN
+F 3 "" H 7050 5200 50  0000 C CNN
+F 4 "02-0902" H 7050 5200 60  0001 C CNN "HPN"
+	1    7050 5200
 	1    0    0    1   
 $EndComp
 $Comp
-L CONN_01X02 P9
+L Connector_Generic:Conn_01x02 P9
 U 1 1 592C8B4A
-P 7050 5600
-F 0 "P9" H 6968 5325 50  0000 C CNN
-F 1 "Future_use" H 6968 5416 50  0000 C CNN
-F 2 "tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 6968 5417 50  0001 C CNN
-F 3 "" H 7050 5600 50  0000 C CNN
-F 4 "02-0???" H 7050 5600 60  0001 C CNN "HPN"
-	1    7050 5600
+P 7050 5650
+F 0 "P9" H 6968 5375 50  0000 C CNN
+F 1 "Future_use" H 6968 5466 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 6968 5467 50  0001 C CNN
+F 3 "" H 7050 5650 50  0000 C CNN
+F 4 "02-0902" H 7050 5650 60  0001 C CNN "HPN"
+	1    7050 5650
 	1    0    0    1   
 $EndComp
 $Comp
-L F_Small F6
+L Device:Fuse_Small F6
 U 1 1 592C8B52
 P 5600 5550
 F 0 "F6" H 5600 5735 50  0000 C CNN
@@ -139,49 +99,19 @@ F 4 "94-5010" H 5600 5550 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil K?
-U 2 1 592C8B60
-P 3850 2850
-AR Path="/592C8B60" Ref="K?"  Part="2" 
-AR Path="/592C66DA/592C8B60" Ref="K2"  Part="2" 
-F 0 "K2" V 3750 2850 60  0000 C CNN
-F 1 "SPDT-16A_12VDC-Coil" V 4100 2850 30  0000 C CNN
-F 2 "tera_relais:Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil" H 3850 2275 60  0001 C CNN
-F 3 "" H 3850 2850 60  0001 C CNN
-F 4 "96-2005" V 3850 2850 60  0001 C CNN "HPN"
-	2    3850 2850
-	0    -1   1    0   
-$EndComp
-$Comp
-L Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil K?
-U 1 1 592C8B68
-P 10000 3250
-AR Path="/592C8B68" Ref="K?"  Part="1" 
-AR Path="/592C66DA/592C8B68" Ref="K2"  Part="1" 
-F 0 "K2" H 10050 3350 60  0000 L CNN
-F 1 "SPDT-16A_12VDC-Coil" H 9650 3000 60  0001 L CNN
-F 2 "tera_relais:Finder-41.61.9.012.0010_SPDT-16A_12VDC-Coil" H 10000 2675 60  0001 C CNN
-F 3 "" H 10000 3250 60  0001 C CNN
-F 4 "96-2005" H 10000 3250 60  0001 C CNN "HPN"
-	1    10000 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R1
+L Device:R_Small R1
 U 1 1 592C8B78
 P 9700 3700
 F 0 "R1" V 9900 3700 50  0000 C CNN
-F 1 "510R 250mW" V 9800 3700 50  0000 C CNN
+F 1 "180R" V 9800 3700 50  0000 C CNN
 F 2 "tera_rlc:R_1206in" H 9700 3700 50  0001 C CNN
 F 3 "" H 9700 3700 50  0000 C CNN
-F 4 "13-510R" V 9700 3700 60  0001 C CNN "HPN"
+F 4 "11-180R" V 9700 3700 60  0001 C CNN "HPN"
 	1    9700 3700
 	0    1    1    0   
 $EndComp
-NoConn ~ 4100 2850
-NoConn ~ 4100 2750
 $Comp
-L IRLML2246TRPBF-1 Q1
+L tera_general:IRLML2246TRPBF-1 Q1
 U 1 1 592C8B8A
 P 4450 3250
 F 0 "Q1" H 4300 3150 50  0000 L CNN
@@ -193,7 +123,7 @@ F 4 "24-2253" H 4450 3250 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R3
+L Device:R_Small R3
 U 1 1 592C8B92
 P 4450 3550
 F 0 "R3" H 4509 3596 50  0000 L CNN
@@ -205,7 +135,7 @@ F 4 "11-12K0" H 4450 3550 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D5
+L Device:LED_Small D5
 U 1 1 592C8B9A
 P 4450 3750
 F 0 "D5" V 4450 3700 50  0000 R CNN
@@ -217,7 +147,7 @@ F 4 "21-0001" V 4450 3750 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L IRLML2246TRPBF-1 Q3
+L tera_general:IRLML2246TRPBF-1 Q3
 U 1 1 592C8BA8
 P 5450 3250
 F 0 "Q3" H 5538 3254 50  0000 L CNN
@@ -229,7 +159,7 @@ F 4 "24-2253" H 5450 3250 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R7
+L Device:R_Small R7
 U 1 1 592C8BB0
 P 5450 3550
 F 0 "R7" H 5509 3596 50  0000 L CNN
@@ -241,7 +171,7 @@ F 4 "11-12K0" H 5450 3550 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D7
+L Device:LED_Small D7
 U 1 1 592C8BB8
 P 5450 3750
 F 0 "D7" V 5450 3700 50  0000 R CNN
@@ -253,7 +183,7 @@ F 4 "21-0001" V 5450 3750 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R5
+L Device:R_Small R5
 U 1 1 592C8BC6
 P 4750 3550
 F 0 "R5" H 4809 3596 50  0000 L CNN
@@ -265,7 +195,7 @@ F 4 "11-100K" H 4750 3550 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R9
+L Device:R_Small R9
 U 1 1 592C8BD4
 P 5750 3550
 F 0 "R9" H 5809 3596 50  0000 L CNN
@@ -277,7 +207,7 @@ F 4 "11-100K" H 5750 3550 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L IRLML2246TRPBF-1 Q2
+L tera_general:IRLML2246TRPBF-1 Q2
 U 1 1 592C8BE2
 P 4450 5850
 F 0 "Q2" H 4538 5854 50  0000 L CNN
@@ -289,7 +219,7 @@ F 4 "24-2253" H 4450 5850 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R4
+L Device:R_Small R4
 U 1 1 592C8BEA
 P 4450 6150
 F 0 "R4" H 4509 6196 50  0000 L CNN
@@ -301,7 +231,7 @@ F 4 "11-12K0" H 4450 6150 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D6
+L Device:LED_Small D6
 U 1 1 592C8BF2
 P 4450 6350
 F 0 "D6" V 4450 6300 50  0000 R CNN
@@ -313,7 +243,7 @@ F 4 "21-0001" V 4450 6350 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R6
+L Device:R_Small R6
 U 1 1 592C8C00
 P 4750 6150
 F 0 "R6" H 4809 6196 50  0000 L CNN
@@ -325,7 +255,7 @@ F 4 "11-100K" H 4750 6150 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L IRLML2246TRPBF-1 Q4
+L tera_general:IRLML2246TRPBF-1 Q4
 U 1 1 592C8C0E
 P 5450 5850
 F 0 "Q4" H 5538 5854 50  0000 L CNN
@@ -337,7 +267,7 @@ F 4 "24-2253" H 5450 5850 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R8
+L Device:R_Small R8
 U 1 1 592C8C16
 P 5450 6150
 F 0 "R8" H 5509 6196 50  0000 L CNN
@@ -349,7 +279,7 @@ F 4 "11-12K0" H 5450 6150 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D8
+L Device:LED_Small D8
 U 1 1 592C8C1E
 P 5450 6350
 F 0 "D8" V 5450 6300 50  0000 R CNN
@@ -361,7 +291,7 @@ F 4 "21-0001" V 5450 6350 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R10
+L Device:R_Small R10
 U 1 1 592C8C2C
 P 5750 6150
 F 0 "R10" H 5809 6196 50  0000 L CNN
@@ -375,40 +305,34 @@ $EndComp
 Wire Wire Line
 	2900 3050 3150 3050
 Wire Wire Line
-	3150 2900 3150 3100
+	3150 2900 3150 3050
 Connection ~ 3150 3050
 Connection ~ 3150 2650
 Wire Wire Line
-	3600 2950 3650 2950
+	3600 2950 3700 2950
 Connection ~ 3600 2650
 Wire Wire Line
-	4100 2950 5500 2950
+	4000 2950 4200 2950
 Wire Wire Line
-	4100 3050 4200 3050
-Wire Wire Line
-	4200 2950 4200 5550
+	4200 2950 4200 5100
 Connection ~ 4200 2950
 Wire Wire Line
-	5700 2950 6200 2950
+	5700 2950 5750 2950
 Wire Wire Line
-	4700 2650 9650 2650
+	4700 2650 4750 2650
 Wire Wire Line
-	4200 5100 4500 5100
-Connection ~ 4200 3050
+	4200 5100 4450 5100
 Wire Wire Line
-	4700 5100 6850 5100
+	4700 5100 4750 5100
 Wire Wire Line
-	5700 5550 6850 5550
+	5700 5550 5750 5550
 Wire Wire Line
-	4200 5550 5500 5550
+	4200 5550 5450 5550
 Connection ~ 4200 5100
 Wire Wire Line
 	3600 2650 3600 2950
 Wire Wire Line
-	3650 2850 3600 2850
-Connection ~ 3600 2850
-Wire Wire Line
-	9350 3000 10300 3000
+	9350 3000 9450 3000
 Wire Wire Line
 	10000 3000 10000 3100
 Wire Wire Line
@@ -417,7 +341,7 @@ Connection ~ 10000 3000
 Wire Wire Line
 	10300 3350 10300 3450
 Wire Wire Line
-	10000 3400 10000 3700
+	10000 3400 10000 3450
 Connection ~ 10000 3450
 Wire Wire Line
 	10000 3700 9800 3700
@@ -428,7 +352,7 @@ Wire Wire Line
 	4450 2650 4450 3150
 Connection ~ 4450 2650
 Wire Wire Line
-	4750 2650 4750 3450
+	4750 2650 4750 3250
 Wire Wire Line
 	4750 3250 4650 3250
 Connection ~ 4750 2650
@@ -438,21 +362,21 @@ Wire Wire Line
 	5450 3150 5450 2950
 Connection ~ 5450 2950
 Wire Wire Line
-	5750 2950 5750 3450
+	5750 2950 5750 3250
 Connection ~ 5750 2950
 Connection ~ 4750 3250
 Connection ~ 5750 3250
 Wire Wire Line
 	4750 5850 4650 5850
 Wire Wire Line
-	4750 5100 4750 6050
+	4750 5100 4750 5850
 Connection ~ 4750 5850
 Wire Wire Line
 	5750 5850 5650 5850
 Wire Wire Line
 	5450 5750 5450 5550
 Wire Wire Line
-	5750 5550 5750 6050
+	5750 5550 5750 5850
 Connection ~ 5750 5850
 Wire Wire Line
 	4450 5750 4450 5100
@@ -461,7 +385,7 @@ Connection ~ 4750 5100
 Connection ~ 5450 5550
 Connection ~ 5750 5550
 $Comp
-L D_Small D3
+L Device:D_Small D3
 U 1 1 592C8C97
 P 10300 3250
 F 0 "D3" H 10300 3050 50  0000 C CNN
@@ -473,11 +397,11 @@ F 4 "21-1105" H 10300 3250 60  0001 C CNN "HPN"
 	0    -1   1    0   
 $EndComp
 Text Notes 10650 3900 1    40   ~ 0
-Coil info: 12VDC, 0.36W => 400 Ohm, 30mA
+Coil info: 12VDC, 720 Ohm, 0.2W
 Text Label 4200 5100 1    60   ~ 0
 +12V_switched
 $Comp
-L THD_12-xxxx_single_output U3
+L Supply:THD_12-xxxx_single_output U3
 U 1 1 592C8CA2
 P 2400 2850
 F 0 "U3" H 2400 3250 60  0000 C CNN
@@ -544,12 +468,10 @@ Wire Wire Line
 Wire Wire Line
 	9350 3600 10000 3600
 Wire Wire Line
-	9450 2650 9450 2650
-Wire Wire Line
 	9450 2650 9450 3000
 Connection ~ 9450 3000
 $Comp
-L PWR_FLAG #FLG02
+L power:PWR_FLAG #FLG02
 U 1 1 59334E0A
 P 5000 2550
 F 0 "#FLG02" H 5000 2645 50  0001 C CNN
@@ -563,7 +485,7 @@ Wire Wire Line
 	5000 2550 5000 2650
 Connection ~ 5000 2650
 $Comp
-L PWR_FLAG #FLG03
+L power:PWR_FLAG #FLG03
 U 1 1 59335CA0
 P 4900 5000
 F 0 "#FLG03" H 4900 5095 50  0001 C CNN
@@ -577,7 +499,7 @@ Wire Wire Line
 	4900 5000 4900 5100
 Connection ~ 4900 5100
 $Comp
-L PWR_FLAG #FLG04
+L power:PWR_FLAG #FLG04
 U 1 1 59335DEE
 P 5900 2850
 F 0 "#FLG04" H 5900 2945 50  0001 C CNN
@@ -591,7 +513,7 @@ Wire Wire Line
 	5900 2850 5900 2950
 Connection ~ 5900 2950
 $Comp
-L PWR_FLAG #FLG05
+L power:PWR_FLAG #FLG05
 U 1 1 59336B2C
 P 5900 5450
 F 0 "#FLG05" H 5900 5545 50  0001 C CNN
@@ -620,7 +542,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 2700 1800 2700
 Wire Wire Line
-	1800 2650 1800 2750
+	1800 2650 1800 2700
 Wire Wire Line
 	1800 2650 1900 2650
 Wire Wire Line
@@ -657,14 +579,14 @@ GND_BN
 Wire Wire Line
 	3150 2700 3150 2650
 Wire Wire Line
-	2900 2650 4500 2650
+	2900 2650 3150 2650
 Connection ~ 1850 3050
 Wire Wire Line
 	1700 3500 1700 4200
 Wire Wire Line
 	1700 2850 1900 2850
 $Comp
-L Jumper_NO_Small JP2
+L Device:Jumper_NO_Small JP2
 U 1 1 5930F666
 P 1700 3050
 F 0 "JP2" V 1700 3250 50  0000 R CNN
@@ -677,7 +599,7 @@ $EndComp
 Wire Wire Line
 	1700 2950 1700 2850
 $Comp
-L Panasonic_AQY414S K4
+L relais:Panasonic_AQY414S K4
 U 1 1 593361E4
 P 1400 4300
 F 0 "K4" H 1400 4500 60  0000 C CNN
@@ -688,7 +610,7 @@ F 3 "" H 1400 4300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R22
+L Device:R_Small R22
 U 1 1 593361EC
 P 1000 4300
 F 0 "R22" H 1059 4346 50  0000 L CNN
@@ -700,11 +622,11 @@ F 4 "11-1K00" H 1000 4300 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	750  4150 1100 4150
+	750  4150 1000 4150
 Wire Wire Line
 	1000 4150 1000 4200
 Wire Wire Line
-	750  4450 1100 4450
+	750  4450 1000 4450
 Wire Wire Line
 	1000 4450 1000 4400
 Connection ~ 1000 4150
@@ -738,23 +660,23 @@ Wire Notes Line
 Wire Notes Line
 	1400 5050 500  5050
 Wire Wire Line
-	1700 4400 1850 4400
+	1700 4400 1800 4400
 Wire Wire Line
 	1800 4400 1800 4500
 Wire Wire Line
-	1850 4400 1850 2950
+	1850 4400 1850 3050
 Connection ~ 1800 4400
 Text Notes 550  5050 0    40   ~ 0
 Isolated Interlock circuit
 $Comp
-L CONN_01X03 P5
+L Connector_Generic:Conn_01x03 P5
 U 1 1 593074AF
 P 1200 3400
 F 0 "P5" H 1119 3075 50  0000 C CNN
 F 1 "Reset_Interlock" H 1119 3166 50  0000 C CNN
 F 2 "tera_Connectors_JST:JST_EH_S03B-EH_03x2.50mm_Angled" H 1119 3167 50  0001 C CNN
 F 3 "" H 1200 3400 50  0000 C CNN
-F 4 "02-0???" H 1200 3400 60  0001 C CNN "HPN"
+F 4 "02-1003" H 1200 3400 60  0001 C CNN "HPN"
 	1    1200 3400
 	-1   0    0    1   
 $EndComp
@@ -772,4 +694,94 @@ Text Notes 500  3325 0    40   ~ 0
 LED 12V BMS OK
 Text Notes 500  3475 0    40   ~ 0
 Button Reset IL (NC)
+Text Label 1400 3400 0    60   ~ 0
+BN_on
+Text Label 1400 3500 0    60   ~ 0
+BN_IL
+$Comp
+L relais:TE_OJ-SH-112DM_MU K2
+U 1 1 5AA09CFA
+P 10000 3250
+F 0 "K2" H 10050 3350 50  0000 L CNN
+F 1 "TE_OJ-SH-112DM" V 9850 3000 30  0000 L CNN
+F 2 "tera_relais:RELAIS-TE-OJ" H 10600 2950 50  0001 C CNN
+F 3 "" H 10000 3250 50  0000 C CNN
+F 4 "96-0002" H 10400 3150 60  0001 C CNN "HPN"
+	1    10000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L relais:TE_OJ-SH-112DM_MU K2
+U 2 1 5AA0B1FB
+P 3850 2950
+F 0 "K2" V 3750 2900 50  0000 L CNN
+F 1 "TE_OJ-SH-112DM" V 3950 2700 30  0000 L CNN
+F 2 "tera_relais:RELAIS-TE-OJ" H 4450 2650 50  0001 C CNN
+F 3 "" H 3850 2950 50  0000 C CNN
+F 4 "96-0002" H 4250 2850 60  0001 C CNN "HPN"
+	2    3850 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 3050 3150 3100
+Wire Wire Line
+	3150 2650 3600 2650
+Wire Wire Line
+	3600 2650 4450 2650
+Wire Wire Line
+	4200 2950 5450 2950
+Wire Wire Line
+	4200 5100 4200 5550
+Wire Wire Line
+	10000 3000 10300 3000
+Wire Wire Line
+	10000 3450 10000 3600
+Wire Wire Line
+	10000 3600 10000 3700
+Wire Wire Line
+	4450 2650 4500 2650
+Wire Wire Line
+	4750 2650 5000 2650
+Wire Wire Line
+	5450 2950 5500 2950
+Wire Wire Line
+	5750 2950 5900 2950
+Wire Wire Line
+	4750 3250 4750 3450
+Wire Wire Line
+	5750 3250 5750 3450
+Wire Wire Line
+	4750 5850 4750 6050
+Wire Wire Line
+	5750 5850 5750 6050
+Wire Wire Line
+	4450 5100 4500 5100
+Wire Wire Line
+	4750 5100 4900 5100
+Wire Wire Line
+	5450 5550 5500 5550
+Wire Wire Line
+	5750 5550 5900 5550
+Wire Wire Line
+	9450 3000 10000 3000
+Wire Wire Line
+	5000 2650 9450 2650
+Wire Wire Line
+	4900 5100 6850 5100
+Wire Wire Line
+	5900 2950 6200 2950
+Wire Wire Line
+	5900 5550 6850 5550
+Wire Wire Line
+	9450 2650 9650 2650
+Wire Wire Line
+	1800 2700 1800 2750
+Wire Wire Line
+	1850 3050 1850 2950
+Wire Wire Line
+	1000 4150 1100 4150
+Wire Wire Line
+	1000 4450 1100 4450
+Wire Wire Line
+	1800 4400 1850 4400
 $EndSCHEMATC

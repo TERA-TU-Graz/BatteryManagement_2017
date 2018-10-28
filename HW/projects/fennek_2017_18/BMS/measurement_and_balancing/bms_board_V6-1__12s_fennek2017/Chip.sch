@@ -1,45 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:relais
-LIBS:Supply
-LIBS:tera_general
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_switches
-LIBS:local_power
-LIBS:ft232rl
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
+EESchema Schematic File Version 4
 LIBS:bms_board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -54,12 +15,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L C C2
+L bms_board-rescue:C C2
 U 1 1 58593A62
 P 5950 3050
 AR Path="/5859336D/58593A62" Ref="C2"  Part="1" 
 AR Path="/585C2532/58593A62" Ref="C19"  Part="1" 
-F 0 "C2" H 6065 3096 50  0000 L CNN
+AR Path="/58593A62" Ref="C19"  Part="1" 
+F 0 "C19" H 6065 3096 50  0000 L CNN
 F 1 "10u" H 6065 3005 50  0000 L CNN
 F 2 "tera_rlc:C_0805in" H 5988 2900 50  0001 C CNN
 F 3 "" H 5950 3050 50  0000 C CNN
@@ -68,12 +30,13 @@ F 4 "53-10u0" H 5950 3050 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C7
+L bms_board-rescue:C C7
 U 1 1 58593A6F
 P 7250 2350
 AR Path="/5859336D/58593A6F" Ref="C7"  Part="1" 
 AR Path="/585C2532/58593A6F" Ref="C24"  Part="1" 
-F 0 "C7" H 7365 2396 50  0000 L CNN
+AR Path="/58593A6F" Ref="C24"  Part="1" 
+F 0 "C24" H 7365 2396 50  0000 L CNN
 F 1 "2.2u" H 7365 2305 50  0000 L CNN
 F 2 "tera_rlc:C_0805in" H 7288 2200 50  0001 C CNN
 F 3 "" H 7250 2350 50  0000 C CNN
@@ -82,12 +45,13 @@ F 4 "52-2u20" H 7250 2350 60  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C11
+L bms_board-rescue:C C11
 U 1 1 58593A82
 P 8150 3100
 AR Path="/5859336D/58593A82" Ref="C11"  Part="1" 
 AR Path="/585C2532/58593A82" Ref="C28"  Part="1" 
-F 0 "C11" V 8100 3150 50  0000 L CNN
+AR Path="/58593A82" Ref="C28"  Part="1" 
+F 0 "C28" V 8100 3150 50  0000 L CNN
 F 1 "2.2u" V 8265 3055 50  0000 L CNN
 F 2 "tera_rlc:C_0805in" H 8188 2950 50  0001 C CNN
 F 3 "" H 8150 3100 50  0000 C CNN
@@ -96,12 +60,13 @@ F 4 "52-2u20" V 8150 3100 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C12
+L bms_board-rescue:C C12
 U 1 1 58593A89
 P 8300 3400
 AR Path="/5859336D/58593A89" Ref="C12"  Part="1" 
 AR Path="/585C2532/58593A89" Ref="C29"  Part="1" 
-F 0 "C12" V 8250 3450 50  0000 L CNN
+AR Path="/58593A89" Ref="C29"  Part="1" 
+F 0 "C29" V 8250 3450 50  0000 L CNN
 F 1 "100n" V 8350 3100 50  0000 L CNN
 F 2 "tera_rlc:C_0603in" H 8338 3250 50  0001 C CNN
 F 3 "" H 8300 3400 50  0000 C CNN
@@ -110,12 +75,13 @@ F 4 "52-100n" V 8300 3400 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C14
+L bms_board-rescue:C C14
 U 1 1 58593A90
 P 8500 3100
 AR Path="/5859336D/58593A90" Ref="C14"  Part="1" 
 AR Path="/585C2532/58593A90" Ref="C31"  Part="1" 
-F 0 "C14" V 8450 3150 50  0000 L CNN
+AR Path="/58593A90" Ref="C31"  Part="1" 
+F 0 "C31" V 8450 3150 50  0000 L CNN
 F 1 "2.2u" V 8615 3055 50  0000 L CNN
 F 2 "tera_rlc:C_0805in" H 8538 2950 50  0001 C CNN
 F 3 "" H 8500 3100 50  0000 C CNN
@@ -124,12 +90,13 @@ F 4 "52-2u20" V 8500 3100 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C15
+L bms_board-rescue:C C15
 U 1 1 58593A97
 P 8650 3400
 AR Path="/5859336D/58593A97" Ref="C15"  Part="1" 
 AR Path="/585C2532/58593A97" Ref="C32"  Part="1" 
-F 0 "C15" V 8600 3450 50  0000 L CNN
+AR Path="/58593A97" Ref="C32"  Part="1" 
+F 0 "C32" V 8600 3450 50  0000 L CNN
 F 1 "100n" V 8700 3100 50  0000 L CNN
 F 2 "tera_rlc:C_0603in" H 8688 3250 50  0001 C CNN
 F 3 "" H 8650 3400 50  0000 C CNN
@@ -138,12 +105,12 @@ F 4 "52-100n" V 8650 3400 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 X1
+L bms_board-rescue:CONN_01X02 X1
 U 1 1 58593A9E
 P 9100 2800
 AR Path="/5859336D/58593A9E" Ref="X1"  Part="1" 
 AR Path="/585C2532/58593A9E" Ref="X2"  Part="1" 
-F 0 "X1" H 9019 2519 50  0000 C CNN
+F 0 "X2" H 9019 2519 50  0000 C CNN
 F 1 "Prog_Voltage" H 9019 2610 50  0000 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 9100 2800 50  0001 C CNN
 F 3 "" H 9100 2800 50  0000 C CNN
@@ -152,12 +119,13 @@ F 4 "09-1003" H 9100 2800 60  0001 C CNN "HPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L C C5
+L bms_board-rescue:C C5
 U 1 1 58593AAB
 P 7100 3100
 AR Path="/5859336D/58593AAB" Ref="C5"  Part="1" 
 AR Path="/585C2532/58593AAB" Ref="C22"  Part="1" 
-F 0 "C5" V 7050 3150 50  0000 L CNN
+AR Path="/58593AAB" Ref="C22"  Part="1" 
+F 0 "C22" V 7050 3150 50  0000 L CNN
 F 1 "2.2u" V 7150 2850 50  0000 L CNN
 F 2 "tera_rlc:C_0805in" H 7138 2950 50  0001 C CNN
 F 3 "" H 7100 3100 50  0000 C CNN
@@ -166,12 +134,13 @@ F 4 "52-2u20" V 7100 3100 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C8
+L bms_board-rescue:C C8
 U 1 1 58593AB2
 P 7250 3250
 AR Path="/5859336D/58593AB2" Ref="C8"  Part="1" 
 AR Path="/585C2532/58593AB2" Ref="C25"  Part="1" 
-F 0 "C8" V 7200 3300 50  0000 L CNN
+AR Path="/58593AB2" Ref="C25"  Part="1" 
+F 0 "C25" V 7200 3300 50  0000 L CNN
 F 1 "100n" V 7100 3150 50  0000 L CNN
 F 2 "tera_rlc:C_0603in" H 7288 3100 50  0001 C CNN
 F 3 "" H 7250 3250 50  0000 C CNN
@@ -180,12 +149,13 @@ F 4 "52-100n" V 7250 3250 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C1
+L bms_board-rescue:C C1
 U 1 1 58593ACB
 P 5650 2500
 AR Path="/5859336D/58593ACB" Ref="C1"  Part="1" 
 AR Path="/585C2532/58593ACB" Ref="C18"  Part="1" 
-F 0 "C1" V 5700 2300 50  0000 L CNN
+AR Path="/58593ACB" Ref="C18"  Part="1" 
+F 0 "C18" V 5700 2300 50  0000 L CNN
 F 1 "100n 50V" V 5800 2300 50  0000 L CNN
 F 2 "tera_rlc:C_0805in" H 5688 2350 50  0001 C CNN
 F 3 "" H 5650 2500 50  0000 C CNN
@@ -194,13 +164,13 @@ F 4 "50-100n" V 5650 2500 60  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L TI-bq76pl536-multiunit IC1
+L tera_general:TI-bq76pl536-multiunit IC1
 U 8 1 58593AD2
 P 6450 2750
 AR Path="/5859336D/58593AD2" Ref="IC1"  Part="8" 
 AR Path="/585C2532/58593AD2" Ref="IC2"  Part="8" 
 AR Path="/58593AD2" Ref="IC2"  Part="8" 
-F 0 "IC1" H 6450 3437 60  0000 C CNN
+F 0 "IC2" H 6450 3437 60  0000 C CNN
 F 1 "TI-bq76pl536" H 6600 3350 60  0000 C CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 6550 5250 60  0001 C CNN
 F 3 "" H 6650 2700 60  0000 C CNN
@@ -288,13 +258,13 @@ Connection ~ 8500 2650
 Connection ~ 8300 2750
 Connection ~ 8150 2750
 $Comp
-L TI-bq76pl536-multiunit IC?
+L tera_general:TI-bq76pl536-multiunit IC?
 U 1 1 58595E80
 P 4050 3350
 AR Path="/58595E80" Ref="IC?"  Part="1" 
 AR Path="/5859336D/58595E80" Ref="IC1"  Part="1" 
 AR Path="/585C2532/58595E80" Ref="IC2"  Part="1" 
-F 0 "IC1" H 4050 3937 60  0000 C CNN
+F 0 "IC2" H 4050 3937 60  0000 C CNN
 F 1 "TI-bq76pl536" H 4050 3831 60  0000 C CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 4150 5850 60  0001 C CNN
 F 3 "" H 4250 3300 60  0000 C CNN
@@ -335,13 +305,13 @@ VC2
 Text HLabel 1250 4400 0    60   Input ~ 0
 VC1
 $Comp
-L TI-bq76pl536-multiunit IC?
+L tera_general:TI-bq76pl536-multiunit IC?
 U 4 1 585A3EA2
 P 2050 5650
 AR Path="/585A3EA2" Ref="IC?"  Part="4" 
 AR Path="/5859336D/585A3EA2" Ref="IC1"  Part="4" 
 AR Path="/585C2532/585A3EA2" Ref="IC2"  Part="4" 
-F 0 "IC1" H 2400 5700 60  0000 C CNN
+F 0 "IC2" H 2400 5700 60  0000 C CNN
 F 1 "TI-bq76pl536" H 2600 5600 60  0000 C CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 2150 8150 60  0001 C CNN
 F 3 "" H 2350 5600 60  0000 C CNN
@@ -350,13 +320,13 @@ F 4 "20-0006" H 2050 5650 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L TI-bq76pl536-multiunit IC?
+L tera_general:TI-bq76pl536-multiunit IC?
 U 2 1 585A3EA9
 P 2050 6500
 AR Path="/585A3EA9" Ref="IC?"  Part="2" 
 AR Path="/5859336D/585A3EA9" Ref="IC1"  Part="2" 
 AR Path="/585C2532/585A3EA9" Ref="IC2"  Part="2" 
-F 0 "IC1" H 2278 6553 60  0000 L CNN
+F 0 "IC2" H 2278 6553 60  0000 L CNN
 F 1 "TI-bq76pl536" H 2278 6447 60  0000 L CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 2150 9000 60  0001 C CNN
 F 3 "" H 2350 6450 60  0000 C CNN
@@ -365,13 +335,13 @@ F 4 "20-0006" H 2050 6500 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L TI-bq76pl536-multiunit IC?
+L tera_general:TI-bq76pl536-multiunit IC?
 U 3 1 585A3EB0
 P 2050 7300
 AR Path="/585A3EB0" Ref="IC?"  Part="3" 
 AR Path="/5859336D/585A3EB0" Ref="IC1"  Part="3" 
 AR Path="/585C2532/585A3EB0" Ref="IC2"  Part="3" 
-F 0 "IC1" H 2278 7353 60  0000 L CNN
+F 0 "IC2" H 2278 7353 60  0000 L CNN
 F 1 "TI-bq76pl536" H 2278 7247 60  0000 L CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 2150 9800 60  0001 C CNN
 F 3 "" H 2350 7250 60  0000 C CNN
@@ -387,13 +357,13 @@ Wire Wire Line
 	1650 5550 1650 5650
 Connection ~ 1650 5650
 $Comp
-L TI-bq76pl536-multiunit IC?
+L tera_general:TI-bq76pl536-multiunit IC?
 U 5 1 585A712E
 P 9800 3200
 AR Path="/585A712E" Ref="IC?"  Part="5" 
 AR Path="/5859336D/585A712E" Ref="IC1"  Part="5" 
 AR Path="/585C2532/585A712E" Ref="IC2"  Part="5" 
-F 0 "IC1" H 9750 2513 60  0000 C CNN
+F 0 "IC2" H 9750 2513 60  0000 C CNN
 F 1 "TI-bq76pl536" H 9750 2619 60  0000 C CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 9900 5700 60  0001 C CNN
 F 3 "" H 10000 3150 60  0000 C CNN
@@ -402,13 +372,13 @@ F 4 "20-0006" H 9800 3200 60  0001 C CNN "HPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L TI-bq76pl536-multiunit IC?
+L tera_general:TI-bq76pl536-multiunit IC?
 U 6 1 585A7135
 P 9300 5100
 AR Path="/585A7135" Ref="IC?"  Part="6" 
 AR Path="/5859336D/585A7135" Ref="IC1"  Part="6" 
 AR Path="/585C2532/585A7135" Ref="IC2"  Part="6" 
-F 0 "IC1" H 9072 5047 60  0000 R CNN
+F 0 "IC2" H 9072 5047 60  0000 R CNN
 F 1 "TI-bq76pl536" H 9072 5153 60  0000 R CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 9400 7600 60  0001 C CNN
 F 3 "" H 9500 5050 60  0000 C CNN
@@ -417,13 +387,13 @@ F 4 "20-0006" H 9300 5100 60  0001 C CNN "HPN"
 	0    -1   1    0   
 $EndComp
 $Comp
-L TI-bq76pl536-multiunit IC?
+L tera_general:TI-bq76pl536-multiunit IC?
 U 7 1 585A713C
 P 9400 1400
 AR Path="/585A713C" Ref="IC?"  Part="7" 
 AR Path="/5859336D/585A713C" Ref="IC1"  Part="7" 
 AR Path="/585C2532/585A713C" Ref="IC2"  Part="7" 
-F 0 "IC1" H 9400 2100 60  0000 C CNN
+F 0 "IC2" H 9400 2100 60  0000 C CNN
 F 1 "TI-bq76pl536" H 9400 2000 60  0000 C CNN
 F 2 "tera_atomic_ic:TI_bq76PL536" H 9500 3900 60  0001 C CNN
 F 3 "" H 9600 1350 60  0000 C CNN

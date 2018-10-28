@@ -1,45 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:relais
-LIBS:Supply
-LIBS:tera_general
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_switches
-LIBS:local_power
-LIBS:ft232rl
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
+EESchema Schematic File Version 4
 LIBS:bms_board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -54,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L R_Small R5
+L Device:R_Small R5
 U 1 1 56ED75BD
 P 9100 4750
 F 0 "R5" V 9000 4800 50  0000 C CNN
@@ -152,7 +113,7 @@ F37 "TS2+" B R 8850 5750 60
 F38 "TS2-" B R 8850 5950 60 
 $EndSheet
 $Comp
-L +5V #PWR01
+L power:+5V #PWR01
 U 1 1 58667247
 P 3850 2100
 F 0 "#PWR01" H 3850 1950 50  0001 C CNN
@@ -163,7 +124,7 @@ F 3 "" H 3850 2100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 5879171A
 P 3900 4650
 F 0 "#PWR02" H 3900 4400 50  0001 C CNN
@@ -239,7 +200,7 @@ F10 "VBatt-" I R 3100 4600 60
 F11 "5V" I R 3100 3450 60 
 $EndSheet
 $Comp
-L +5V #PWR03
+L power:+5V #PWR03
 U 1 1 58876F92
 P 3250 3400
 F 0 "#PWR03" H 3250 3250 50  0001 C CNN
@@ -270,7 +231,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 4400 4000 4400
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 5887E1A7
 P 3350 4650
 F 0 "#PWR04" H 3350 4400 50  0001 C CNN
@@ -301,7 +262,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 3050 5550 3050
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 5888DC46
 P 5400 2100
 F 0 "#PWR05" H 5400 1850 50  0001 C CNN
@@ -314,7 +275,7 @@ $EndComp
 Wire Wire Line
 	5400 2100 5550 2100
 $Comp
-L Vmiddle #PWR06
+L local_power:Vmiddle #PWR06
 U 1 1 58893F4C
 P 5350 1950
 F 0 "#PWR06" H 5350 1800 50  0001 C CNN
@@ -351,7 +312,7 @@ Wire Wire Line
 Wire Wire Line
 	6900 3050 7700 3050
 $Comp
-L Vmiddle #PWR07
+L local_power:Vmiddle #PWR07
 U 1 1 588A8C1E
 P 5300 3900
 F 0 "#PWR07" H 5300 3750 50  0001 C CNN
@@ -366,7 +327,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 4000 5050 4000
 $Comp
-L Vmiddle #PWR08
+L local_power:Vmiddle #PWR08
 U 1 1 588AA79D
 P 7550 4700
 F 0 "#PWR08" H 7550 4550 50  0001 C CNN
@@ -383,7 +344,7 @@ Wire Wire Line
 Wire Wire Line
 	6850 4000 7700 4000
 $Comp
-L +BATT #PWR09
+L power:+BATT #PWR09
 U 1 1 588BC192
 P 9050 2200
 F 0 "#PWR09" H 9050 2050 50  0001 C CNN
@@ -394,7 +355,7 @@ F 3 "" H 9050 2200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9050 2200 9050 3050
+	9050 2200 9050 2300
 Wire Wire Line
 	9050 3050 8850 3050
 Wire Wire Line
@@ -419,7 +380,7 @@ Wire Wire Line
 	8850 2300 9050 2300
 Connection ~ 9050 2300
 $Comp
-L GND #PWR010
+L power:GND #PWR010
 U 1 1 588C4DFF
 P 3850 3150
 F 0 "#PWR010" H 3850 2900 50  0001 C CNN
@@ -430,7 +391,7 @@ F 3 "" H 3850 3150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 2300 3850 3150
+	3850 2300 3850 2400
 Wire Wire Line
 	3850 2300 4000 2300
 Wire Wire Line
@@ -455,7 +416,7 @@ Wire Wire Line
 	4000 3050 3850 3050
 Connection ~ 3850 3050
 $Comp
-L CONN_01X13 P1
+L Connector_Generic:Conn_01x13 P1
 U 1 1 588D77C9
 P 6250 5250
 F 0 "P1" V 6372 5245 50  0000 C CNN
@@ -467,7 +428,7 @@ F 4 "02-0013" V 6250 5250 60  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR011
+L power:GND #PWR011
 U 1 1 588DB998
 P 5450 5150
 F 0 "#PWR011" H 5450 4900 50  0001 C CNN
@@ -478,13 +439,13 @@ F 3 "" H 5450 5150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 4950 5450 5150
+	5450 4950 5450 5000
 Wire Wire Line
 	5450 5000 5650 5000
 Wire Wire Line
-	5650 4600 5650 5050
+	5650 4600 5650 5000
 $Comp
-L +BATT #PWR012
+L power:+BATT #PWR012
 U 1 1 588DD065
 P 7150 5000
 F 0 "#PWR012" H 7150 4850 50  0001 C CNN
@@ -495,11 +456,11 @@ F 3 "" H 7150 5000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 4000 6850 5050
+	6850 4000 6850 5000
 Wire Wire Line
-	6850 5000 7150 5000
+	6850 5000 6950 5000
 $Comp
-L Vmiddle #PWR013
+L local_power:Vmiddle #PWR013
 U 1 1 588E152C
 P 6250 3900
 F 0 "#PWR013" H 6250 3750 50  0001 C CNN
@@ -510,7 +471,7 @@ F 3 "" H 6250 3900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 3900 6250 5050
+	6250 3900 6250 4000
 Connection ~ 5650 5000
 Wire Wire Line
 	5750 5050 5750 4500
@@ -558,7 +519,7 @@ Text Label 9100 4600 1    60   ~ 0
 Text Label 7650 2150 2    60   ~ 0
 5V_C2
 $Comp
-L PWR_FLAG #FLG014
+L power:PWR_FLAG #FLG014
 U 1 1 589514D9
 P 5450 4950
 F 0 "#FLG014" H 5450 5045 50  0001 C CNN
@@ -570,7 +531,7 @@ F 3 "" H 5450 4950 50  0000 C CNN
 $EndComp
 Connection ~ 5450 5000
 $Comp
-L PWR_FLAG #FLG015
+L power:PWR_FLAG #FLG015
 U 1 1 589547FF
 P 6950 5000
 F 0 "#FLG015" H 6950 5095 50  0001 C CNN
@@ -582,7 +543,7 @@ F 3 "" H 6950 5000 50  0000 C CNN
 $EndComp
 Connection ~ 6950 5000
 $Comp
-L PWR_FLAG #FLG016
+L power:PWR_FLAG #FLG016
 U 1 1 58965E29
 P 6250 4000
 F 0 "#FLG016" H 6250 4095 50  0001 C CNN
@@ -594,19 +555,19 @@ F 3 "" H 6250 4000 50  0000 C CNN
 $EndComp
 Connection ~ 6250 4000
 $Comp
-L CONN_01X02 P2
+L Connector_Generic:Conn_01x02 P2
 U 1 1 585A2812
-P 2850 5300
-F 0 "P2" H 3050 5250 50  0000 C CNN
-F 1 "TS1" H 3000 5150 50  0000 C CNN
-F 2 "tera_Connectors_Molex:Molex_PicoBlade_53261-0271_02x1.25mm_Angled" H 2850 5300 50  0001 C CNN
-F 3 "" H 2850 5300 50  0000 C CNN
-F 4 "03-0202" H 2850 5300 60  0001 C CNN "HPN"
-	1    2850 5300
+P 2850 5350
+F 0 "P2" H 3050 5300 50  0000 C CNN
+F 1 "TS1" H 3000 5200 50  0000 C CNN
+F 2 "tera_Connectors_Molex:Molex_PicoBlade_53261-0271_02x1.25mm_Angled" H 2850 5350 50  0001 C CNN
+F 3 "" H 2850 5350 50  0000 C CNN
+F 4 "03-0202" H 2850 5350 60  0001 C CNN "HPN"
+	1    2850 5350
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C16
+L Device:C_Small C16
 U 1 1 585A2819
 P 3550 5250
 F 0 "C16" H 3600 5200 50  0000 L CNN
@@ -618,7 +579,7 @@ F 4 "50-47n0" H 3550 5250 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R8
+L Device:R_Small R8
 U 1 1 585A2820
 P 3200 5350
 F 0 "R8" V 3100 5350 50  0000 C CNN
@@ -630,7 +591,7 @@ F 4 "11-1K47" V 3200 5350 60  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R9
+L Device:R_Small R9
 U 1 1 585A2827
 P 3550 5450
 F 0 "R9" V 3450 5450 50  0000 C CNN
@@ -642,19 +603,19 @@ F 4 "11-1K82" V 3550 5450 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P3
+L Connector_Generic:Conn_01x02 P3
 U 1 1 585A282E
-P 9950 5700
-F 0 "P3" H 10150 5650 50  0000 C CNN
-F 1 "TS2" H 10100 5550 50  0000 C CNN
-F 2 "tera_Connectors_Molex:Molex_PicoBlade_53261-0271_02x1.25mm_Angled" H 9950 5700 50  0001 C CNN
-F 3 "" H 9950 5700 50  0000 C CNN
-F 4 "03-0202" H 9950 5700 60  0001 C CNN "HPN"
-	1    9950 5700
+P 9950 5750
+F 0 "P3" H 10150 5700 50  0000 C CNN
+F 1 "TS2" H 10100 5600 50  0000 C CNN
+F 2 "tera_Connectors_Molex:Molex_PicoBlade_53261-0271_02x1.25mm_Angled" H 9950 5750 50  0001 C CNN
+F 3 "" H 9950 5750 50  0000 C CNN
+F 4 "03-0202" H 9950 5750 60  0001 C CNN "HPN"
+	1    9950 5750
 	1    0    0    1   
 $EndComp
 $Comp
-L C_Small C17
+L Device:C_Small C17
 U 1 1 585A2835
 P 9250 5650
 F 0 "C17" H 9300 5600 50  0000 L CNN
@@ -666,7 +627,7 @@ F 4 "50-47n0" H 9250 5650 60  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R_Small R11
+L Device:R_Small R11
 U 1 1 585A283C
 P 9600 5750
 F 0 "R11" V 9500 5750 50  0000 C CNN
@@ -678,7 +639,7 @@ F 4 "11-1K47" V 9600 5750 60  0001 C CNN "HPN"
 	0    -1   1    0   
 $EndComp
 $Comp
-L R_Small R10
+L Device:R_Small R10
 U 1 1 585A2843
 P 9250 5850
 F 0 "R10" V 9150 5850 50  0000 C CNN
@@ -694,13 +655,13 @@ Wire Wire Line
 Wire Wire Line
 	3100 5250 3050 5250
 Wire Wire Line
-	3100 5100 3100 5250
+	3100 5100 3100 5150
 Wire Wire Line
 	3100 5150 3550 5150
 Connection ~ 3100 5150
 Connection ~ 3550 5350
 Wire Wire Line
-	3300 5350 4000 5350
+	3300 5350 3550 5350
 Wire Wire Line
 	3550 5550 4000 5550
 Wire Wire Line
@@ -708,17 +669,17 @@ Wire Wire Line
 Wire Wire Line
 	9700 5650 9750 5650
 Wire Wire Line
-	9700 5450 9700 5650
+	9700 5450 9700 5550
 Wire Wire Line
 	9700 5550 9250 5550
 Connection ~ 9700 5550
 Connection ~ 9250 5750
 Wire Wire Line
-	8850 5750 9500 5750
+	8850 5750 9250 5750
 Wire Wire Line
 	8850 5950 9250 5950
 $Comp
-L +5V #PWR017
+L power:+5V #PWR017
 U 1 1 585E9C2D
 P 3100 5100
 F 0 "#PWR017" H 3100 4950 50  0001 C CNN
@@ -735,7 +696,7 @@ NoConn ~ 8850 5550
 Text Label 9700 5450 1    60   ~ 0
 5V_C2
 $Comp
-L C_Small C51
+L Device:C_Small C51
 U 1 1 58677B6B
 P 6000 5850
 F 0 "C51" V 6150 5800 50  0000 L CNN
@@ -747,7 +708,7 @@ F 4 "50-100n" V 6000 5850 60  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR018
+L power:GND #PWR018
 U 1 1 5867DDC7
 P 5900 5850
 F 0 "#PWR018" H 5900 5600 50  0001 C CNN
@@ -758,7 +719,7 @@ F 3 "" H 5900 5850 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Vmiddle #PWR019
+L local_power:Vmiddle #PWR019
 U 1 1 5868539B
 P 6100 5850
 F 0 "#PWR019" H 6100 5700 50  0001 C CNN
@@ -768,4 +729,50 @@ F 3 "" H 6100 5850 50  0000 C CNN
 	1    6100 5850
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	9050 2950 9050 3050
+Wire Wire Line
+	9050 2850 9050 2950
+Wire Wire Line
+	9050 2750 9050 2850
+Wire Wire Line
+	9050 2600 9050 2750
+Wire Wire Line
+	9050 2500 9050 2600
+Wire Wire Line
+	9050 2400 9050 2500
+Wire Wire Line
+	9050 2300 9050 2400
+Wire Wire Line
+	3850 2400 3850 2500
+Wire Wire Line
+	3850 2500 3850 2600
+Wire Wire Line
+	3850 2600 3850 2750
+Wire Wire Line
+	3850 2750 3850 2850
+Wire Wire Line
+	3850 2850 3850 2950
+Wire Wire Line
+	3850 2950 3850 3050
+Wire Wire Line
+	3850 3050 3850 3150
+Wire Wire Line
+	5650 5000 5650 5050
+Wire Wire Line
+	6850 5000 6850 5050
+Wire Wire Line
+	5450 5000 5450 5150
+Wire Wire Line
+	6950 5000 7150 5000
+Wire Wire Line
+	6250 4000 6250 5050
+Wire Wire Line
+	3100 5150 3100 5250
+Wire Wire Line
+	3550 5350 4000 5350
+Wire Wire Line
+	9700 5550 9700 5650
+Wire Wire Line
+	9250 5750 9500 5750
 $EndSCHEMATC

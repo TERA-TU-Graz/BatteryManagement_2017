@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name fennek_power_distribution-rescue)(type Legacy)(uri ${KIPRJMOD}/fennek_power_distribution-rescue.lib)(options "")(descr ""))
+  (lib (name local_power)(type Legacy)(uri ${KIPRJMOD}/local_libs/local_power.lib)(options "")(descr ""))
+)

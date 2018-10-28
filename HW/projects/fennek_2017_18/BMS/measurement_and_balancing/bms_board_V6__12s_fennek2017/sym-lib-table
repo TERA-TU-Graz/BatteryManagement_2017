@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name bms_board-rescue)(type Legacy)(uri ${KIPRJMOD}/bms_board-rescue.lib)(options "")(descr ""))
+  (lib (name local_power)(type Legacy)(uri ${KIPRJMOD}/local_sym_libs/local_power.lib)(options "")(descr ""))
+)

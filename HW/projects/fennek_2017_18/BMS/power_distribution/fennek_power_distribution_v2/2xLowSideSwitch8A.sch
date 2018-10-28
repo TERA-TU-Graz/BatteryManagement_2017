@@ -1,50 +1,10 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:local_power
-LIBS:ft232rl
-LIBS:relais
-LIBS:Supply
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
-LIBS:tera_general
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_switches
-LIBS:tera_sensoric
+EESchema Schematic File Version 4
 LIBS:fennek_power_distribution-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 8
+Sheet 7 8
 Title "BMS Master"
 Date "2017-01-06"
 Rev "6"
@@ -55,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L TLE8102SG IC?
+L tera_general:TLE8102SG IC?
 U 1 1 56FBF232
 P 2900 4500
 AR Path="/56F50775/56F58707/56FBF232" Ref="IC?"  Part="1" 
@@ -67,7 +27,7 @@ AR Path="/56F50775/56F899AD/56FBF232" Ref="IC7"  Part="1"
 AR Path="/592C0125/592CDA4E/56FBF232" Ref="IC4"  Part="1" 
 AR Path="/592C66DA/59333C7E/56FBF232" Ref="IC3"  Part="1" 
 AR Path="/592C0125/59308F13/56FBF232" Ref="IC5"  Part="1" 
-F 0 "IC5" H 2900 5137 60  0000 C CNN
+F 0 "IC3" H 2900 5137 60  0000 C CNN
 F 1 "TLE8102SG" H 2900 5031 60  0000 C CNN
 F 2 "infineon:INF-PG-DSO-12-11-EP_N_EPvias" H 2850 4500 60  0001 C CNN
 F 3 "" H 2850 4500 60  0000 C CNN
@@ -76,7 +36,7 @@ F 4 "24-0051" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D?
+L Device:LED D?
 U 1 1 56FBF233
 P 4000 3900
 AR Path="/56F50775/56F58707/56FBF233" Ref="D?"  Part="1" 
@@ -88,7 +48,8 @@ AR Path="/56F50775/56F899AD/56FBF233" Ref="D10"  Part="1"
 AR Path="/592C0125/592CDA4E/56FBF233" Ref="D15"  Part="1" 
 AR Path="/592C66DA/59333C7E/56FBF233" Ref="D4"  Part="1" 
 AR Path="/592C0125/59308F13/56FBF233" Ref="D19"  Part="1" 
-F 0 "D19" V 4046 3792 50  0000 R CNN
+AR Path="/56FBF233" Ref="D19"  Part="1" 
+F 0 "D4" V 4046 3792 50  0000 R CNN
 F 1 "K_CH1" V 3955 3792 50  0000 R CNN
 F 2 "tera_diodes:LED_0805" H 4000 3900 50  0001 C CNN
 F 3 "" H 4000 3900 50  0000 C CNN
@@ -97,7 +58,7 @@ F 4 "21-0003" H 0   0   50  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R?
+L Device:R R?
 U 1 1 56F516C1
 P 4000 3500
 AR Path="/56F50775/56F58707/56F516C1" Ref="R?"  Part="1" 
@@ -109,7 +70,7 @@ AR Path="/56F50775/56F899AD/56F516C1" Ref="R19"  Part="1"
 AR Path="/592C0125/592CDA4E/56F516C1" Ref="R18"  Part="1" 
 AR Path="/592C66DA/59333C7E/56F516C1" Ref="R15"  Part="1" 
 AR Path="/592C0125/59308F13/56F516C1" Ref="R20"  Part="1" 
-F 0 "R20" H 4070 3546 50  0000 L CNN
+F 0 "R15" H 4070 3546 50  0000 L CNN
 F 1 "12k" H 4070 3455 50  0000 L CNN
 F 2 "tera_rlc:R_0805in" V 3930 3500 50  0001 C CNN
 F 3 "" H 4000 3500 50  0000 C CNN
@@ -118,7 +79,7 @@ F 4 "11-12K0" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C?
+L Device:C C?
 U 1 1 56F516EB
 P 3550 4050
 AR Path="/56F50775/56F58707/56F516EB" Ref="C?"  Part="1" 
@@ -130,7 +91,8 @@ AR Path="/56F50775/56F899AD/56F516EB" Ref="C13"  Part="1"
 AR Path="/592C0125/592CDA4E/56F516EB" Ref="C5"  Part="1" 
 AR Path="/592C66DA/59333C7E/56F516EB" Ref="C1"  Part="1" 
 AR Path="/592C0125/59308F13/56F516EB" Ref="C6"  Part="1" 
-F 0 "C6" V 3298 4050 50  0000 C CNN
+AR Path="/56F516EB" Ref="C6"  Part="1" 
+F 0 "C1" V 3298 4050 50  0000 C CNN
 F 1 "100n" V 3389 4050 50  0000 C CNN
 F 2 "tera_rlc:C_0603in" H 3588 3900 50  0001 C CNN
 F 3 "" H 3550 4050 50  0000 C CNN
@@ -139,7 +101,7 @@ F 4 "52-100n" H 0   0   50  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D?
+L Device:LED D?
 U 1 1 56FBF236
 P 4400 3900
 AR Path="/56F50775/56F58707/56FBF236" Ref="D?"  Part="1" 
@@ -151,7 +113,8 @@ AR Path="/56F50775/56F899AD/56FBF236" Ref="D11"  Part="1"
 AR Path="/592C0125/592CDA4E/56FBF236" Ref="D16"  Part="1" 
 AR Path="/592C66DA/59333C7E/56FBF236" Ref="D9"  Part="1" 
 AR Path="/592C0125/59308F13/56FBF236" Ref="D20"  Part="1" 
-F 0 "D20" V 4446 3792 50  0000 R CNN
+AR Path="/56FBF236" Ref="D20"  Part="1" 
+F 0 "D9" V 4446 3792 50  0000 R CNN
 F 1 "K_CH2" V 4355 3792 50  0000 R CNN
 F 2 "tera_diodes:LED_0805" H 4400 3900 50  0001 C CNN
 F 3 "" H 4400 3900 50  0000 C CNN
@@ -160,7 +123,7 @@ F 4 "21-0003" H 0   0   50  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R?
+L Device:R R?
 U 1 1 56F52A59
 P 4400 3500
 AR Path="/56F50775/56F58707/56F52A59" Ref="R?"  Part="1" 
@@ -172,7 +135,7 @@ AR Path="/56F50775/56F899AD/56F52A59" Ref="R20"  Part="1"
 AR Path="/592C0125/592CDA4E/56F52A59" Ref="R19"  Part="1" 
 AR Path="/592C66DA/59333C7E/56F52A59" Ref="R16"  Part="1" 
 AR Path="/592C0125/59308F13/56F52A59" Ref="R21"  Part="1" 
-F 0 "R21" H 4470 3546 50  0000 L CNN
+F 0 "R16" H 4470 3546 50  0000 L CNN
 F 1 "12k" H 4470 3455 50  0000 L CNN
 F 2 "tera_rlc:R_0805in" V 4330 3500 50  0001 C CNN
 F 3 "" H 4400 3500 50  0000 C CNN
@@ -201,7 +164,7 @@ Text HLabel 3250 3600 0    60   Input ~ 0
 Wire Wire Line
 	3300 4700 3400 4700
 Wire Wire Line
-	3400 4700 3400 5400
+	3400 4700 3400 4800
 Wire Wire Line
 	3300 4800 3400 4800
 Wire Wire Line
@@ -209,27 +172,27 @@ Wire Wire Line
 Wire Wire Line
 	3350 4100 3300 4100
 Wire Wire Line
-	3350 3600 3350 4100
+	3350 3600 3350 4050
 Wire Wire Line
 	3400 4050 3350 4050
 Wire Wire Line
 	3750 4050 3700 4050
 Wire Wire Line
-	3300 4200 4900 4200
+	3300 4200 4000 4200
 Wire Wire Line
-	4000 4200 4000 4100
+	4000 4200 4000 4050
 Wire Wire Line
 	4000 3250 4000 3350
 Wire Wire Line
-	4000 3650 4000 3700
+	4000 3650 4000 3750
 Wire Wire Line
-	4400 4100 4400 4300
+	4400 4050 4400 4300
 Wire Wire Line
 	4400 3250 4400 3350
 Wire Wire Line
-	4400 3650 4400 3700
+	4400 3650 4400 3750
 Wire Wire Line
-	2300 4200 2500 4200
+	2300 4200 2400 4200
 Wire Wire Line
 	2400 4200 2400 4100
 Wire Wire Line
@@ -239,9 +202,9 @@ Wire Wire Line
 Wire Wire Line
 	3350 3600 3250 3600
 Wire Wire Line
-	3300 4300 4900 4300
+	3300 4300 4400 4300
 Wire Wire Line
-	3100 5400 3750 5400
+	3100 5400 3400 5400
 Connection ~ 3400 4800
 Connection ~ 3400 4900
 Connection ~ 3350 4050
@@ -251,19 +214,19 @@ Connection ~ 2400 4200
 Connection ~ 3400 5400
 Connection ~ 4000 3250
 Wire Wire Line
-	3850 3250 4400 3250
+	3850 3250 4000 3250
 Text HLabel 5100 4200 2    50   Output ~ 0
 CHANNEL1
 Text HLabel 5100 4300 2    50   Output ~ 0
 CHANNEL2
 $Comp
-L D_Small D10
+L Device:D_Small D10
 U 1 1 592FA3A0
 P 5000 4200
 AR Path="/592C66DA/59333C7E/592FA3A0" Ref="D10"  Part="1" 
 AR Path="/592C0125/592CDA4E/592FA3A0" Ref="D17"  Part="1" 
 AR Path="/592C0125/59308F13/592FA3A0" Ref="D21"  Part="1" 
-F 0 "D21" H 5000 4405 50  0000 C CNN
+F 0 "D10" H 5000 4405 50  0000 C CNN
 F 1 "BAS3005B-02V" H 5000 4314 50  0000 C CNN
 F 2 "tera_diodes:BAS3005B-02V__sc79" V 5000 4200 50  0001 C CNN
 F 3 "" V 5000 4200 50  0000 C CNN
@@ -272,13 +235,13 @@ F 4 "21-1105" H 5000 4200 60  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D14
+L Device:D_Small D14
 U 1 1 592FA8FB
 P 5000 4300
 AR Path="/592C66DA/59333C7E/592FA8FB" Ref="D14"  Part="1" 
 AR Path="/592C0125/592CDA4E/592FA8FB" Ref="D18"  Part="1" 
 AR Path="/592C0125/59308F13/592FA8FB" Ref="D22"  Part="1" 
-F 0 "D22" H 5000 4505 50  0000 C CNN
+F 0 "D14" H 5000 4505 50  0000 C CNN
 F 1 "BAS3005B-02V" H 5000 4414 50  0000 C CNN
 F 2 "tera_diodes:BAS3005B-02V__sc79" V 5000 4300 50  0001 C CNN
 F 3 "" V 5000 4300 50  0000 C CNN
@@ -286,4 +249,20 @@ F 4 "21-1105" H 5000 4300 60  0001 C CNN "HPN"
 	1    5000 4300
 	1    0    0    1   
 $EndComp
+Wire Wire Line
+	3400 4800 3400 4900
+Wire Wire Line
+	3400 4900 3400 5400
+Wire Wire Line
+	3350 4050 3350 4100
+Wire Wire Line
+	4400 4300 4900 4300
+Wire Wire Line
+	2400 4200 2500 4200
+Wire Wire Line
+	3400 5400 3750 5400
+Wire Wire Line
+	4000 3250 4400 3250
+Wire Wire Line
+	4000 4200 4900 4200
 $EndSCHEMATC
